@@ -11136,7 +11136,7 @@
     },
     {
       "source": "httpdocs/includes/header.php",
-      "target": "../../pblcare-explorer/backend/scanner/side_bar.php",
+      "target": "../../pblcare-explorer/backend/side_bar.php",
       "type": "include"
     },
     {
@@ -11146,332 +11146,332 @@
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_001.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_002.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_003.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_004.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_005.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_006.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_007.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_008.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_009.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_010.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_011.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_012.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_013.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_014.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_015.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_016.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_017.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_018.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_019.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_020.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_021.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_022.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_023.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_024.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_025.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_026.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_027.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_028.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_029.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_030.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_031.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_032.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_033.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_034.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_035.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_036.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_037.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_038.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_039.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_040.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_041.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_042.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_043.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_044.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_045.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_046.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_047.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_048.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_049.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_050.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_051.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_052.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_053.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_054.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_055.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_056.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_057.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_058.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_059.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_060.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_061.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_062.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_063.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_064.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_065.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
       "source": "httpdocs/includes/pdf/TCPDF-main/examples/example_067.php",
-      "target": "../../pblcare-explorer/backend/scanner/tcpdf_include.php",
+      "target": "../../pblcare-explorer/backend/tcpdf_include.php",
       "type": "require_once"
     },
     {
@@ -11531,7 +11531,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_active_session.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11541,7 +11541,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_active_sessions.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11551,7 +11551,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_completed_session.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11561,7 +11561,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_completed_sessions.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11571,7 +11571,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_patient_visit_history.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11581,7 +11581,7 @@
     },
     {
       "source": "httpdocs/mobile_api/sessions/get_staff_dashboard.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/visit_lateness.php",
+      "target": "../../pblcare-explorer/backend/visit_lateness.php",
       "type": "include"
     },
     {
@@ -11621,7 +11621,7 @@
     },
     {
       "source": "httpdocs/mobile_api/test_request.api.php",
-      "target": "../../pblcare-explorer/backend/scanner/functions.php",
+      "target": "../../pblcare-explorer/backend/functions.php",
       "type": "include"
     },
     {

@@ -28,8 +28,15 @@ const analysis = phpFiles.map(file => {
 
 const graph = buildGraph(analysis, repoPath);
 
-// On s'assure que le dossier de destination existe avant d'écrire
-const outputPath = path.join(__dirname, "..", "..", "data", "graph.json");
+// --- NOUVEAUTÉ : GESTION DYNAMIQUE DU NOM DU FICHIER PAR BRANCHE ---
+// On récupère la variable d'environnement ou on met "local" si tu le lances sur ton Mac
+// Le .replace évite les caractères bizarres (comme /) dans les noms de fichiers
+const branchName = process.env.GITHUB_BRANCH_NAME 
+    ? process.env.GITHUB_BRANCH_NAME.replace(/[^a-zA-Z0-9-_]/g, '-') 
+    : 'local';
+
+const outputFileName = `graph-${branchName}.json`;
+const outputPath = path.join(__dirname, "..", "..", "data", outputFileName);
 const outputDir = path.dirname(outputPath);
 
 if (!fs.existsSync(outputDir)){
@@ -41,4 +48,4 @@ fs.writeFileSync(
     JSON.stringify(graph, null, 2)
 );
 
-console.log("✅ graph.json généré avec succès dans :", outputPath);
+console.log(`✅ ${outputFileName} généré avec succès dans :`, outputPath);

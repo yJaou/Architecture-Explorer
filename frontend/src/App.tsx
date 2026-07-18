@@ -2,18 +2,44 @@ import { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar/SearchBar";
 import ArchitectureTree from "./components/ArchitectureTree/ArchitectureTree";
 import DetailsPanel from "./components/DetailsPanel/DetailsPanel";
-// 1. On renomme l'import brut du JSON pour pouvoir le typer proprement
-import graphData from "./data/graph.json";
-// 2. On importe nos interfaces depuis ton fichier types.ts
 import type { ArchitectureFile, ArchitectureGraph } from "./types";
-// 3. On force TypeScript à reconnaître la structure exacte de ton JSON
-const graph = graphData as ArchitectureGraph;
 
-function App(){
-    // 4. On remplace <any> par notre type strict (le fichier est soit une structure valide, soit null)
+// 1. Labels translated to English
+const BRANCH_OPTIONS = [
+    { value: "empty", label: "Select a branch..." },
+    { value: "graph-master", label: "Branch: master" },
+    { value: "graph-create-map-feature-visualisation", label: "Branch: create-map-feature-visualisation" },
+    { value: "graph-ART_Code-Updates", label: "Branch: ART_Code-Updates" },
+    { value: "graph-ART_Code_Updates_2", label: "Branch: ART_Code_Updates_2" },
+];
+
+function App() {
+    // 2. State initialized to "empty" to display nothing on refresh
+    const [currentGraph, setCurrentGraph] = useState<ArchitectureGraph | null>(null);
+    const [selectedBranch, setSelectedBranch] = useState("empty");
+    
     const [selectedFile, setSelectedFile] = useState<ArchitectureFile | null>(null);
     const [search, setSearch] = useState("");
     const [darkMode, setDarkMode] = useState(false);
+
+    // 3. Dynamic loading handling the "empty" selection
+    useEffect(() => {
+        if (selectedBranch === "empty") {
+            setCurrentGraph(null);
+            setSelectedFile(null);
+            return;
+        }
+
+        import(`./data/${selectedBranch}.json`)
+            .then((module) => {
+                setCurrentGraph(module.default as ArchitectureGraph);
+                setSelectedFile(null); 
+            })
+            .catch((err) => {
+                console.error("Error loading branch data:", err);
+                setCurrentGraph(null);
+            });
+    }, [selectedBranch]);
 
     useEffect(() => {
         if (darkMode) {
@@ -32,28 +58,59 @@ function App(){
             color: "var(--text)"
         }}>
 
-            {/* Dark Mode Toggle Button */}
-            <button 
-                onClick={() => setDarkMode(!darkMode)}
-                style={{
-                    position: "absolute",
-                    top: "24px",
-                    right: "24px",
-                    padding: "8px 14px",
-                    cursor: "pointer",
-                    borderRadius: "8px",
-                    border: "1px solid var(--border)",
-                    background: "var(--code-bg)",
-                    color: "var(--text-h)",
-                    fontFamily: "var(--sans)",
-                    fontWeight: "500",
-                    fontSize: "14px",
-                    boxShadow: "var(--shadow)",
-                    zIndex: 10
-                }}
-            >
-                {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-            </button>
+            {/* Top Right Buttons Container */}
+            <div style={{
+                position: "absolute",
+                top: "24px",
+                right: "24px",
+                display: "flex",
+                gap: "12px",
+                zIndex: 10
+            }}>
+                {/* Branch Selector */}
+                <select
+                    value={selectedBranch}
+                    onChange={(e) => setSelectedBranch(e.target.value)}
+                    style={{
+                        padding: "8px 14px",
+                        cursor: "pointer",
+                        borderRadius: "8px",
+                        border: "1px solid var(--border)",
+                        background: "var(--code-bg)",
+                        color: "var(--text-h)",
+                        fontFamily: "var(--sans)",
+                        fontWeight: "500",
+                        fontSize: "14px",
+                        boxShadow: "var(--shadow)",
+                        outline: "none"
+                    }}
+                >
+                    {BRANCH_OPTIONS.map((option) => (
+                        <option key={option.value} value={option.value}>
+                            {option.label}
+                        </option>
+                    ))}
+                </select>
+
+                {/* Dark Mode Toggle Button */}
+                <button 
+                    onClick={() => setDarkMode(!darkMode)}
+                    style={{
+                        padding: "8px 14px",
+                        cursor: "pointer",
+                        borderRadius: "8px",
+                        border: "1px solid var(--border)",
+                        background: "var(--code-bg)",
+                        color: "var(--text-h)",
+                        fontFamily: "var(--sans)",
+                        fontWeight: "500",
+                        fontSize: "14px",
+                        boxShadow: "var(--shadow)"
+                    }}
+                >
+                    {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+                </button>
+            </div>
 
             {/* Left Column: Explorer */}
             <div style={{ 
@@ -78,11 +135,19 @@ function App(){
                     onChange={setSearch}
                 />
 
+                {/* 4. Strict condition: Tree is hidden if no branch is selected */}
                 <div style={{ marginTop: "24px" }}>
-                    <ArchitectureTree 
-                        onSelect={setSelectedFile}
-                        search={search}
-                    />
+                    {currentGraph ? (
+                        <ArchitectureTree 
+                            graph={currentGraph}
+                            onSelect={setSelectedFile}
+                            search={search}
+                        />
+                    ) : (
+                        <p style={{ color: "var(--text-muted)", fontFamily: "var(--sans)", fontStyle: "italic" }}>
+                            Please select a branch to display the architecture.
+                        </p>
+                    )}
                 </div>
             </div>
 
@@ -90,16 +155,23 @@ function App(){
             <div style={{
                 width: "50%",
                 borderLeft: "1px solid var(--border)",
-                padding: "40px",
+                padding: "8px 40px 40px 40px",
                 boxSizing: "border-box",
                 background: "var(--social-bg)",
                 textAlign: "left"
             }}>
-                <DetailsPanel 
-                 file={selectedFile}
-                 graph={graph}
-                 onSelect={setSelectedFile}
-                />
+                {/* 5. Details are hidden and translated if no branch is selected */}
+                {currentGraph ? (
+                    <DetailsPanel 
+                        file={selectedFile}
+                        graph={currentGraph}
+                        onSelect={setSelectedFile}
+                    />
+                ) : (
+                    <p style={{ color: "var(--text-muted)", fontFamily: "var(--sans)", fontStyle: "italic", marginTop: "72px" }}>
+                        Please select a branch to view details.
+                    </p>
+                )}
             </div>
 
         </div>

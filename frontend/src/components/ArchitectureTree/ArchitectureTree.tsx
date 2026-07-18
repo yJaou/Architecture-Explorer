@@ -1,6 +1,5 @@
 // 1. On importe nos types (avec le mot-clé type obligatoire)
-import type { ArchitectureFile, TreeStructureNode } from "../../types";
-import graph from "../../data/graph.json";
+import type { ArchitectureFile, TreeStructureNode, ArchitectureGraph } from "../../types";
 import TreeNode from "./TreeNode";
 
 // 2. On type l'argument d'entrée (tableau de fichiers) et le retour (un nœud racine)
@@ -33,14 +32,15 @@ function buildTree(nodes: ArchitectureFile[]): TreeStructureNode {
     return root;
 }
 
-// 3. Interface pour les Props du composant principal
+// 3. Interface pour les Props du composant principal (Mise à jour pour inclure graph)
 interface ArchitectureTreeProps {
+    graph: ArchitectureGraph; // <-- AJOUT DE LA PROP ICI
     onSelect: (file: ArchitectureFile) => void;
     search: string;
 }
 
-export default function ArchitectureTree({ onSelect, search }: ArchitectureTreeProps) {
-    // graph.nodes est maintenant traité comme un tableau d'ArchitectureFile
+export default function ArchitectureTree({ graph, onSelect, search }: ArchitectureTreeProps) {
+    // 4. L'arbre se construit désormais à partir des nœuds du graphe dynamique reçu en paramètre
     const tree = buildTree(graph.nodes as ArchitectureFile[]);
 
     return (

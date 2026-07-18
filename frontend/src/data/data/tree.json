@@ -1,0 +1,3417 @@
+{
+  ".devcontainer": {
+    "000-default.conf": {
+      "type": "unknown"
+    },
+    "Dockerfile": {
+      "type": "unknown"
+    },
+    "devcontainer.json": {
+      "type": "unknown"
+    },
+    "docker-compose.yml": {
+      "type": "yaml"
+    },
+    "postCreateCommand.sh": {
+      "type": "unknown"
+    }
+  },
+  ".github": {
+    "workflows": {
+      "pbl-care_gcp_cd.yml": {
+        "type": "yaml"
+      }
+    }
+  },
+  ".gitignore": {
+    "type": "unknown"
+  },
+  ".vscode": {
+    "settings.json": {
+      "type": "unknown"
+    }
+  },
+  "README.md": {
+    "type": "unknown"
+  },
+  "backend_files": {
+    "messages": {
+      "_message_auth.php": {
+        "type": "php"
+      },
+      "get_unread_counts.api.php": {
+        "type": "php"
+      },
+      "get_unread_visit_messages.api.php": {
+        "type": "php"
+      },
+      "get_visit_messages.api.php": {
+        "type": "php"
+      },
+      "schema.sql": {
+        "type": "unknown"
+      },
+      "send_visit_message.api.php": {
+        "type": "php"
+      }
+    },
+    "notifications": {
+      "schema.sql": {
+        "type": "unknown"
+      }
+    }
+  },
+  "fix_grid.py": {
+    "type": "python"
+  },
+  "fix_grid_10.py": {
+    "type": "python"
+  },
+  "fix_grid_11.py": {
+    "type": "python"
+  },
+  "fix_grid_12.py": {
+    "type": "python"
+  },
+  "fix_grid_13.py": {
+    "type": "python"
+  },
+  "fix_grid_14.py": {
+    "type": "python"
+  },
+  "fix_grid_15.py": {
+    "type": "python"
+  },
+  "fix_grid_16.py": {
+    "type": "python"
+  },
+  "fix_grid_17.py": {
+    "type": "python"
+  },
+  "fix_grid_18.py": {
+    "type": "python"
+  },
+  "fix_grid_19.py": {
+    "type": "python"
+  },
+  "fix_grid_2.py": {
+    "type": "python"
+  },
+  "fix_grid_20.py": {
+    "type": "python"
+  },
+  "fix_grid_3.py": {
+    "type": "python"
+  },
+  "fix_grid_4.py": {
+    "type": "python"
+  },
+  "fix_grid_5.py": {
+    "type": "python"
+  },
+  "fix_grid_6.py": {
+    "type": "python"
+  },
+  "fix_grid_7.py": {
+    "type": "python"
+  },
+  "fix_grid_8.py": {
+    "type": "python"
+  },
+  "fix_grid_9.py": {
+    "type": "python"
+  },
+  "httpdocs": {
+    ".htaccess": {
+      "type": "unknown"
+    },
+    ".well-known": {
+      "acme-challenge": {
+        ".htaccess": {
+          "type": "unknown"
+        }
+      }
+    },
+    "api": {
+      "llm": {
+        "daily-visit-summary.php": {
+          "type": "php"
+        },
+        "manager-alert-email.php": {
+          "type": "php"
+        },
+        "visit-summary.php": {
+          "type": "php"
+        }
+      },
+      "nhs": {
+        "lookup.php": {
+          "type": "php"
+        }
+      }
+    },
+    "classes": {
+      ".DS_Store": {
+        "type": "unknown"
+      },
+      "Access_group": {
+        "Access_group.class.php": {
+          "type": "php"
+        },
+        "Access_group_controller.class.php": {
+          "type": "php"
+        },
+        "Access_group_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Alert": {
+        "Alert.class.php": {
+          "type": "php"
+        },
+        "Alert_controller.class.php": {
+          "type": "php"
+        },
+        "Alert_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Branch": {
+        "Branch.class.php": {
+          "type": "php"
+        },
+        "Branch_controller.class.php": {
+          "type": "php"
+        },
+        "Branch_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Branch_area": {
+        "Branch_area.class.php": {
+          "type": "php"
+        },
+        "Branch_area_controller.class.php": {
+          "type": "php"
+        },
+        "Branch_area_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Condition": {
+        "Condition.class.php": {
+          "type": "php"
+        },
+        "Condition_controller.class.php": {
+          "type": "php"
+        },
+        "Condition_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Database_connect.class.php": {
+        "type": "php"
+      },
+      "Document": {
+        "Document.class.php": {
+          "type": "php"
+        },
+        "Document_controller.class.php": {
+          "type": "php"
+        },
+        "Document_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Equipment": {
+        "Equipment.class.php": {
+          "type": "php"
+        },
+        "Equipment_controller.class.php": {
+          "type": "php"
+        },
+        "Equipment_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Funder": {
+        "Funder.class.php": {
+          "type": "php"
+        },
+        "Funder_controller.class.php": {
+          "type": "php"
+        },
+        "Funder_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Mobile_device": {
+        "Mobile_device.class.php": {
+          "type": "php"
+        },
+        "Mobile_device_controller.class.php": {
+          "type": "php"
+        },
+        "Mobile_device_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Next_of_Kin": {
+        "Next_of_Kin.class.php": {
+          "type": "php"
+        },
+        "Next_of_Kin_controller.class.php": {
+          "type": "php"
+        },
+        "Next_of_Kin_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Note": {
+        "Note.class.php": {
+          "type": "php"
+        },
+        "Note_controller.class.php": {
+          "type": "php"
+        },
+        "Note_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Patient": {
+        "Patient.class.php": {
+          "type": "php"
+        },
+        "Patient_controller.class.php": {
+          "type": "php"
+        },
+        "Patient_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Postcode_area": {
+        "Postcode_area.class.php": {
+          "type": "php"
+        },
+        "Postcode_area_controller.class.php": {
+          "type": "php"
+        },
+        "Postcode_area_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Risk": {
+        "Risk.class.php": {
+          "type": "php"
+        },
+        "Risk_controller.class.php": {
+          "type": "php"
+        },
+        "Risk_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Risk_assessment": {
+        "Risk_assessment.class.php": {
+          "type": "php"
+        },
+        "Risk_assessment_controller.class.php": {
+          "type": "php"
+        },
+        "Risk_assessment_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Service": {
+        "Service.class.php": {
+          "type": "php"
+        },
+        "Service_controller.class.php": {
+          "type": "php"
+        },
+        "Service_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Session": {
+        "Session.class.php": {
+          "type": "php"
+        },
+        "Session_controller.class.php": {
+          "type": "php"
+        },
+        "Session_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Session_Task": {
+        "Session_Task.class.php": {
+          "type": "php"
+        },
+        "Session_Task_controller.class.php": {
+          "type": "php"
+        },
+        "Session_Task_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Staff": {
+        "Staff.class.php": {
+          "type": "php"
+        },
+        "Staff_applicant_view.class.php": {
+          "type": "php"
+        },
+        "Staff_availability_slot.class.php": {
+          "type": "php"
+        },
+        "Staff_availability_view.class.php": {
+          "type": "php"
+        },
+        "Staff_controller.class.php": {
+          "type": "php"
+        },
+        "Staff_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Staff_position": {
+        "Staff_position.class.php": {
+          "type": "php"
+        },
+        "Staff_position_controller.class.php": {
+          "type": "php"
+        },
+        "Staff_position_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Staff_type": {
+        "Staff_type.class.php": {
+          "type": "php"
+        },
+        "Staff_type_controller.class.php": {
+          "type": "php"
+        },
+        "Staff_type_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Task": {
+        "Task.class.php": {
+          "type": "php"
+        },
+        "Task_category.class.php": {
+          "type": "php"
+        },
+        "Task_controller.class.php": {
+          "type": "php"
+        },
+        "Task_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Task_record": {
+        "Task_record.class.php": {
+          "type": "php"
+        },
+        "Task_record_controller.class.php": {
+          "type": "php"
+        },
+        "Task_record_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Time_off": {
+        "Time_off.class.php": {
+          "type": "php"
+        },
+        "Time_off_controller.class.php": {
+          "type": "php"
+        },
+        "Time_off_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Training": {
+        "Training.class.php": {
+          "type": "php"
+        },
+        "Training_controller.class.php": {
+          "type": "php"
+        },
+        "Training_view.class.php": {
+          "type": "php"
+        }
+      },
+      "Training_record": {
+        "Training_record.class.php": {
+          "type": "php"
+        },
+        "Training_record_controller.class.php": {
+          "type": "php"
+        },
+        "Training_record_view.class.php": {
+          "type": "php"
+        }
+      },
+      "User": {
+        "User.class.php": {
+          "type": "php"
+        },
+        "User_controller.class.php": {
+          "type": "php"
+        },
+        "User_view.class.php": {
+          "type": "php"
+        }
+      }
+    },
+    "files": {
+      "images": {
+        ".htaccess": {
+          "type": "unknown"
+        },
+        "body": {
+          "body_back_1.png": {
+            "type": "unknown"
+          },
+          "body_back_arm_1.png": {
+            "type": "unknown"
+          },
+          "body_back_arm_2.png": {
+            "type": "unknown"
+          },
+          "body_back_back.png": {
+            "type": "unknown"
+          },
+          "body_back_crus_1.png": {
+            "type": "unknown"
+          },
+          "body_back_crus_2.png": {
+            "type": "unknown"
+          },
+          "body_back_femur_1.png": {
+            "type": "unknown"
+          },
+          "body_back_femur_2.png": {
+            "type": "unknown"
+          },
+          "body_back_foot_1.png": {
+            "type": "unknown"
+          },
+          "body_back_foot_2.png": {
+            "type": "unknown"
+          },
+          "body_back_forearm_1.png": {
+            "type": "unknown"
+          },
+          "body_back_forearm_2.png": {
+            "type": "unknown"
+          },
+          "body_back_gluteus.png": {
+            "type": "unknown"
+          },
+          "body_back_hand_1.png": {
+            "type": "unknown"
+          },
+          "body_back_hand_2.png": {
+            "type": "unknown"
+          },
+          "body_back_head.png": {
+            "type": "unknown"
+          },
+          "body_back_neck.png": {
+            "type": "unknown"
+          },
+          "body_back_shoulder_1.png": {
+            "type": "unknown"
+          },
+          "body_back_shoulder_2.png": {
+            "type": "unknown"
+          },
+          "body_front_1.png": {
+            "type": "unknown"
+          },
+          "body_front_abdomen.png": {
+            "type": "unknown"
+          },
+          "body_front_arm_1.png": {
+            "type": "unknown"
+          },
+          "body_front_arm_2.png": {
+            "type": "unknown"
+          },
+          "body_front_chest.png": {
+            "type": "unknown"
+          },
+          "body_front_crus_1.png": {
+            "type": "unknown"
+          },
+          "body_front_crus_2.png": {
+            "type": "unknown"
+          },
+          "body_front_femur_1.png": {
+            "type": "unknown"
+          },
+          "body_front_femur_2.png": {
+            "type": "unknown"
+          },
+          "body_front_foot_1.png": {
+            "type": "unknown"
+          },
+          "body_front_foot_2.png": {
+            "type": "unknown"
+          },
+          "body_front_forearm_1.png": {
+            "type": "unknown"
+          },
+          "body_front_forearm_2.png": {
+            "type": "unknown"
+          },
+          "body_front_genitals.png": {
+            "type": "unknown"
+          },
+          "body_front_hand_1.png": {
+            "type": "unknown"
+          },
+          "body_front_hand_2.png": {
+            "type": "unknown"
+          },
+          "body_front_head.png": {
+            "type": "unknown"
+          },
+          "body_front_knee_1.png": {
+            "type": "unknown"
+          },
+          "body_front_knee_2.png": {
+            "type": "unknown"
+          },
+          "body_front_neck.png": {
+            "type": "unknown"
+          },
+          "body_front_shoulder_1.png": {
+            "type": "unknown"
+          },
+          "body_front_shoulder_2.png": {
+            "type": "unknown"
+          }
+        },
+        "favicon.ico": {
+          "type": "unknown"
+        },
+        "logo_6594a78be4c1e.png": {
+          "type": "unknown"
+        },
+        "profile_picture_blank.jpg": {
+          "type": "unknown"
+        },
+        "profile_picture_guidelines.jpg": {
+          "type": "unknown"
+        },
+        "risk_assessment.png": {
+          "type": "unknown"
+        },
+        "task_icons": {
+          "default-task.svg": {
+            "type": "unknown"
+          },
+          "medication-task.svg": {
+            "type": "unknown"
+          },
+          "task_icon_6a2145cdab76f.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a214dff975bb.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a215005ef6f9.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a2154fc95930.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a21560ea784c.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a215671d5f76.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a21571093429.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a2357249d6f6.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a2358ea35831.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a2359af8add1.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235a56ca504.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235af769e96.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235c38ba863.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235dc978ae9.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235e6fa4206.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a235f5fb769a.png": {
+            "type": "unknown"
+          },
+          "task_icon_6a2362dedf43a.png": {
+            "type": "unknown"
+          }
+        }
+      }
+    },
+    "includes": {
+      ".DS_Store": {
+        "type": "unknown"
+      },
+      "api_config.php": {
+        "type": "php"
+      },
+      "authentication": {
+        "footer.php": {
+          "type": "php"
+        },
+        "header.php": {
+          "type": "php"
+        }
+      },
+      "dropdown": {
+        "dropdown_access_group.php": {
+          "type": "php"
+        },
+        "dropdown_alerts.php": {
+          "type": "php"
+        },
+        "dropdown_availability.php": {
+          "type": "php"
+        },
+        "dropdown_branch.php": {
+          "type": "php"
+        },
+        "dropdown_branch_areas.php": {
+          "type": "php"
+        },
+        "dropdown_branch_areas_fetch_positions.php": {
+          "type": "php"
+        },
+        "dropdown_care_scheduling.php": {
+          "type": "php"
+        },
+        "dropdown_condition_status.php": {
+          "type": "php"
+        },
+        "dropdown_date_format.php": {
+          "type": "php"
+        },
+        "dropdown_device_status.php": {
+          "type": "php"
+        },
+        "dropdown_document_management.php": {
+          "type": "php"
+        },
+        "dropdown_ems.php": {
+          "type": "php"
+        },
+        "dropdown_ethnic_origin.php": {
+          "type": "php"
+        },
+        "dropdown_exclusion_type.php": {
+          "type": "php"
+        },
+        "dropdown_funder_types.php": {
+          "type": "php"
+        },
+        "dropdown_funders.php": {
+          "type": "php"
+        },
+        "dropdown_gender.php": {
+          "type": "php"
+        },
+        "dropdown_initiate_from.php": {
+          "type": "php"
+        },
+        "dropdown_initiate_from_month_day.php": {
+          "type": "php"
+        },
+        "dropdown_invoice_format.php": {
+          "type": "php"
+        },
+        "dropdown_invoice_group.php": {
+          "type": "php"
+        },
+        "dropdown_invoice_run.php": {
+          "type": "php"
+        },
+        "dropdown_marital_status.php": {
+          "type": "php"
+        },
+        "dropdown_medicine_forms.php": {
+          "type": "php"
+        },
+        "dropdown_medicine_prescription.php": {
+          "type": "php"
+        },
+        "dropdown_nationalities.php": {
+          "type": "php"
+        },
+        "dropdown_next_of_kin_types.php": {
+          "type": "php"
+        },
+        "dropdown_patient_types.php": {
+          "type": "php"
+        },
+        "dropdown_pay_groups.php": {
+          "type": "php"
+        },
+        "dropdown_payroll_runs.php": {
+          "type": "php"
+        },
+        "dropdown_postcode_area_colours.php": {
+          "type": "php"
+        },
+        "dropdown_religion.php": {
+          "type": "php"
+        },
+        "dropdown_reoccur_type.php": {
+          "type": "php"
+        },
+        "dropdown_reoccurable_from.php": {
+          "type": "php"
+        },
+        "dropdown_risk_impact.php": {
+          "type": "php"
+        },
+        "dropdown_risk_likelihood.php": {
+          "type": "php"
+        },
+        "dropdown_risk_type.php": {
+          "type": "php"
+        },
+        "dropdown_schedule.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_branches.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_copy_branches.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_copy_patients.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_copy_staffs.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_patients.php": {
+          "type": "php"
+        },
+        "dropdown_schedule_staffs.php": {
+          "type": "php"
+        },
+        "dropdown_service_priorities.php": {
+          "type": "php"
+        },
+        "dropdown_service_specific_task_category.php": {
+          "type": "php"
+        },
+        "dropdown_service_task_state.php": {
+          "type": "php"
+        },
+        "dropdown_service_types.php": {
+          "type": "php"
+        },
+        "dropdown_session_charge.php": {
+          "type": "php"
+        },
+        "dropdown_session_idle_time.php": {
+          "type": "php"
+        },
+        "dropdown_session_staff.php": {
+          "type": "php"
+        },
+        "dropdown_session_state.php": {
+          "type": "php"
+        },
+        "dropdown_staff_positions.php": {
+          "type": "php"
+        },
+        "dropdown_staff_positions_fetch_positions.php": {
+          "type": "php"
+        },
+        "dropdown_staff_types.php": {
+          "type": "php"
+        },
+        "dropdown_staffs.php": {
+          "type": "php"
+        },
+        "dropdown_staffs_all.php": {
+          "type": "php"
+        },
+        "dropdown_status.php": {
+          "type": "php"
+        },
+        "dropdown_task_status.php": {
+          "type": "php"
+        },
+        "dropdown_termiantion_reason_funder.php": {
+          "type": "php"
+        },
+        "dropdown_termination_reason.php": {
+          "type": "php"
+        },
+        "dropdown_termination_reason_patient.php": {
+          "type": "php"
+        },
+        "dropdown_time.php": {
+          "type": "php"
+        },
+        "dropdown_time_extended.php": {
+          "type": "php"
+        },
+        "dropdown_time_format.php": {
+          "type": "php"
+        },
+        "dropdown_time_off_full_day.php": {
+          "type": "php"
+        },
+        "dropdown_time_off_hours_paid.php": {
+          "type": "php"
+        },
+        "dropdown_time_off_status.php": {
+          "type": "php"
+        },
+        "dropdown_time_off_types.php": {
+          "type": "php"
+        },
+        "dropdown_time_zone.php": {
+          "type": "php"
+        },
+        "dropdown_title.php": {
+          "type": "php"
+        },
+        "dropdown_transport_mode.php": {
+          "type": "php"
+        },
+        "dropdown_user_status.php": {
+          "type": "php"
+        },
+        "dropdown_visit_access.php": {
+          "type": "php"
+        },
+        "dropdown_visit_notes_state.php": {
+          "type": "php"
+        },
+        "dropdown_visit_types.php": {
+          "type": "php"
+        },
+        "dropdown_warning_type.php": {
+          "type": "php"
+        },
+        "dropdown_wtr.php": {
+          "type": "php"
+        }
+      },
+      "footer.php": {
+        "type": "php"
+      },
+      "functions.php": {
+        "type": "php"
+      },
+      "header.php": {
+        "type": "php"
+      },
+      "jquery": {
+        "AUTHORS.txt": {
+          "type": "unknown"
+        },
+        "LICENSE.txt": {
+          "type": "unknown"
+        },
+        "external": {
+          "jquery": {
+            "jquery.js": {
+              "type": "javascript"
+            }
+          }
+        },
+        "images": {
+          "ui-icons_444444_256x240.png": {
+            "type": "unknown"
+          },
+          "ui-icons_555555_256x240.png": {
+            "type": "unknown"
+          },
+          "ui-icons_777620_256x240.png": {
+            "type": "unknown"
+          },
+          "ui-icons_777777_256x240.png": {
+            "type": "unknown"
+          },
+          "ui-icons_cc0000_256x240.png": {
+            "type": "unknown"
+          },
+          "ui-icons_ffffff_256x240.png": {
+            "type": "unknown"
+          }
+        },
+        "index.html": {
+          "type": "html"
+        },
+        "jquery-ui.css": {
+          "type": "css"
+        },
+        "jquery-ui.js": {
+          "type": "javascript"
+        },
+        "jquery-ui.min.css": {
+          "type": "css"
+        },
+        "jquery-ui.min.js": {
+          "type": "javascript"
+        },
+        "jquery-ui.structure.css": {
+          "type": "css"
+        },
+        "jquery-ui.structure.min.css": {
+          "type": "css"
+        },
+        "jquery-ui.theme.css": {
+          "type": "css"
+        },
+        "jquery-ui.theme.min.css": {
+          "type": "css"
+        },
+        "package.json": {
+          "type": "unknown"
+        }
+      },
+      "llmService.php": {
+        "type": "php"
+      },
+      "load_classes.php": {
+        "type": "php"
+      },
+      "mail": {
+        "mail_account_setup.html": {
+          "type": "html"
+        },
+        "mail_new_ip_signed_in.html": {
+          "type": "html"
+        },
+        "mail_password_has_changed.html": {
+          "type": "html"
+        },
+        "mail_reset_password.html": {
+          "type": "html"
+        },
+        "phpmailer": {
+          "COMMITMENT": {
+            "type": "unknown"
+          },
+          "LICENSE": {
+            "type": "unknown"
+          },
+          "README.md": {
+            "type": "unknown"
+          },
+          "SECURITY.md": {
+            "type": "unknown"
+          },
+          "VERSION": {
+            "type": "unknown"
+          },
+          "composer.json": {
+            "type": "unknown"
+          },
+          "get_oauth_token.php": {
+            "type": "php"
+          },
+          "language": {
+            "phpmailer.lang-af.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ar.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-az.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ba.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-be.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-bg.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ca.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-cs.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-da.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-de.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-el.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-eo.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-es.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-et.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-fa.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-fi.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-fo.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-fr.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-gl.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-he.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-hi.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-hr.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-hu.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-hy.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-id.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-it.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ja.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ka.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ko.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-lt.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-lv.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-mg.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-mn.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ms.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-nb.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-nl.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-pl.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-pt.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-pt_br.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ro.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-ru.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-sk.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-sl.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-sr.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-sr_latn.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-sv.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-tl.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-tr.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-uk.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-vi.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-zh.php": {
+              "type": "php"
+            },
+            "phpmailer.lang-zh_cn.php": {
+              "type": "php"
+            }
+          },
+          "src": {
+            "Exception.php": {
+              "type": "php"
+            },
+            "OAuth.php": {
+              "type": "php"
+            },
+            "OAuthTokenProvider.php": {
+              "type": "php"
+            },
+            "PHPMailer.php": {
+              "type": "php"
+            },
+            "POP3.php": {
+              "type": "php"
+            },
+            "SMTP.php": {
+              "type": "php"
+            }
+          }
+        }
+      },
+      "nhs_service.php": {
+        "type": "php"
+      },
+      "panels": {
+        "applicant_panel.php": {
+          "type": "php"
+        },
+        "funder_panel.php": {
+          "type": "php"
+        },
+        "patient_panel.php": {
+          "type": "php"
+        },
+        "risk_assessment_panel.php": {
+          "type": "php"
+        },
+        "session_panel.php": {
+          "type": "php"
+        },
+        "staff_panel.php": {
+          "type": "php"
+        }
+      },
+      "pdf": {
+        "TCPDF-main": {
+          "CHANGELOG.TXT": {
+            "type": "unknown"
+          },
+          "LICENSE.TXT": {
+            "type": "unknown"
+          },
+          "README.md": {
+            "type": "unknown"
+          },
+          "VERSION": {
+            "type": "unknown"
+          },
+          "composer.json": {
+            "type": "unknown"
+          },
+          "config": {
+            "tcpdf_config.php": {
+              "type": "php"
+            }
+          },
+          "examples": {
+            "barcodes": {
+              "example_1d_html.php": {
+                "type": "php"
+              },
+              "example_1d_png.php": {
+                "type": "php"
+              },
+              "example_1d_svg.php": {
+                "type": "php"
+              },
+              "example_1d_svgi.php": {
+                "type": "php"
+              },
+              "example_2d_datamatrix_html.php": {
+                "type": "php"
+              },
+              "example_2d_datamatrix_png.php": {
+                "type": "php"
+              },
+              "example_2d_datamatrix_svg.php": {
+                "type": "php"
+              },
+              "example_2d_datamatrix_svgi.php": {
+                "type": "php"
+              },
+              "example_2d_pdf417_html.php": {
+                "type": "php"
+              },
+              "example_2d_pdf417_png.php": {
+                "type": "php"
+              },
+              "example_2d_pdf417_svg.php": {
+                "type": "php"
+              },
+              "example_2d_pdf417_svgi.php": {
+                "type": "php"
+              },
+              "example_2d_qrcode_html.php": {
+                "type": "php"
+              },
+              "example_2d_qrcode_png.php": {
+                "type": "php"
+              },
+              "example_2d_qrcode_svg.php": {
+                "type": "php"
+              },
+              "example_2d_qrcode_svgi.php": {
+                "type": "php"
+              },
+              "tcpdf_barcodes_1d_include.php": {
+                "type": "php"
+              },
+              "tcpdf_barcodes_2d_include.php": {
+                "type": "php"
+              }
+            },
+            "config": {
+              "tcpdf_config_alt.php": {
+                "type": "php"
+              }
+            },
+            "data": {
+              "cert": {
+                "tcpdf.crt": {
+                  "type": "unknown"
+                },
+                "tcpdf.fdf": {
+                  "type": "unknown"
+                },
+                "tcpdf.p12": {
+                  "type": "unknown"
+                }
+              },
+              "chapter_demo_1.txt": {
+                "type": "unknown"
+              },
+              "chapter_demo_2.txt": {
+                "type": "unknown"
+              },
+              "table_data_demo.txt": {
+                "type": "unknown"
+              },
+              "utf8test.txt": {
+                "type": "unknown"
+              }
+            },
+            "example_001.php": {
+              "type": "php"
+            },
+            "example_002.php": {
+              "type": "php"
+            },
+            "example_003.php": {
+              "type": "php"
+            },
+            "example_004.php": {
+              "type": "php"
+            },
+            "example_005.php": {
+              "type": "php"
+            },
+            "example_006.php": {
+              "type": "php"
+            },
+            "example_007.php": {
+              "type": "php"
+            },
+            "example_008.php": {
+              "type": "php"
+            },
+            "example_009.php": {
+              "type": "php"
+            },
+            "example_010.php": {
+              "type": "php"
+            },
+            "example_011.php": {
+              "type": "php"
+            },
+            "example_012.pdf": {
+              "type": "unknown"
+            },
+            "example_012.php": {
+              "type": "php"
+            },
+            "example_013.php": {
+              "type": "php"
+            },
+            "example_014.php": {
+              "type": "php"
+            },
+            "example_015.php": {
+              "type": "php"
+            },
+            "example_016.php": {
+              "type": "php"
+            },
+            "example_017.php": {
+              "type": "php"
+            },
+            "example_018.php": {
+              "type": "php"
+            },
+            "example_019.php": {
+              "type": "php"
+            },
+            "example_020.php": {
+              "type": "php"
+            },
+            "example_021.php": {
+              "type": "php"
+            },
+            "example_022.php": {
+              "type": "php"
+            },
+            "example_023.php": {
+              "type": "php"
+            },
+            "example_024.php": {
+              "type": "php"
+            },
+            "example_025.php": {
+              "type": "php"
+            },
+            "example_026.php": {
+              "type": "php"
+            },
+            "example_027.php": {
+              "type": "php"
+            },
+            "example_028.php": {
+              "type": "php"
+            },
+            "example_029.php": {
+              "type": "php"
+            },
+            "example_030.php": {
+              "type": "php"
+            },
+            "example_031.php": {
+              "type": "php"
+            },
+            "example_032.php": {
+              "type": "php"
+            },
+            "example_033.php": {
+              "type": "php"
+            },
+            "example_034.php": {
+              "type": "php"
+            },
+            "example_035.php": {
+              "type": "php"
+            },
+            "example_036.php": {
+              "type": "php"
+            },
+            "example_037.php": {
+              "type": "php"
+            },
+            "example_038.php": {
+              "type": "php"
+            },
+            "example_039.php": {
+              "type": "php"
+            },
+            "example_040.php": {
+              "type": "php"
+            },
+            "example_041.php": {
+              "type": "php"
+            },
+            "example_042.php": {
+              "type": "php"
+            },
+            "example_043.php": {
+              "type": "php"
+            },
+            "example_044.php": {
+              "type": "php"
+            },
+            "example_045.php": {
+              "type": "php"
+            },
+            "example_046.php": {
+              "type": "php"
+            },
+            "example_047.php": {
+              "type": "php"
+            },
+            "example_048.php": {
+              "type": "php"
+            },
+            "example_049.php": {
+              "type": "php"
+            },
+            "example_050.php": {
+              "type": "php"
+            },
+            "example_051.php": {
+              "type": "php"
+            },
+            "example_052.php": {
+              "type": "php"
+            },
+            "example_053.php": {
+              "type": "php"
+            },
+            "example_054.php": {
+              "type": "php"
+            },
+            "example_055.php": {
+              "type": "php"
+            },
+            "example_056.php": {
+              "type": "php"
+            },
+            "example_057.php": {
+              "type": "php"
+            },
+            "example_058.php": {
+              "type": "php"
+            },
+            "example_059.php": {
+              "type": "php"
+            },
+            "example_060.php": {
+              "type": "php"
+            },
+            "example_061.php": {
+              "type": "php"
+            },
+            "example_062.php": {
+              "type": "php"
+            },
+            "example_063.php": {
+              "type": "php"
+            },
+            "example_064.php": {
+              "type": "php"
+            },
+            "example_065.php": {
+              "type": "php"
+            },
+            "example_066.php": {
+              "type": "php"
+            },
+            "example_067.php": {
+              "type": "php"
+            },
+            "images": {
+              "_blank.png": {
+                "type": "unknown"
+              },
+              "alpha.png": {
+                "type": "unknown"
+              },
+              "image_demo.jpg": {
+                "type": "unknown"
+              },
+              "image_with_alpha.png": {
+                "type": "unknown"
+              },
+              "img.png": {
+                "type": "unknown"
+              },
+              "logo_example.gif": {
+                "type": "unknown"
+              },
+              "logo_example.jpg": {
+                "type": "unknown"
+              },
+              "logo_example.png": {
+                "type": "unknown"
+              },
+              "tcpdf_box.ai": {
+                "type": "unknown"
+              },
+              "tcpdf_box.svg": {
+                "type": "unknown"
+              },
+              "tcpdf_cell.png": {
+                "type": "unknown"
+              },
+              "tcpdf_logo.jpg": {
+                "type": "unknown"
+              },
+              "tcpdf_signature.png": {
+                "type": "unknown"
+              },
+              "testsvg.svg": {
+                "type": "unknown"
+              },
+              "tux.svg": {
+                "type": "unknown"
+              }
+            },
+            "index.php": {
+              "type": "php"
+            },
+            "lang": {
+              "afr.php": {
+                "type": "php"
+              },
+              "ara.php": {
+                "type": "php"
+              },
+              "aze.php": {
+                "type": "php"
+              },
+              "bel.php": {
+                "type": "php"
+              },
+              "bra.php": {
+                "type": "php"
+              },
+              "bul.php": {
+                "type": "php"
+              },
+              "cat.php": {
+                "type": "php"
+              },
+              "ces.php": {
+                "type": "php"
+              },
+              "chi.php": {
+                "type": "php"
+              },
+              "cym.php": {
+                "type": "php"
+              },
+              "dan.php": {
+                "type": "php"
+              },
+              "eng.php": {
+                "type": "php"
+              },
+              "est.php": {
+                "type": "php"
+              },
+              "eus.php": {
+                "type": "php"
+              },
+              "far.php": {
+                "type": "php"
+              },
+              "fra.php": {
+                "type": "php"
+              },
+              "ger.php": {
+                "type": "php"
+              },
+              "gle.php": {
+                "type": "php"
+              },
+              "glg.php": {
+                "type": "php"
+              },
+              "hat.php": {
+                "type": "php"
+              },
+              "heb.php": {
+                "type": "php"
+              },
+              "hrv.php": {
+                "type": "php"
+              },
+              "hun.php": {
+                "type": "php"
+              },
+              "hye.php": {
+                "type": "php"
+              },
+              "ind.php": {
+                "type": "php"
+              },
+              "ita.php": {
+                "type": "php"
+              },
+              "jpn.php": {
+                "type": "php"
+              },
+              "kat.php": {
+                "type": "php"
+              },
+              "kor.php": {
+                "type": "php"
+              },
+              "mkd.php": {
+                "type": "php"
+              },
+              "mlt.php": {
+                "type": "php"
+              },
+              "msa.php": {
+                "type": "php"
+              },
+              "nld.php": {
+                "type": "php"
+              },
+              "nob.php": {
+                "type": "php"
+              },
+              "pol.php": {
+                "type": "php"
+              },
+              "por.php": {
+                "type": "php"
+              },
+              "ron.php": {
+                "type": "php"
+              },
+              "rus.php": {
+                "type": "php"
+              },
+              "slv.php": {
+                "type": "php"
+              },
+              "spa.php": {
+                "type": "php"
+              },
+              "sqi.php": {
+                "type": "php"
+              },
+              "srp.php": {
+                "type": "php"
+              },
+              "swa.php": {
+                "type": "php"
+              },
+              "swe.php": {
+                "type": "php"
+              },
+              "ukr.php": {
+                "type": "php"
+              },
+              "urd.php": {
+                "type": "php"
+              },
+              "yid.php": {
+                "type": "php"
+              },
+              "zho.php": {
+                "type": "php"
+              }
+            },
+            "tcpdf_include.php": {
+              "type": "php"
+            }
+          },
+          "fonts": {
+            "ae_fonts_2.0": {
+              "COPYING": {
+                "type": "unknown"
+              },
+              "ChangeLog": {
+                "type": "unknown"
+              },
+              "README": {
+                "type": "unknown"
+              }
+            },
+            "aealarabiya.ctg.z": {
+              "type": "unknown"
+            },
+            "aealarabiya.php": {
+              "type": "php"
+            },
+            "aealarabiya.z": {
+              "type": "unknown"
+            },
+            "aefurat.ctg.z": {
+              "type": "unknown"
+            },
+            "aefurat.php": {
+              "type": "php"
+            },
+            "aefurat.z": {
+              "type": "unknown"
+            },
+            "cid0cs.php": {
+              "type": "php"
+            },
+            "cid0ct.php": {
+              "type": "php"
+            },
+            "cid0jp.php": {
+              "type": "php"
+            },
+            "cid0kr.php": {
+              "type": "php"
+            },
+            "courier.php": {
+              "type": "php"
+            },
+            "courierb.php": {
+              "type": "php"
+            },
+            "courierbi.php": {
+              "type": "php"
+            },
+            "courieri.php": {
+              "type": "php"
+            },
+            "dejavu-fonts-ttf-2.33": {
+              "AUTHORS": {
+                "type": "unknown"
+              },
+              "BUGS": {
+                "type": "unknown"
+              },
+              "LICENSE": {
+                "type": "unknown"
+              },
+              "NEWS": {
+                "type": "unknown"
+              },
+              "README": {
+                "type": "unknown"
+              },
+              "langcover.txt": {
+                "type": "unknown"
+              },
+              "unicover.txt": {
+                "type": "unknown"
+              }
+            },
+            "dejavu-fonts-ttf-2.34": {
+              "AUTHORS": {
+                "type": "unknown"
+              },
+              "BUGS": {
+                "type": "unknown"
+              },
+              "LICENSE": {
+                "type": "unknown"
+              },
+              "NEWS": {
+                "type": "unknown"
+              },
+              "README": {
+                "type": "unknown"
+              },
+              "langcover.txt": {
+                "type": "unknown"
+              },
+              "unicover.txt": {
+                "type": "unknown"
+              }
+            },
+            "dejavusans.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusans.php": {
+              "type": "php"
+            },
+            "dejavusans.z": {
+              "type": "unknown"
+            },
+            "dejavusansb.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansb.php": {
+              "type": "php"
+            },
+            "dejavusansb.z": {
+              "type": "unknown"
+            },
+            "dejavusansbi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansbi.php": {
+              "type": "php"
+            },
+            "dejavusansbi.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensed.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensed.php": {
+              "type": "php"
+            },
+            "dejavusanscondensed.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedb.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedb.php": {
+              "type": "php"
+            },
+            "dejavusanscondensedb.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedbi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedbi.php": {
+              "type": "php"
+            },
+            "dejavusanscondensedbi.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusanscondensedi.php": {
+              "type": "php"
+            },
+            "dejavusanscondensedi.z": {
+              "type": "unknown"
+            },
+            "dejavusansextralight.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansextralight.php": {
+              "type": "php"
+            },
+            "dejavusansextralight.z": {
+              "type": "unknown"
+            },
+            "dejavusansi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansi.php": {
+              "type": "php"
+            },
+            "dejavusansi.z": {
+              "type": "unknown"
+            },
+            "dejavusansmono.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansmono.php": {
+              "type": "php"
+            },
+            "dejavusansmono.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonob.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonob.php": {
+              "type": "php"
+            },
+            "dejavusansmonob.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonobi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonobi.php": {
+              "type": "php"
+            },
+            "dejavusansmonobi.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonoi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavusansmonoi.php": {
+              "type": "php"
+            },
+            "dejavusansmonoi.z": {
+              "type": "unknown"
+            },
+            "dejavuserif.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserif.php": {
+              "type": "php"
+            },
+            "dejavuserif.z": {
+              "type": "unknown"
+            },
+            "dejavuserifb.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifb.php": {
+              "type": "php"
+            },
+            "dejavuserifb.z": {
+              "type": "unknown"
+            },
+            "dejavuserifbi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifbi.php": {
+              "type": "php"
+            },
+            "dejavuserifbi.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensed.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensed.php": {
+              "type": "php"
+            },
+            "dejavuserifcondensed.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedb.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedb.php": {
+              "type": "php"
+            },
+            "dejavuserifcondensedb.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedbi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedbi.php": {
+              "type": "php"
+            },
+            "dejavuserifcondensedbi.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifcondensedi.php": {
+              "type": "php"
+            },
+            "dejavuserifcondensedi.z": {
+              "type": "unknown"
+            },
+            "dejavuserifi.ctg.z": {
+              "type": "unknown"
+            },
+            "dejavuserifi.php": {
+              "type": "php"
+            },
+            "dejavuserifi.z": {
+              "type": "unknown"
+            },
+            "freefont-20100919": {
+              "AUTHORS": {
+                "type": "unknown"
+              },
+              "COPYING": {
+                "type": "unknown"
+              },
+              "CREDITS": {
+                "type": "unknown"
+              },
+              "ChangeLog": {
+                "type": "unknown"
+              },
+              "INSTALL": {
+                "type": "unknown"
+              },
+              "README": {
+                "type": "unknown"
+              }
+            },
+            "freefont-20120503": {
+              "AUTHORS": {
+                "type": "unknown"
+              },
+              "COPYING": {
+                "type": "unknown"
+              },
+              "CREDITS": {
+                "type": "unknown"
+              },
+              "ChangeLog": {
+                "type": "unknown"
+              },
+              "INSTALL": {
+                "type": "unknown"
+              },
+              "README": {
+                "type": "unknown"
+              },
+              "TROUBLESHOOTING": {
+                "type": "unknown"
+              },
+              "USAGE": {
+                "type": "unknown"
+              }
+            },
+            "freemono.ctg.z": {
+              "type": "unknown"
+            },
+            "freemono.php": {
+              "type": "php"
+            },
+            "freemono.z": {
+              "type": "unknown"
+            },
+            "freemonob.ctg.z": {
+              "type": "unknown"
+            },
+            "freemonob.php": {
+              "type": "php"
+            },
+            "freemonob.z": {
+              "type": "unknown"
+            },
+            "freemonobi.ctg.z": {
+              "type": "unknown"
+            },
+            "freemonobi.php": {
+              "type": "php"
+            },
+            "freemonobi.z": {
+              "type": "unknown"
+            },
+            "freemonoi.ctg.z": {
+              "type": "unknown"
+            },
+            "freemonoi.php": {
+              "type": "php"
+            },
+            "freemonoi.z": {
+              "type": "unknown"
+            },
+            "freesans.ctg.z": {
+              "type": "unknown"
+            },
+            "freesans.php": {
+              "type": "php"
+            },
+            "freesans.z": {
+              "type": "unknown"
+            },
+            "freesansb.ctg.z": {
+              "type": "unknown"
+            },
+            "freesansb.php": {
+              "type": "php"
+            },
+            "freesansb.z": {
+              "type": "unknown"
+            },
+            "freesansbi.ctg.z": {
+              "type": "unknown"
+            },
+            "freesansbi.php": {
+              "type": "php"
+            },
+            "freesansbi.z": {
+              "type": "unknown"
+            },
+            "freesansi.ctg.z": {
+              "type": "unknown"
+            },
+            "freesansi.php": {
+              "type": "php"
+            },
+            "freesansi.z": {
+              "type": "unknown"
+            },
+            "freeserif.ctg.z": {
+              "type": "unknown"
+            },
+            "freeserif.php": {
+              "type": "php"
+            },
+            "freeserif.z": {
+              "type": "unknown"
+            },
+            "freeserifb.ctg.z": {
+              "type": "unknown"
+            },
+            "freeserifb.php": {
+              "type": "php"
+            },
+            "freeserifb.z": {
+              "type": "unknown"
+            },
+            "freeserifbi.ctg.z": {
+              "type": "unknown"
+            },
+            "freeserifbi.php": {
+              "type": "php"
+            },
+            "freeserifbi.z": {
+              "type": "unknown"
+            },
+            "freeserifi.ctg.z": {
+              "type": "unknown"
+            },
+            "freeserifi.php": {
+              "type": "php"
+            },
+            "freeserifi.z": {
+              "type": "unknown"
+            },
+            "helvetica.php": {
+              "type": "php"
+            },
+            "helveticab.php": {
+              "type": "php"
+            },
+            "helveticabi.php": {
+              "type": "php"
+            },
+            "helveticai.php": {
+              "type": "php"
+            },
+            "hysmyeongjostdmedium.php": {
+              "type": "php"
+            },
+            "kozgopromedium.php": {
+              "type": "php"
+            },
+            "kozminproregular.php": {
+              "type": "php"
+            },
+            "msungstdlight.php": {
+              "type": "php"
+            },
+            "pdfacourier.php": {
+              "type": "php"
+            },
+            "pdfacourier.z": {
+              "type": "unknown"
+            },
+            "pdfacourierb.php": {
+              "type": "php"
+            },
+            "pdfacourierb.z": {
+              "type": "unknown"
+            },
+            "pdfacourierbi.php": {
+              "type": "php"
+            },
+            "pdfacourierbi.z": {
+              "type": "unknown"
+            },
+            "pdfacourieri.php": {
+              "type": "php"
+            },
+            "pdfacourieri.z": {
+              "type": "unknown"
+            },
+            "pdfahelvetica.php": {
+              "type": "php"
+            },
+            "pdfahelvetica.z": {
+              "type": "unknown"
+            },
+            "pdfahelveticab.php": {
+              "type": "php"
+            },
+            "pdfahelveticab.z": {
+              "type": "unknown"
+            },
+            "pdfahelveticabi.php": {
+              "type": "php"
+            },
+            "pdfahelveticabi.z": {
+              "type": "unknown"
+            },
+            "pdfahelveticai.php": {
+              "type": "php"
+            },
+            "pdfahelveticai.z": {
+              "type": "unknown"
+            },
+            "pdfasymbol.php": {
+              "type": "php"
+            },
+            "pdfasymbol.z": {
+              "type": "unknown"
+            },
+            "pdfatimes.php": {
+              "type": "php"
+            },
+            "pdfatimes.z": {
+              "type": "unknown"
+            },
+            "pdfatimesb.php": {
+              "type": "php"
+            },
+            "pdfatimesb.z": {
+              "type": "unknown"
+            },
+            "pdfatimesbi.php": {
+              "type": "php"
+            },
+            "pdfatimesbi.z": {
+              "type": "unknown"
+            },
+            "pdfatimesi.php": {
+              "type": "php"
+            },
+            "pdfatimesi.z": {
+              "type": "unknown"
+            },
+            "pdfazapfdingbats.php": {
+              "type": "php"
+            },
+            "pdfazapfdingbats.z": {
+              "type": "unknown"
+            },
+            "stsongstdlight.php": {
+              "type": "php"
+            },
+            "symbol.php": {
+              "type": "php"
+            },
+            "times.php": {
+              "type": "php"
+            },
+            "timesb.php": {
+              "type": "php"
+            },
+            "timesbi.php": {
+              "type": "php"
+            },
+            "timesi.php": {
+              "type": "php"
+            },
+            "uni2cid_ac15.php": {
+              "type": "php"
+            },
+            "uni2cid_ag15.php": {
+              "type": "php"
+            },
+            "uni2cid_aj16.php": {
+              "type": "php"
+            },
+            "uni2cid_ak12.php": {
+              "type": "php"
+            },
+            "zapfdingbats.php": {
+              "type": "php"
+            }
+          },
+          "include": {
+            "barcodes": {
+              "datamatrix.php": {
+                "type": "php"
+              },
+              "pdf417.php": {
+                "type": "php"
+              },
+              "qrcode.php": {
+                "type": "php"
+              }
+            },
+            "sRGB.icc": {
+              "type": "unknown"
+            },
+            "tcpdf_colors.php": {
+              "type": "php"
+            },
+            "tcpdf_filters.php": {
+              "type": "php"
+            },
+            "tcpdf_font_data.php": {
+              "type": "php"
+            },
+            "tcpdf_fonts.php": {
+              "type": "php"
+            },
+            "tcpdf_images.php": {
+              "type": "php"
+            },
+            "tcpdf_static.php": {
+              "type": "php"
+            }
+          },
+          "tcpdf.php": {
+            "type": "php"
+          },
+          "tcpdf_autoconfig.php": {
+            "type": "php"
+          },
+          "tcpdf_barcodes_1d.php": {
+            "type": "php"
+          },
+          "tcpdf_barcodes_2d.php": {
+            "type": "php"
+          },
+          "tcpdf_import.php": {
+            "type": "php"
+          },
+          "tcpdf_parser.php": {
+            "type": "php"
+          },
+          "tools": {
+            ".htaccess": {
+              "type": "unknown"
+            },
+            "convert_fonts_examples.txt": {
+              "type": "unknown"
+            },
+            "tcpdf_addfont.php": {
+              "type": "php"
+            }
+          }
+        }
+      },
+      "schedule_visit_tooltip.php": {
+        "type": "php"
+      },
+      "script.js": {
+        "type": "javascript"
+      },
+      "side_bar.php": {
+        "type": "php"
+      },
+      "side_bar_quick_links.php": {
+        "type": "php"
+      },
+      "style.css": {
+        "type": "css"
+      },
+      "visitSummaryPrompt.php": {
+        "type": "php"
+      }
+    },
+    "mobile_api": {
+      ".DS_Store": {
+        "type": "unknown"
+      },
+      "authentication": {
+        "check_device.api.php": {
+          "type": "php"
+        },
+        "check_user_token.api.php": {
+          "type": "php"
+        },
+        "get_session_context.api.php": {
+          "type": "php"
+        },
+        "register_device.api.php": {
+          "type": "php"
+        },
+        "sign_in.api.php": {
+          "type": "php"
+        }
+      },
+      "cors.php": {
+        "type": "php"
+      },
+      "files": {
+        "patient_photo.api.php": {
+          "type": "php"
+        }
+      },
+      "functions.php": {
+        "type": "php"
+      },
+      "get_care_sessions.api.php": {
+        "type": "php"
+      },
+      "messages": {
+        "_message_auth.php": {
+          "type": "php"
+        },
+        "get_unread_counts.api.php": {
+          "type": "php"
+        },
+        "get_unread_visit_messages.api.php": {
+          "type": "php"
+        },
+        "get_visit_messages.api.php": {
+          "type": "php"
+        },
+        "send_visit_message.api.php": {
+          "type": "php"
+        }
+      },
+      "nhs_medicine.php": {
+        "type": "php"
+      },
+      "notifications": {
+        "get_notifications.api.php": {
+          "type": "php"
+        },
+        "mark_notifications_read.api.php": {
+          "type": "php"
+        },
+        "notify_helpers.php": {
+          "type": "php"
+        }
+      },
+      "request_header.php": {
+        "type": "php"
+      },
+      "service_users": {
+        "get_qr_code.api.php": {
+          "type": "php"
+        }
+      },
+      "sessions": {
+        "complete_notes.api.php": {
+          "type": "php"
+        },
+        "complete_task.api.php": {
+          "type": "php"
+        },
+        "end_session.api.php": {
+          "type": "php"
+        },
+        "get_active_session.api.php": {
+          "type": "php"
+        },
+        "get_active_sessions.api.php": {
+          "type": "php"
+        },
+        "get_completed_session.api.php": {
+          "type": "php"
+        },
+        "get_completed_sessions.api.php": {
+          "type": "php"
+        },
+        "get_manager_care_staff.api.php": {
+          "type": "php"
+        },
+        "get_manager_patient_visits.api.php": {
+          "type": "php"
+        },
+        "get_manager_staff_summary.api.php": {
+          "type": "php"
+        },
+        "get_manager_staff_visits.api.php": {
+          "type": "php"
+        },
+        "get_manager_visit_patients.api.php": {
+          "type": "php"
+        },
+        "get_manager_visit_staff.api.php": {
+          "type": "php"
+        },
+        "get_manager_visit_tasks.api.php": {
+          "type": "php"
+        },
+        "get_manager_visits.api.php": {
+          "type": "php"
+        },
+        "get_patient_visit_history.api.php": {
+          "type": "php"
+        },
+        "get_service_user_session.api.php": {
+          "type": "php"
+        },
+        "get_service_user_visits.api.php": {
+          "type": "php"
+        },
+        "get_staff_dashboard.api.php": {
+          "type": "php"
+        },
+        "get_staff_stats.api.php": {
+          "type": "php"
+        },
+        "get_task_history_summaries.api.php": {
+          "type": "php"
+        },
+        "start_session.api.php": {
+          "type": "php"
+        },
+        "unallocated_occurrences.php": {
+          "type": "php"
+        },
+        "verify_patient_proximity.api.php": {
+          "type": "php"
+        },
+        "verify_patient_qr.api.php": {
+          "type": "php"
+        },
+        "visit_lateness.php": {
+          "type": "php"
+        }
+      },
+      "test_request.api.php": {
+        "type": "php"
+      }
+    },
+    "pages": {
+      ".DS_Store": {
+        "type": "unknown"
+      },
+      "access_groups": {
+        "_permission_catalog.php": {
+          "type": "php"
+        },
+        "_permission_input_map.php": {
+          "type": "php"
+        },
+        "_permission_visual.php": {
+          "type": "php"
+        },
+        "add_access_group.php": {
+          "type": "php"
+        },
+        "upgrade_permissions.php": {
+          "type": "php"
+        },
+        "view_access_group.php": {
+          "type": "php"
+        },
+        "view_access_groups.php": {
+          "type": "php"
+        }
+      },
+      "account": {
+        "view_account.php": {
+          "type": "php"
+        }
+      },
+      "alerts": {
+        "view_alert.php": {
+          "type": "php"
+        },
+        "view_alerts.php": {
+          "type": "php"
+        }
+      },
+      "applicants": {
+        "add_applicant.php": {
+          "type": "php"
+        },
+        "applicants_report.php": {
+          "type": "php"
+        },
+        "applicants_report_detail.php": {
+          "type": "php"
+        },
+        "applicants_report_editable.php": {
+          "type": "php"
+        },
+        "applicants_report_pdf.php": {
+          "type": "php"
+        },
+        "hire_applicant.php": {
+          "type": "php"
+        },
+        "reconsider_applicant.php": {
+          "type": "php"
+        },
+        "reject_applicant.php": {
+          "type": "php"
+        },
+        "view_applicant.php": {
+          "type": "php"
+        },
+        "view_applicants.php": {
+          "type": "php"
+        },
+        "view_availability.php": {
+          "type": "php"
+        }
+      },
+      "branches": {
+        "add_branch.php": {
+          "type": "php"
+        },
+        "view_branch.php": {
+          "type": "php"
+        },
+        "view_branches.php": {
+          "type": "php"
+        }
+      },
+      "branches_areas": {
+        "view_branches_area.php": {
+          "type": "php"
+        }
+      },
+      "care_plan": {
+        "download_care_plan.php": {
+          "type": "php"
+        },
+        "print_care_plans.php": {
+          "type": "php"
+        }
+      },
+      "conditions": {
+        "add_patient_condition.php": {
+          "type": "php"
+        },
+        "view_patient_condition.php": {
+          "type": "php"
+        }
+      },
+      "database": {
+        "download_backup.php": {
+          "type": "php"
+        },
+        "view_backups.php": {
+          "type": "php"
+        }
+      },
+      "documents": {
+        "add_document.php": {
+          "type": "php"
+        },
+        "open_document.php": {
+          "type": "php"
+        },
+        "view_document.php": {
+          "type": "php"
+        },
+        "view_documents.php": {
+          "type": "php"
+        }
+      },
+      "emails": {
+        "view_email_templates.php": {
+          "type": "php"
+        }
+      },
+      "equipment": {
+        "add_new_staff_equipment.php": {
+          "type": "php"
+        },
+        "add_staff_equipment.php": {
+          "type": "php"
+        },
+        "view_all_equipment.php": {
+          "type": "php"
+        },
+        "view_staff_equipment.php": {
+          "type": "php"
+        },
+        "view_staff_equipment_item.php": {
+          "type": "php"
+        }
+      },
+      "error_pages": {
+        "403.php": {
+          "type": "php"
+        },
+        "404.php": {
+          "type": "php"
+        },
+        "500.php": {
+          "type": "php"
+        }
+      },
+      "forgot_password.php": {
+        "type": "php"
+      },
+      "funders": {
+        "add_funder.php": {
+          "type": "php"
+        },
+        "revoke_termination_funder.php": {
+          "type": "php"
+        },
+        "terminate_funder.php": {
+          "type": "php"
+        },
+        "view_funder.php": {
+          "type": "php"
+        },
+        "view_funder_patients.php": {
+          "type": "php"
+        },
+        "view_funders.php": {
+          "type": "php"
+        }
+      },
+      "health_condition_search": {
+        "health_condition_search.php": {
+          "type": "php"
+        }
+      },
+      "index.php": {
+        "type": "php"
+      },
+      "medication_search": {
+        "medication_search.php": {
+          "type": "php"
+        }
+      },
+      "messages": {
+        "view_message_thread.php": {
+          "type": "php"
+        },
+        "view_messages.php": {
+          "type": "php"
+        }
+      },
+      "mobile_devices": {
+        "activate_mobile_device.php": {
+          "type": "php"
+        },
+        "view_mobile_device.php": {
+          "type": "php"
+        },
+        "view_mobile_devices.php": {
+          "type": "php"
+        }
+      },
+      "next_of_kins": {
+        "add_next_of_kin.php": {
+          "type": "php"
+        },
+        "view_next_of_kin.php": {
+          "type": "php"
+        },
+        "view_next_of_kins.php": {
+          "type": "php"
+        }
+      },
+      "notes": {
+        "add_note.php": {
+          "type": "php"
+        },
+        "view_note.php": {
+          "type": "php"
+        },
+        "view_notes.php": {
+          "type": "php"
+        }
+      },
+      "patients": {
+        "add_patient.php": {
+          "type": "php"
+        },
+        "patients_report.php": {
+          "type": "php"
+        },
+        "patients_report_detail.php": {
+          "type": "php"
+        },
+        "patients_report_editable.php": {
+          "type": "php"
+        },
+        "patients_report_pdf.php": {
+          "type": "php"
+        },
+        "revoke_termination_patient.php": {
+          "type": "php"
+        },
+        "terminate_patient.php": {
+          "type": "php"
+        },
+        "view_patient.php": {
+          "type": "php"
+        },
+        "view_patient_conditions.php": {
+          "type": "php"
+        },
+        "view_patient_login.php": {
+          "type": "php"
+        },
+        "view_patient_mar.php": {
+          "type": "php"
+        },
+        "view_patient_mar_pdf.php": {
+          "type": "php"
+        },
+        "view_patient_risk_assessments.php": {
+          "type": "php"
+        },
+        "view_patient_sessions.php": {
+          "type": "php"
+        },
+        "view_patients.php": {
+          "type": "php"
+        }
+      },
+      "postcode_areas": {
+        "add_postcode_area.php": {
+          "type": "php"
+        },
+        "view_postcode_area.php": {
+          "type": "php"
+        },
+        "view_postcode_areas.php": {
+          "type": "php"
+        }
+      },
+      "reset_password.php": {
+        "type": "php"
+      },
+      "risks": {
+        "add_risk.php": {
+          "type": "php"
+        },
+        "download_risk_assessment.php": {
+          "type": "php"
+        },
+        "view_risk.php": {
+          "type": "php"
+        },
+        "view_risks.php": {
+          "type": "php"
+        }
+      },
+      "schedule": {
+        "check_session_availability.php": {
+          "type": "php"
+        },
+        "copy_schedule.php": {
+          "type": "php"
+        },
+        "copy_schedule_weekly.php": {
+          "type": "php"
+        },
+        "duplicate_schedule.php": {
+          "type": "php"
+        },
+        "person_week_schedule.php": {
+          "type": "php"
+        },
+        "schedule_report.php": {
+          "type": "php"
+        },
+        "schedule_report_detail.php": {
+          "type": "php"
+        },
+        "schedule_visit_list_editable.php": {
+          "type": "php"
+        },
+        "schedule_visit_list_pdf.php": {
+          "type": "php"
+        },
+        "staff_availability.php": {
+          "type": "php"
+        },
+        "view_patient_schedule.php": {
+          "type": "php"
+        },
+        "view_schedule.php": {
+          "type": "php"
+        },
+        "view_schedule_calendar.php": {
+          "type": "php"
+        },
+        "view_schedule_week.php": {
+          "type": "php"
+        },
+        "view_staff_schedule.php": {
+          "type": "php"
+        }
+      },
+      "services": {
+        "add_service.php": {
+          "type": "php"
+        },
+        "monitoring.php": {
+          "type": "php"
+        },
+        "view_service.php": {
+          "type": "php"
+        },
+        "view_services.php": {
+          "type": "php"
+        },
+        "view_services_patients.php": {
+          "type": "php"
+        }
+      },
+      "sessions": {
+        "view_session.php": {
+          "type": "php"
+        },
+        "view_session_pdf.php": {
+          "type": "php"
+        },
+        "view_sessions.php": {
+          "type": "php"
+        }
+      },
+      "settings": {
+        "general_settings.php": {
+          "type": "php"
+        }
+      },
+      "sign_in.php": {
+        "type": "php"
+      },
+      "sign_out.php": {
+        "type": "php"
+      },
+      "staff": {
+        "add_staff.php": {
+          "type": "php"
+        },
+        "address_labels.php": {
+          "type": "php"
+        },
+        "availability_conflicts.php": {
+          "type": "php"
+        },
+        "check_availability_slot_conflicts.php": {
+          "type": "php"
+        },
+        "id_cards.php": {
+          "type": "php"
+        },
+        "revoke_termination_staff.php": {
+          "type": "php"
+        },
+        "staff_availability_report.php": {
+          "type": "php"
+        },
+        "staff_report.php": {
+          "type": "php"
+        },
+        "staff_report_detail.php": {
+          "type": "php"
+        },
+        "staff_report_editable.php": {
+          "type": "php"
+        },
+        "staff_report_pdf.php": {
+          "type": "php"
+        },
+        "terminate_staff.php": {
+          "type": "php"
+        },
+        "view_availability.php": {
+          "type": "php"
+        },
+        "view_staff.php": {
+          "type": "php"
+        },
+        "view_staff_access.php": {
+          "type": "php"
+        },
+        "view_staff_sessions.php": {
+          "type": "php"
+        },
+        "view_staffs.php": {
+          "type": "php"
+        }
+      },
+      "staff_positions": {
+        "view_staff_position.php": {
+          "type": "php"
+        }
+      },
+      "staff_types": {
+        "add_staff_type.php": {
+          "type": "php"
+        },
+        "view_staff_type.php": {
+          "type": "php"
+        },
+        "view_staff_types.php": {
+          "type": "php"
+        }
+      },
+      "tasks": {
+        "add_task.php": {
+          "type": "php"
+        },
+        "add_task.php.backup": {
+          "type": "unknown"
+        },
+        "add_task_old.php": {
+          "type": "php"
+        },
+        "reorder_tasks.php": {
+          "type": "php"
+        },
+        "task_categories.php": {
+          "type": "php"
+        },
+        "view_person_task_view_record.php": {
+          "type": "php"
+        },
+        "view_task.php": {
+          "type": "php"
+        },
+        "view_task_applicants.php": {
+          "type": "php"
+        },
+        "view_task_funders.php": {
+          "type": "php"
+        },
+        "view_task_patients.php": {
+          "type": "php"
+        },
+        "view_task_staff.php": {
+          "type": "php"
+        },
+        "view_tasks.php": {
+          "type": "php"
+        },
+        "view_tasks_applicants.php": {
+          "type": "php"
+        },
+        "view_tasks_funders.php": {
+          "type": "php"
+        },
+        "view_tasks_patients.php": {
+          "type": "php"
+        },
+        "view_tasks_staff.php": {
+          "type": "php"
+        }
+      },
+      "time_off": {
+        "add_time_off.php": {
+          "type": "php"
+        },
+        "report_time_offs.php": {
+          "type": "php"
+        },
+        "view_time_off.php": {
+          "type": "php"
+        },
+        "view_time_offs.php": {
+          "type": "php"
+        }
+      },
+      "trainings": {
+        "add_training.php": {
+          "type": "php"
+        },
+        "view_person_training_view_record.php": {
+          "type": "php"
+        },
+        "view_training.php": {
+          "type": "php"
+        },
+        "view_training_applicants.php": {
+          "type": "php"
+        },
+        "view_training_staff.php": {
+          "type": "php"
+        },
+        "view_trainings.php": {
+          "type": "php"
+        },
+        "view_trainings_applicants.php": {
+          "type": "php"
+        },
+        "view_trainings_staff.php": {
+          "type": "php"
+        }
+      },
+      "users": {
+        "view_user_access.php": {
+          "type": "php"
+        },
+        "view_users.php": {
+          "type": "php"
+        }
+      }
+    },
+    "robots.txt": {
+      "type": "unknown"
+    }
+  },
+  "httpdocs_private": {
+    ".DS_Store": {
+      "type": "unknown"
+    },
+    ".env.example": {
+      "type": "unknown"
+    },
+    "config_cryptography.php": {
+      "type": "php"
+    },
+    "config_database.php": {
+      "type": "php"
+    },
+    "config_email.php": {
+      "type": "php"
+    },
+    "cron_scripts": {
+      "cache_conditions.php": {
+        "type": "php"
+      },
+      "cache_medicines.php": {
+        "type": "php"
+      },
+      "create_alerts.php": {
+        "type": "php"
+      },
+      "create_database_backup.php": {
+        "type": "php"
+      },
+      "create_reoccurable_task_records.php": {
+        "type": "php"
+      }
+    },
+    "database_backups": {
+      "DB_BACKUP_2024-01-12_00-00-13.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-13_00-00-05.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-14_00-00-17.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-15_00-00-03.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-16_00-00-04.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-17_00-00-04.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-18_00-00-02.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-19_00-00-01.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-20_00-00-03.sql": {
+        "type": "unknown"
+      },
+      "DB_BACKUP_2024-01-21_00-00-17.sql": {
+        "type": "unknown"
+      }
+    },
+    "database_scripts": {
+      "add_care_plan_versioning.sql": {
+        "type": "unknown"
+      },
+      "add_note_to_staff_availability_slots.sql": {
+        "type": "unknown"
+      },
+      "add_patient_login_credentials.sql": {
+        "type": "unknown"
+      },
+      "add_pbl_sessions_indexes.sql": {
+        "type": "unknown"
+      },
+      "add_required_by_notes_to_equipment.sql": {
+        "type": "unknown"
+      },
+      "add_staff_manager.sql": {
+        "type": "unknown"
+      },
+      "add_staff_pin.sql": {
+        "type": "unknown"
+      },
+      "add_task_completed_date.sql": {
+        "type": "unknown"
+      },
+      "add_task_days_to_completion.sql": {
+        "type": "unknown"
+      },
+      "add_task_icon.sql": {
+        "type": "unknown"
+      },
+      "add_task_sort_order.sql": {
+        "type": "unknown"
+      },
+      "add_user_username.sql": {
+        "type": "unknown"
+      },
+      "add_visit_change_history.sql": {
+        "type": "unknown"
+      },
+      "clean_database.sql": {
+        "type": "unknown"
+      },
+      "create_equipment_table.sql": {
+        "type": "unknown"
+      },
+      "create_patient_checkin_qr_table.sql": {
+        "type": "unknown"
+      },
+      "create_patient_mobile_token_table.sql": {
+        "type": "unknown"
+      },
+      "create_qr_tables.sql": {
+        "type": "unknown"
+      },
+      "create_qr_verification_tokens.sql": {
+        "type": "unknown"
+      },
+      "create_service_occurrence_exceptions.sql": {
+        "type": "unknown"
+      },
+      "create_staff_availability_slots.sql": {
+        "type": "unknown"
+      },
+      "create_task_history_summary_cache_table.sql": {
+        "type": "unknown"
+      }
+    },
+    "documents": {
+      "65ac5bef01878.pdf": {
+        "type": "unknown"
+      }
+    },
+    "env_loader.php": {
+      "type": "php"
+    },
+    "profile_pictures": {
+      "69eb77e661901.png": {
+        "type": "unknown"
+      },
+      "profile_picture_blank.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d26c42a69e1.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d2706193d54.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d270acd6c9c.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d270e774e21.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d272f67a100.png": {
+        "type": "unknown"
+      },
+      "web_resized_64d2730dac661.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_64d2733d41184.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_64d2740771820.png": {
+        "type": "unknown"
+      },
+      "web_resized_6578b7ab784c5.png": {
+        "type": "unknown"
+      },
+      "web_resized_6578b83ee4ec2.png": {
+        "type": "unknown"
+      },
+      "web_resized_659710c24e0b5.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_69eb78c705215.png": {
+        "type": "unknown"
+      },
+      "web_resized_6a11af12447bb.jpeg": {
+        "type": "unknown"
+      },
+      "web_resized_6a11b0150a361.jpeg": {
+        "type": "unknown"
+      },
+      "web_resized_6a2067715ba0f.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a2067a87dc5e.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a21ae351266c.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a21b09b27400.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a26a708ee165.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a26a73306cd5.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a26a7624a86e.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a33b467c8de3.jpg": {
+        "type": "unknown"
+      },
+      "web_resized_6a33b68121acf.jpg": {
+        "type": "unknown"
+      }
+    },
+    "seed_nhs_cache.php": {
+      "type": "php"
+    },
+    "settings.ini": {
+      "type": "unknown"
+    },
+    "test_nhs_api.php": {
+      "type": "php"
+    },
+    "user_logs": {
+      "log_S088884413.txt": {
+        "type": "unknown"
+      },
+      "log_S171765158.txt": {
+        "type": "unknown"
+      },
+      "log_S382385771.txt": {
+        "type": "unknown"
+      },
+      "log_S546406994.txt": {
+        "type": "unknown"
+      },
+      "log_S643293061.txt": {
+        "type": "unknown"
+      },
+      "log_S675748871.txt": {
+        "type": "unknown"
+      },
+      "log_S696176223.txt": {
+        "type": "unknown"
+      },
+      "log_S706260555.txt": {
+        "type": "unknown"
+      },
+      "log_S837973885.txt": {
+        "type": "unknown"
+      },
+      "log_S882777206.txt": {
+        "type": "unknown"
+      }
+    }
+  }
+}

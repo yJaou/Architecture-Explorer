@@ -58,60 +58,6 @@ function App() {
             color: "var(--text)"
         }}>
 
-            {/* Top Right Buttons Container */}
-            <div style={{
-                position: "absolute",
-                top: "24px",
-                right: "24px",
-                display: "flex",
-                gap: "12px",
-                zIndex: 10
-            }}>
-                {/* Branch Selector */}
-                <select
-                    value={selectedBranch}
-                    onChange={(e) => setSelectedBranch(e.target.value)}
-                    style={{
-                        padding: "8px 14px",
-                        cursor: "pointer",
-                        borderRadius: "8px",
-                        border: "1px solid var(--border)",
-                        background: "var(--code-bg)",
-                        color: "var(--text-h)",
-                        fontFamily: "var(--sans)",
-                        fontWeight: "500",
-                        fontSize: "14px",
-                        boxShadow: "var(--shadow)",
-                        outline: "none"
-                    }}
-                >
-                    {BRANCH_OPTIONS.map((option) => (
-                        <option key={option.value} value={option.value}>
-                            {option.label}
-                        </option>
-                    ))}
-                </select>
-
-                {/* Dark Mode Toggle Button */}
-                <button 
-                    onClick={() => setDarkMode(!darkMode)}
-                    style={{
-                        padding: "8px 14px",
-                        cursor: "pointer",
-                        borderRadius: "8px",
-                        border: "1px solid var(--border)",
-                        background: "var(--code-bg)",
-                        color: "var(--text-h)",
-                        fontFamily: "var(--sans)",
-                        fontWeight: "500",
-                        fontSize: "14px",
-                        boxShadow: "var(--shadow)"
-                    }}
-                >
-                    {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-                </button>
-            </div>
-
             {/* Left Column: Explorer */}
             <div style={{ 
                 width: "50%",
@@ -155,11 +101,64 @@ function App() {
             <div style={{
                 width: "50%",
                 borderLeft: "1px solid var(--border)",
-                padding: "8px 40px 40px 40px",
+                padding: "40px", // Ajusté pour un alignement propre avec la colonne de gauche
                 boxSizing: "border-box",
                 background: "var(--social-bg)",
                 textAlign: "left"
             }}>
+                {/* CONTENEUR DE BOUTONS RE-POSITIONNÉ ICI DANS LE FLUX NORMAL */}
+                <div style={{
+                    display: "flex",
+                    justifyContent: "flex-end", // Aligne le groupe à droite de la colonne
+                    gap: "12px",
+                    marginBottom: "24px", // Laisse de l'espace par rapport au titre qui suit
+                    width: "100%"
+                }}>
+                    {/* Branch Selector */}
+                    <select
+                        value={selectedBranch}
+                        onChange={(e) => setSelectedBranch(e.target.value)}
+                        style={{
+                            padding: "8px 14px",
+                            cursor: "pointer",
+                            borderRadius: "8px",
+                            border: "1px solid var(--border)",
+                            background: "var(--code-bg)",
+                            color: "var(--text-h)",
+                            fontFamily: "var(--sans)",
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            boxShadow: "var(--shadow)",
+                            outline: "none"
+                        }}
+                    >
+                        {BRANCH_OPTIONS.map((option) => (
+                            <option key={option.value} value={option.value}>
+                                {option.label}
+                            </option>
+                        ))}
+                    </select>
+
+                    {/* Dark Mode Toggle Button */}
+                    <button 
+                        onClick={() => setDarkMode(!darkMode)}
+                        style={{
+                            padding: "8px 14px",
+                            cursor: "pointer",
+                            borderRadius: "8px",
+                            border: "1px solid var(--border)",
+                            background: "var(--code-bg)",
+                            color: "var(--text-h)",
+                            fontFamily: "var(--sans)",
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            boxShadow: "var(--shadow)"
+                        }}
+                    >
+                        {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+                    </button>
+                </div>
+
                 {/* 5. Details are hidden and translated if no branch is selected */}
                 {currentGraph ? (
                     <DetailsPanel 
@@ -168,7 +167,7 @@ function App() {
                         onSelect={setSelectedFile}
                     />
                 ) : (
-                    <p style={{ color: "var(--text-muted)", fontFamily: "var(--sans)", fontStyle: "italic", marginTop: "72px" }}>
+                    <p style={{ color: "var(--text-muted)", fontFamily: "var(--sans)", fontStyle: "italic", marginTop: "24px" }}>
                         Please select a branch to view details.
                     </p>
                 )}
@@ -177,5 +176,4 @@ function App() {
         </div>
     );
 }
-
 export default App;

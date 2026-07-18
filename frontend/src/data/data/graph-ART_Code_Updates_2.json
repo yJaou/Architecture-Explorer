@@ -149,18 +149,6 @@
       "imports": []
     },
     {
-      "id": "httpdocs/api/patients/patient_test_pipeline.php",
-      "name": "patient_test_pipeline.php",
-      "type": "PHP",
-      "feature": "Patient Management",
-      "classes": [],
-      "functions": [
-        "pbl_verify_automation_sync",
-        "pbl_check_vercel_deployment_flow"
-      ],
-      "imports": []
-    },
-    {
       "id": "httpdocs/classes/Access_group/Access_group.class.php",
       "name": "Access_group.class.php",
       "type": "PHP",

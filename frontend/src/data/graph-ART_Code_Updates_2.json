@@ -63,17 +63,6 @@
       "imports": []
     },
     {
-      "id": "httpdocs/api/auth_pipeline_check.php",
-      "name": "auth_pipeline_check.php",
-      "type": "PHP",
-      "feature": "Authentication",
-      "classes": [],
-      "functions": [
-        "pbl_auth_test_system"
-      ],
-      "imports": []
-    },
-    {
       "id": "httpdocs/api/llm/daily-visit-summary.php",
       "name": "daily-visit-summary.php",
       "type": "PHP",

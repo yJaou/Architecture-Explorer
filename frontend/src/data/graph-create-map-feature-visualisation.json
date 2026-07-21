@@ -63,6 +63,55 @@
       "imports": []
     },
     {
+      "id": "backend_files/sessions/get_service_user_location.api.php",
+      "name": "get_service_user_location.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_su_get_respond"
+      ],
+      "imports": []
+    },
+    {
+      "id": "backend_files/sessions/get_service_user_sharing_window.api.php",
+      "name": "get_service_user_sharing_window.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_su_window_respond"
+      ],
+      "imports": []
+    },
+    {
+      "id": "backend_files/sessions/service_user_location_helpers.php",
+      "name": "service_user_location_helpers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "resolve_authenticated_identity",
+        "pbl_su_location_ensure_table",
+        "pbl_su_has_en_route_column",
+        "pbl_su_get_sharing_window",
+        "pbl_su_upsert_location",
+        "pbl_su_read_location"
+      ],
+      "imports": []
+    },
+    {
+      "id": "backend_files/sessions/update_service_user_location.api.php",
+      "name": "update_service_user_location.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_su_update_respond"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/llm/daily-visit-summary.php",
       "name": "daily-visit-summary.php",
       "type": "PHP",
@@ -2015,6 +2064,7 @@
         "check_task_number_exists",
         "edit_task",
         "task_icon_column_exists",
+        "task_category_column_exists",
         "delete_task",
         "get_task_descriptions_by_type",
         "set_task_sort_order"
@@ -2036,6 +2086,7 @@
         "show_categories",
         "show_category_name_by_icon",
         "show_usage_counts_by_icon",
+        "task_category_column_exists",
         "add_category",
         "update_category",
         "remove_category",
@@ -2064,6 +2115,7 @@
         "add_inline_service_task",
         "create_service_specific_task",
         "sanitize_task_icon",
+        "sanitize_task_category",
         "generate_task_number",
         "remove_task",
         "validate_task_number",
@@ -2111,6 +2163,7 @@
         "show_medication_location",
         "show_medication_application",
         "show_task_icon",
+        "show_task_category",
         "show_task_added_date",
         "is_overdue",
         "show_due"
@@ -7862,6 +7915,23 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/visit_report_render.php",
+      "name": "visit_report_render.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "visit_task_state_display",
+        "visit_datetime_or_dash",
+        "visit_maps_link",
+        "visit_report_can_view",
+        "visit_report_detail_styles",
+        "collect_visit_report_data",
+        "render_visit_report_body"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/account/get_account.api.php",
       "name": "get_account.api.php",
       "type": "PHP",
@@ -8363,6 +8433,22 @@
       "classes": [],
       "functions": [],
       "imports": []
+    },
+    {
+      "id": "httpdocs/mobile_api/sessions/check_in_success.api.php",
+      "name": "check_in_success.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "check_in_success_error_system"
+      ],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/mobile_api/request_header.php"
+        }
+      ]
     },
     {
       "id": "httpdocs/mobile_api/sessions/complete_notes.api.php",
@@ -12111,6 +12197,61 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/visits/visit_report_csv.php",
+      "name": "visit_report_csv.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/visits/visit_report_detail.php",
+      "name": "visit_report_detail.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/visits/visit_report_print.php",
+      "name": "visit_report_print.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/visits/visit_reports.php",
+      "name": "visit_reports.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "visit_status_display",
+        "vrUpdateCount",
+        "vrSelectedSessions",
+        "vrPrintList",
+        "vrPrintDetails",
+        "vrViewSummary",
+        "vrViewDetails",
+        "vrExportFullCsv",
+        "vrCsvCell",
+        "vrExportCsv",
+        "vrMakeSearchable",
+        "currentLabel",
+        "showSelection",
+        "build",
+        "open",
+        "close",
+        "setActive",
+        "choose"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/config_cryptography.php",
       "name": "config_cryptography.php",
       "type": "PHP",
@@ -12850,6 +12991,11 @@
     {
       "source": "httpdocs/mobile_api/request_header.php",
       "target": "httpdocs/functions.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/mobile_api/sessions/check_in_success.api.php",
+      "target": "httpdocs/mobile_api/request_header.php",
       "type": "include"
     },
     {

@@ -12584,6 +12584,29 @@
       "imports": []
     },
     {
+      "id": "migration/loader/update_visits_from_report_csv.php",
+      "name": "update_visits_from_report_csv.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_Report_Task_Writer"
+      ],
+      "functions": [
+        "apply_fields",
+        "to_utf8",
+        "norm",
+        "firstlast",
+        "stored_text_key",
+        "name_key",
+        "parse_planned_start",
+        "parse_closed_date",
+        "same_minute",
+        "mins_to_clock",
+        "resolve_staff_by_name"
+      ],
+      "imports": []
+    },
+    {
       "id": "scratchpad/diagnose_missed_visit.php",
       "name": "diagnose_missed_visit.php",
       "type": "PHP",

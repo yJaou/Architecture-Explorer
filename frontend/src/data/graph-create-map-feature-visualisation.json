@@ -112,6 +112,17 @@
       "imports": []
     },
     {
+      "id": "backend_files/tasks/recategorise_hygiene_tasks.php",
+      "name": "recategorise_hygiene_tasks.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "matched_hygiene_term"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/llm/daily-visit-summary.php",
       "name": "daily-visit-summary.php",
       "type": "PHP",
@@ -1061,6 +1072,8 @@
       "functions": [
         "get_patient",
         "edit_patient_field",
+        "ensure_case_id_column",
+        "get_max_case_id_number",
         "edit_patient",
         "set_patient",
         "check_username_exists",
@@ -1084,6 +1097,7 @@
       ],
       "functions": [
         "update_patient_source_fields",
+        "propose_case_id",
         "add_patient",
         "update_patient",
         "terminate_patient",
@@ -1134,6 +1148,7 @@
         "show_date_of_birth",
         "show_age",
         "show_nhs_number",
+        "show_case_id",
         "show_service_priority",
         "show_branch_number",
         "show_branch_area_number",
@@ -1361,7 +1376,9 @@
         "get_service",
         "get_all_service_order_numbers",
         "get_all_service_template_ids",
+        "get_service_template_ids_for_case",
         "get_all_service_case_ids",
+        "get_patient_case_id",
         "get_case_id_for_patient",
         "set_service_template_case_ids",
         "edit_service_field",
@@ -11605,7 +11622,10 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [],
+      "functions": [
+        "filter_address",
+        "refresh_listing"
+      ],
       "imports": [
         {
           "type": "include",
@@ -12529,6 +12549,37 @@
       "functions": [
         "normalise_task_name",
         "fetch_all"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/schedule_visits_from_csv.php",
+      "name": "schedule_visits_from_csv.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "norm",
+        "firstlast",
+        "parse_rota_date",
+        "parse_clock",
+        "mins_to_clock",
+        "plan_covers",
+        "resolve_person"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/update_serviceuser_case_ids.php",
+      "name": "update_serviceuser_case_ids.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "norm",
+        "norm_loose",
+        "firstlast",
+        "is_placeholder"
       ],
       "imports": []
     },

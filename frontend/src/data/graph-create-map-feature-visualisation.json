@@ -1392,6 +1392,8 @@
         "check_service_number_exists",
         "delete_service",
         "get_service_task_details",
+        "medication_time_options",
+        "normalise_task_med_time",
         "task_details_has_nhs_columns",
         "save_service_task_details"
       ],
@@ -12515,6 +12517,25 @@
       "imports": []
     },
     {
+      "id": "migration/loader/fix_careplan_csv.php",
+      "name": "fix_careplan_csv.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "apply_corrections",
+        "finding",
+        "fix_year",
+        "fix_mojibake",
+        "fix_newlines",
+        "fix_prn_bleed",
+        "check_medication",
+        "check_truncated",
+        "infer_med_time"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/load_careplans.php",
       "name": "load_careplans.php",
       "type": "PHP",
@@ -12523,6 +12544,7 @@
         "CarePlanImporter"
       ],
       "functions": [
+        "same_instruction",
         "__construct",
         "delete_careplans",
         "find_patient_by_name",

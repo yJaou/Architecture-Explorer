@@ -1073,6 +1073,7 @@
         "get_patient",
         "edit_patient_field",
         "ensure_case_id_column",
+        "ensure_care_setting_column",
         "get_max_case_id_number",
         "edit_patient",
         "set_patient",
@@ -1152,6 +1153,7 @@
         "show_nhs_number",
         "show_case_id",
         "show_service_priority",
+        "show_care_setting",
         "show_branch_number",
         "show_branch_area_number",
         "show_landline_phone_number",
@@ -2694,6 +2696,17 @@
       "classes": [],
       "functions": [
         "include_care_scheduling"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/dropdown/dropdown_care_settings.php",
+      "name": "dropdown_care_settings.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "include_care_settings"
       ],
       "imports": []
     },
@@ -12473,6 +12486,18 @@
       "imports": []
     },
     {
+      "id": "migration/loader/add_library_task_to_plan.php",
+      "name": "add_library_task_to_plan.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "fetch_all",
+        "esc"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/add_next_of_kin_from_csv.php",
       "name": "add_next_of_kin_from_csv.php",
       "type": "PHP",
@@ -12615,6 +12640,18 @@
       "imports": []
     },
     {
+      "id": "migration/loader/merge_general_tasks.php",
+      "name": "merge_general_tasks.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "fetch_all",
+        "esc"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/relink_service_task_to_general.php",
       "name": "relink_service_task_to_general.php",
       "type": "PHP",
@@ -12640,6 +12677,32 @@
         "mins_to_clock",
         "plan_covers",
         "resolve_person"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/set_patient_care_setting.php",
+      "name": "set_patient_care_setting.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [
+        "fetch_all",
+        "esc",
+        "name_looks_right"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/sync_plan_task_notes.php",
+      "name": "sync_plan_task_notes.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "fetch_all",
+        "esc",
+        "normalise_task_name"
       ],
       "imports": []
     },

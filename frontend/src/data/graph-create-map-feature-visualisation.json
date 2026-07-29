@@ -10494,7 +10494,12 @@
       "classes": [],
       "functions": [
         "rows",
+        "settingOf",
+        "matchesTerm",
+        "updateTabCounts",
         "applyFilter",
+        "syncUrl",
+        "selectTab",
         "applySort"
       ],
       "imports": []

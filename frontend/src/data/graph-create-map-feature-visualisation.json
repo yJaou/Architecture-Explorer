@@ -3553,7 +3553,9 @@
         "authenticate_user_with_password",
         "reset_password",
         "get_smtp_config",
+        "apply_smtp_settings",
         "send_password_has_changed_email",
+        "log_mail_error",
         "send_new_password_email",
         "forgot_password",
         "generate_reset_password_code",
@@ -3717,68 +3719,7 @@
         "build_mar_pdf_html",
         "mar_staff_initials"
       ],
-      "imports": [
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/Exception.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/PHPMailer.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/SMTP.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/Exception.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/PHPMailer.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/SMTP.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/Exception.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/PHPMailer.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/includes/mail/phpmailer/src/SMTP.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/Exception.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/PHPMailer.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/SMTP.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/Exception.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/PHPMailer.php"
-        },
-        {
-          "type": "include",
-          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/mail/phpmailer/src/SMTP.php"
-        }
-      ]
+      "imports": []
     },
     {
       "id": "httpdocs/includes/header.php",
@@ -12326,7 +12267,9 @@
       "type": "PHP",
       "feature": "AI Core",
       "classes": [],
-      "functions": [],
+      "functions": [
+        "smtp_env"
+      ],
       "imports": []
     },
     {
@@ -12481,6 +12424,15 @@
       "name": "test_nhs_terminology.php",
       "type": "PHP",
       "feature": "NHS Integration",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/test_smtp.php",
+      "name": "test_smtp.php",
+      "type": "PHP",
+      "feature": "Other",
       "classes": [],
       "functions": [],
       "imports": []
@@ -12796,81 +12748,6 @@
     }
   ],
   "links": [
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/Exception.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/PHPMailer.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/SMTP.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/Exception.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/PHPMailer.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/SMTP.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/Exception.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/PHPMailer.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "includes/mail/phpmailer/src/SMTP.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/Exception.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/PHPMailer.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/SMTP.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/Exception.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/PHPMailer.php",
-      "type": "include"
-    },
-    {
-      "source": "httpdocs/includes/functions.php",
-      "target": "httpdocs/includes/mail/phpmailer/src/SMTP.php",
-      "type": "include"
-    },
     {
       "source": "httpdocs/includes/header.php",
       "target": "scanner-tool/backend/side_bar.php",

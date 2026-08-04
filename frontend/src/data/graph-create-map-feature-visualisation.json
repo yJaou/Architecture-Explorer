@@ -1396,6 +1396,7 @@
         "get_service_task_details",
         "medication_time_options",
         "normalise_task_med_time",
+        "normalise_task_ended_date",
         "task_details_has_nhs_columns",
         "save_service_task_details"
       ],
@@ -1498,6 +1499,9 @@
         "get_session",
         "edit_session_field",
         "edit_session",
+        "sessions_have_visit_ref",
+        "visit_ref_for_slot",
+        "generate_visit_ref",
         "set_session",
         "check_session_number_exists",
         "delete_session",
@@ -1561,6 +1565,8 @@
       "functions": [
         "__construct",
         "show_session_number",
+        "show_visit_ref",
+        "show_other_carers",
         "show_patient_number",
         "show_service_number",
         "show_staff_number",
@@ -3542,6 +3548,7 @@
         "get_settings",
         "get_private_path",
         "clean_input",
+        "decode_stored_text",
         "log_activity",
         "get_search_data",
         "check_user_number",
@@ -3585,6 +3592,7 @@
         "get_hours",
         "get_minutes",
         "display_time",
+        "display_time_of_day",
         "get_display_date_format",
         "display_date",
         "display_date_time",
@@ -3600,6 +3608,7 @@
         "schedule_visit_avatar",
         "schedule_status_badge",
         "schedule_show_status_badge",
+        "schedule_double_up_badge",
         "schedule_visit_chip",
         "display_qr_card_image",
         "display_profile_image",
@@ -3628,6 +3637,9 @@
         "find_nearest_monday",
         "check_service_has_session",
         "get_number_of_services",
+        "get_unbooked_service_slots",
+        "get_number_of_unbooked_service_slots",
+        "get_number_of_sessions_without_staff",
         "get_number_of_sessions_active",
         "get_number_of_sessions_canceled",
         "get_number_of_sessions_in_progress",
@@ -3658,6 +3670,9 @@
         "get_record_number_funders",
         "get_record_number_time_off",
         "get_record_number_tasks",
+        "get_session_ended_medication_task_numbers",
+        "get_session_not_required_prn_task_numbers",
+        "get_session_task_evidence_map",
         "get_record_number_tasks_session",
         "get_record_number_tasks_session_completed",
         "get_record_number_trainings",
@@ -4599,6 +4614,15 @@
     {
       "id": "httpdocs/includes/panels/session_panel.php",
       "name": "session_panel.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/panels/session_progress_panel.php",
+      "name": "session_progress_panel.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],
@@ -7798,6 +7822,18 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/schedule_day_visits.php",
+      "name": "schedule_day_visits.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_day_visit_category",
+        "schedule_day_visits"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/schedule_visit_tooltip.php",
       "name": "schedule_visit_tooltip.php",
       "type": "PHP",
@@ -10783,6 +10819,7 @@
         "schedule_service_is_recurring",
         "schedule_visit_tooltip",
         "schedule_person_tooltip",
+        "cancelPendingTooltip",
         "esc",
         "sessionNumberFromFrame",
         "isCarerFrame",
@@ -10790,6 +10827,7 @@
         "positionTooltip",
         "hideTooltip",
         "withinRect",
+        "showTooltipFor",
         "pesc",
         "buildPersonTooltip",
         "positionPersonTooltip",
@@ -10804,11 +10842,13 @@
         "toastFromUrl",
         "cleanUrl",
         "seamlessNavigate",
-        "resetInfoSessionFilter",
-        "filterInfoSessions",
         "ensureScheduleFocusStyles",
         "scheduleClearVisitFocus",
         "scheduleFocusCategory",
+        "scheduleVisitsEsc",
+        "scheduleVisitsClock",
+        "scheduleShowMoreVisits",
+        "scheduleRenderDayVisits",
         "showInactiveSessions",
         "showCanceledSessions",
         "showActiveSessions",
@@ -10844,6 +10884,8 @@
         "setScheduleSideEditing",
         "addSession",
         "duplicateSessionPrefill",
+        "scheduleOpenVisit",
+        "scheduleEditVisit",
         "editSession",
         "renderEditSessionHistory",
         "escHtml",
@@ -11211,8 +11253,17 @@
         "sanitize_visit_task_icon_class",
         "render_visit_task_icon_markup",
         "visit_task_state_labels",
+        "visit_task_state_styles",
+        "visit_task_covered_styles",
+        "visit_task_ended_styles",
+        "visit_task_ended_label",
+        "visit_task_covered_label",
+        "visit_task_covered_by_first_names",
+        "section_exists",
+        "current_section",
         "formatDuration",
         "updateCheckInTimePreview",
+        "toggleNotRequiredPrnTasks",
         "styleTaskStateSelect",
         "loadMedicationInfo",
         "toggleBodyParts",
@@ -12391,6 +12442,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/migrate_session_visit_ref.php",
+      "name": "migrate_session_visit_ref.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/nhs_local_db.php",
       "name": "nhs_local_db.php",
       "type": "PHP",
@@ -12487,6 +12547,57 @@
       "imports": []
     },
     {
+      "id": "migration/loader/align_viola_careplan_aug2026.php",
+      "name": "align_viola_careplan_aug2026.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "esc",
+        "fetch_all",
+        "plain",
+        "make_reference_task_number",
+        "session_alias",
+        "assert_ascii"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/complete_visits_from_csv.php",
+      "name": "complete_visits_from_csv.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_Completion_Task_Writer",
+        "Visit_Completion_Session_Writer"
+      ],
+      "functions": [
+        "apply_fields",
+        "apply_field",
+        "to_utf8",
+        "unmojibake",
+        "fold_to_latin1",
+        "unstorable_chars",
+        "repair_text",
+        "norm",
+        "firstlast",
+        "norm_header",
+        "norm_ref",
+        "mins_to_clock",
+        "split_datetime",
+        "parse_date_token",
+        "parse_clock",
+        "detect_date_order",
+        "resolve_person",
+        "name_agrees",
+        "same_minute",
+        "stamp_from_minutes",
+        "signed_mins",
+        "resolve_patient_by_id"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/fanout_prn_medications.php",
       "name": "fanout_prn_medications.php",
       "type": "PHP",
@@ -12573,6 +12684,9 @@
         "find_by_source_ref",
         "attach_photo_if_missing",
         "install_photo",
+        "add_next_of_kin_if_missing",
+        "update_existing",
+        "find_by_name_and_dob",
         "import_carer"
       ],
       "imports": []
@@ -12621,6 +12735,20 @@
       "imports": []
     },
     {
+      "id": "migration/loader/reset_unevidenced_prn_meds.php",
+      "name": "reset_unevidenced_prn_meds.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "fix_mojibake",
+        "name_key",
+        "parse_planned",
+        "read_csv_rows"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/schedule_visits_from_csv.php",
       "name": "schedule_visits_from_csv.php",
       "type": "PHP",
@@ -12629,11 +12757,31 @@
       "functions": [
         "norm",
         "firstlast",
-        "parse_rota_date",
-        "parse_clock",
+        "norm_header",
+        "norm_ref",
         "mins_to_clock",
+        "split_datetime",
+        "parse_date_token",
+        "parse_clock",
+        "detect_date_order",
         "plan_covers",
-        "resolve_person"
+        "resolve_person",
+        "name_agrees",
+        "resolve_patient_by_id"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/set_medication_instruction.php",
+      "name": "set_medication_instruction.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "fetch_all",
+        "esc",
+        "plain",
+        "make_reference_task_number"
       ],
       "imports": []
     },
@@ -12715,8 +12863,20 @@
         "mins_to_clock",
         "preview",
         "looks_mojibaked",
-        "repair_apostrophes"
+        "repair_apostrophes",
+        "unmojibake",
+        "fold_to_latin1",
+        "repair_text"
       ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/update_visits_by_day.php",
+      "name": "update_visits_by_day.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {
@@ -12734,6 +12894,12 @@
         "firstlast",
         "stored_text_key",
         "name_key",
+        "activity_key",
+        "activity_key_loose",
+        "unmojibake",
+        "fold_to_latin1",
+        "unstorable_chars",
+        "repair_text",
         "parse_planned_start",
         "parse_closed_date",
         "same_minute",

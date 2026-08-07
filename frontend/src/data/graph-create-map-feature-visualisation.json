@@ -1,6 +1,135 @@
 {
   "nodes": [
     {
+      "id": "Agentic Platform/agents/activity_sync/activity_apply.php",
+      "name": "activity_apply.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "activity_apply_run",
+        "activity_apply_date_order"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/availability_sync/availability_apply.php",
+      "name": "availability_apply.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Availability_time_off_writer"
+      ],
+      "functions": [
+        "av_norm",
+        "av_firstlast",
+        "av_norm_header",
+        "av_split_title",
+        "av_parse_date",
+        "av_detect_date_order",
+        "av_parse_time",
+        "av_clock",
+        "av_day_index",
+        "av_day_date",
+        "av_day_of_week",
+        "av_merge",
+        "av_day_pieces",
+        "av_runs",
+        "av_slots_from_intervals",
+        "av_time_off_from_interval",
+        "av_map_time_off_type",
+        "av_note",
+        "av_read_csv",
+        "av_period_to_interval",
+        "av_load_staff",
+        "av_resolve_staff",
+        "av_find_exact_slot",
+        "av_slot_pieces",
+        "av_subtract_pieces",
+        "av_slot_remainder",
+        "av_find_overlapping_slot",
+        "av_find_exact_time_off",
+        "av_find_duplicate_time_off",
+        "insert",
+        "availability_apply_run"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/careplan_sync/careplan_apply.php",
+      "name": "careplan_apply.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "CarePlanApply"
+      ],
+      "functions": [
+        "current_payload",
+        "write_payload",
+        "make_task",
+        "plain_comment",
+        "has_task",
+        "task_number_for_name",
+        "careplan_apply_issue"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/careplan_sync/careplan_diff.php",
+      "name": "careplan_diff.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "CarePlanDiff"
+      ],
+      "functions": [
+        "resolve_patient",
+        "shs_plans",
+        "shs_tasks",
+        "plain",
+        "texts_agree",
+        "text_relation",
+        "key_for_planned",
+        "header_of",
+        "schedule_of",
+        "add"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/schedule_sync/schedule_apply.php",
+      "name": "schedule_apply.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_apply_run"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/staff_profile_sync/absent_check.php",
+      "name": "absent_check.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/agents/staff_profile_sync/photo_sync.php",
+      "name": "photo_sync.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "norm",
+        "resolve",
+        "out"
+      ],
+      "imports": []
+    },
+    {
       "id": "backend_files/messages/_message_auth.php",
       "name": "_message_auth.php",
       "type": "PHP",
@@ -2541,6 +2670,24 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/activity_agent.php",
+      "name": "activity_agent.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "activity_agent_inbox",
+        "activity_agent_feeds",
+        "activity_agent_queue_path",
+        "activity_agent_classify",
+        "activity_agent_describe_file",
+        "activity_agent_apply_issue",
+        "activity_agent_bulk_run",
+        "activity_agent_chat"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/add_visit_modal.php",
       "name": "add_visit_modal.php",
       "type": "PHP",
@@ -2573,6 +2720,79 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/agent_review.php",
+      "name": "agent_review.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "agent_review_decisions_table",
+        "agent_review_record_decision",
+        "agent_review_all_decisions",
+        "agent_review_queue",
+        "agent_review_group_key",
+        "agent_review_group_label",
+        "agent_review_issues",
+        "agent_review_counts",
+        "agent_review_groups",
+        "agent_review_bulk_run",
+        "agent_review_run_pass",
+        "agent_review_chat",
+        "agent_review_proposals_table",
+        "agent_review_record_proposal",
+        "agent_review_settle_proposal",
+        "agent_review_decision_matches_action",
+        "agent_review_proposal_record",
+        "agent_review_latest_proposals",
+        "agent_review_latest_proposal",
+        "agent_review_known_names",
+        "agent_review_redactor",
+        "agent_review_name_pattern",
+        "agent_review_identity_facts",
+        "agent_review_privacy_note",
+        "agent_review_chat_agentic",
+        "agent_review_trail_for_display"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/agent_tools.php",
+      "name": "agent_tools.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "agent_tools_names_permitted",
+        "agent_tools_label",
+        "agent_tools_bool",
+        "agent_tools_clock",
+        "agent_tools_window",
+        "agent_tools_norm",
+        "agent_tools_firstlast",
+        "agent_tools_norm_ref",
+        "agent_tools_staff_index",
+        "agent_tools_patient_index",
+        "agent_tools_match_name",
+        "agent_tools_find_carer",
+        "agent_tools_carer_summary",
+        "agent_tools_find_service_user",
+        "agent_tools_service_user_result",
+        "agent_tools_service_user_summary",
+        "agent_tools_resolve_patient",
+        "agent_tools_resolve_staff",
+        "agent_tools_list_care_plans",
+        "agent_tools_list_plan_tasks",
+        "agent_tools_carer_availability",
+        "agent_tools_visits_on",
+        "agent_tools_search_agent_queues",
+        "agent_tools_decision_history",
+        "agent_tools_propose_decision",
+        "agent_tools_schemas",
+        "agent_tools_execute"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/api_config.php",
       "name": "api_config.php",
       "type": "PHP",
@@ -2600,6 +2820,24 @@
       "feature": "Authentication",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/careplan_agent.php",
+      "name": "careplan_agent.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "careplan_agent_decisions_table",
+        "careplan_agent_record_decision",
+        "careplan_agent_all_decisions",
+        "careplan_agent_queue",
+        "careplan_agent_group_key",
+        "careplan_agent_group_label",
+        "careplan_agent_bulk_run",
+        "careplan_agent_chat"
+      ],
       "imports": []
     },
     {
@@ -3781,7 +4019,12 @@
         "pbl_llm_build_local_daily_visit_summary",
         "pbl_llm_generate_daily_visit_summary",
         "pbl_llm_normalize_task_history_summary",
-        "pbl_llm_generate_task_history_summary"
+        "pbl_llm_generate_task_history_summary",
+        "pbl_llm_is_configured",
+        "pbl_llm_model",
+        "pbl_llm_api_url",
+        "pbl_llm_chat_request",
+        "pbl_llm_run_tool_conversation"
       ],
       "imports": []
     },
@@ -7822,6 +8065,23 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/schedule_agent.php",
+      "name": "schedule_agent.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_agent_inbox",
+        "schedule_agent_rotas",
+        "schedule_agent_queue_path",
+        "schedule_agent_looks_like_rota",
+        "schedule_agent_apply_issue",
+        "schedule_agent_bulk_run",
+        "schedule_agent_chat"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/schedule_day_visits.php",
       "name": "schedule_day_visits.php",
       "type": "PHP",
@@ -9029,6 +9289,19 @@
       ]
     },
     {
+      "id": "httpdocs/pages/activity_agent/view_activity_agent.php",
+      "name": "view_activity_agent.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "cpaOpenFeed",
+        "cpaShowGroup",
+        "cpaDetailExtra"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/alerts/view_alert.php",
       "name": "view_alert.php",
       "type": "PHP",
@@ -9300,6 +9573,15 @@
         "fetch_selected_service_tasks",
         "build_print_task_rows"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/care_plan_agent/view_careplan_agent.php",
+      "name": "view_careplan_agent.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {
@@ -11010,6 +11292,19 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/schedule_agent/view_schedule_agent.php",
+      "name": "view_schedule_agent.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "cpaOpenRota",
+        "cpaShowGroup",
+        "cpaDetailExtra"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/services/add_service.php",
       "name": "add_service.php",
       "type": "PHP",
@@ -12656,6 +12951,7 @@
         "window_label",
         "row_window_label",
         "find_general_task_by_name",
+        "task_key",
         "normalise_task_name",
         "delete_orphan_tasks",
         "normalise_name",
@@ -12665,6 +12961,7 @@
         "build_schedule",
         "make_reference_task_number",
         "category_for",
+        "plan_tasks",
         "import_careplan"
       ],
       "imports": []
@@ -12711,6 +13008,29 @@
       "imports": []
     },
     {
+      "id": "migration/loader/match_plan_ids_from_activities.php",
+      "name": "match_plan_ids_from_activities.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "norm_header",
+        "norm_ref",
+        "norm_task",
+        "mins_to_clock",
+        "parse_clock",
+        "time_of",
+        "jaccard",
+        "read_csv_assoc",
+        "pick",
+        "plan_slot",
+        "modal",
+        "score_pair",
+        "best_assignment"
+      ],
+      "imports": []
+    },
+    {
       "id": "migration/loader/merge_general_tasks.php",
       "name": "merge_general_tasks.php",
       "type": "PHP",
@@ -12731,6 +13051,19 @@
       "functions": [
         "normalise_task_name",
         "fetch_all"
+      ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/repair_visit_progress_dates.php",
+      "name": "repair_visit_progress_dates.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Visit_Progress_Date_Writer"
+      ],
+      "functions": [
+        "apply_field"
       ],
       "imports": []
     },
@@ -12885,7 +13218,8 @@
       "type": "PHP",
       "feature": "Scheduling",
       "classes": [
-        "Visit_Report_Task_Writer"
+        "Visit_Report_Task_Writer",
+        "BlankSessionTask"
       ],
       "functions": [
         "apply_fields",
@@ -12900,6 +13234,16 @@
         "fold_to_latin1",
         "unstorable_chars",
         "repair_text",
+        "__construct",
+        "show_state",
+        "show_task_description",
+        "show_medication_name",
+        "show_task_notes",
+        "show_state_manual_staff_number",
+        "show_task_completed_date",
+        "csv_date_order",
+        "detect_date_order",
+        "parse_date_part",
         "parse_planned_start",
         "parse_closed_date",
         "same_minute",

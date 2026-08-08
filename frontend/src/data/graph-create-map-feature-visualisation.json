@@ -130,6 +130,33 @@
       "imports": []
     },
     {
+      "id": "Agentic Platform/scripts/assistant_check.php",
+      "name": "assistant_check.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "h",
+        "kv",
+        "clip"
+      ],
+      "imports": []
+    },
+    {
+      "id": "Agentic Platform/scripts/load_staff_task_matrix.php",
+      "name": "load_staff_task_matrix.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "decrypt_value",
+        "match_key",
+        "parse_matrix_date",
+        "generate_task_record_number"
+      ],
+      "imports": []
+    },
+    {
       "id": "backend_files/messages/_message_auth.php",
       "name": "_message_auth.php",
       "type": "PHP",
@@ -2222,6 +2249,7 @@
         "set_task",
         "check_task_number_exists",
         "edit_task",
+        "reoccur_warning_columns_exist",
         "task_icon_column_exists",
         "task_category_column_exists",
         "delete_task",
@@ -2273,6 +2301,7 @@
         "update_task",
         "add_inline_service_task",
         "create_service_specific_task",
+        "sanitize_reoccur_warning",
         "sanitize_task_icon",
         "sanitize_task_category",
         "generate_task_number",
@@ -2303,6 +2332,9 @@
         "show_task_initiate_from_day",
         "show_task_initiate_warning_value",
         "show_task_initiate_warning_type",
+        "show_task_reoccur_warning_value",
+        "show_task_reoccur_warning_type",
+        "has_task_reoccur_warning",
         "show_task_days_to_completion",
         "show_task_reoccurable",
         "show_task_reoccurable_from",
@@ -2772,7 +2804,9 @@
         "agent_tools_norm_ref",
         "agent_tools_staff_index",
         "agent_tools_patient_index",
+        "agent_tools_live",
         "agent_tools_match_name",
+        "agent_tools_name_search_blocked",
         "agent_tools_find_carer",
         "agent_tools_carer_summary",
         "agent_tools_find_service_user",
@@ -3859,6 +3893,15 @@
         "get_last_task_record_result",
         "get_last_task_record_number",
         "all_tasks_completed",
+        "task_period_unit",
+        "task_shift_date",
+        "task_days_between",
+        "get_last_task_record_row",
+        "get_task_next_due_after_completion",
+        "get_task_occurrences_missed",
+        "format_task_recurrence",
+        "get_person_task_numbers",
+        "count_outstanding_tasks",
         "get_staff_staff_type_number",
         "check_last_task_record_due_date",
         "check_last_task_record_added_date",
@@ -4009,6 +4052,7 @@
         "pbl_llm_log_error",
         "pbl_llm_unavailable_response",
         "pbl_llm_load_settings_ini",
+        "pbl_llm_ensure_env_loaded",
         "pbl_llm_get_runtime_value",
         "pbl_llm_extract_response_error",
         "pbl_llm_normalize_visit_summary",
@@ -8129,6 +8173,7 @@
       "functions": [
         "quick_link_allowed",
         "quick_link_row",
+        "quick_link_outstanding_tasks",
         "quick_link_header",
         "show_quick_links"
       ],
@@ -8143,6 +8188,30 @@
       "functions": [
         "render_task_listing_icon_markup",
         "render_task_listing_row"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/tasks_agent.php",
+      "name": "tasks_agent.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "tasks_agent_queue_path",
+        "tasks_agent_sending_enabled",
+        "tasks_agent_shift_date",
+        "tasks_agent_days_between",
+        "tasks_agent_initiate_date",
+        "tasks_agent_scan",
+        "tasks_agent_assess",
+        "tasks_agent_severity",
+        "tasks_agent_basis_label",
+        "tasks_agent_compose",
+        "tasks_agent_send_reminder",
+        "tasks_agent_publish",
+        "tasks_agent_queue",
+        "tasks_agent_run_pass"
       ],
       "imports": []
     },
@@ -12294,6 +12363,22 @@
       ]
     },
     {
+      "id": "httpdocs/pages/tasks_agent/view_tasks_agent.php",
+      "name": "view_tasks_agent.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "tkaEsc",
+        "tkaVisible",
+        "tkaRender",
+        "tkaSelect",
+        "tkaLoadPreview",
+        "tkaCheckNow"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/time_off/add_time_off.php",
       "name": "add_time_off.php",
       "type": "PHP",
@@ -12671,6 +12756,15 @@
     {
       "id": "httpdocs_private/cron_scripts/create_reoccurable_task_records.php",
       "name": "create_reoccurable_task_records.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/cron_scripts/tasks_agent_pass.php",
+      "name": "tasks_agent_pass.php",
       "type": "PHP",
       "feature": "Scheduled Tasks",
       "classes": [],

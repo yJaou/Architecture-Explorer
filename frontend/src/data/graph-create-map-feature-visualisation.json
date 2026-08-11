@@ -1684,6 +1684,8 @@
         "get_patient_orphaned_change_history",
         "dispatch_notification",
         "add_session",
+        "add_carer_to_visit",
+        "get_visit_carer_numbers",
         "add_unallocated_session",
         "find_active_session_for_slot",
         "update_session",
@@ -3881,6 +3883,7 @@
         "schedule_status_badge",
         "schedule_show_status_badge",
         "schedule_double_up_badge",
+        "schedule_pack_overlapping_visits",
         "schedule_visit_chip",
         "display_qr_card_image",
         "display_profile_image",
@@ -9134,6 +9137,26 @@
       ]
     },
     {
+      "id": "httpdocs/mobile_api/sessions/get_visit_task_progress.api.php",
+      "name": "get_visit_task_progress.api.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "visit_task_progress_response"
+      ],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/mobile_api/request_header.php"
+        },
+        {
+          "type": "include",
+          "path": "visit_task_sharing.php"
+        }
+      ]
+    },
+    {
       "id": "httpdocs/mobile_api/sessions/mark_on_my_way.api.php",
       "name": "mark_on_my_way.api.php",
       "type": "PHP",
@@ -9240,6 +9263,20 @@
       "functions": [
         "get_visit_lateness_payload",
         "get_visit_lateness_bool"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/mobile_api/sessions/visit_task_sharing.php",
+      "name": "visit_task_sharing.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "pbl_carer_owns_session",
+        "pbl_visit_ref_for_session",
+        "pbl_task_state_rank",
+        "pbl_visit_task_progress"
       ],
       "imports": []
     },
@@ -13830,6 +13867,16 @@
     {
       "source": "httpdocs/mobile_api/sessions/get_task_history_summaries.api.php",
       "target": "httpdocs/mobile_api/request_header.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/mobile_api/sessions/get_visit_task_progress.api.php",
+      "target": "httpdocs/mobile_api/request_header.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/mobile_api/sessions/get_visit_task_progress.api.php",
+      "target": "scanner-tool/backend/visit_task_sharing.php",
       "type": "include"
     },
     {

@@ -1524,6 +1524,419 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Schema_sync/Deployment_settings.class.php",
+      "name": "Deployment_settings.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Deployment_settings"
+      ],
+      "functions": [
+        "__construct",
+        "settings",
+        "code",
+        "name",
+        "backup_retention_days",
+        "backup_retention_minimum",
+        "backup_stale_after_hours"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Migration_history.class.php",
+      "name": "Migration_history.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Migration_history"
+      ],
+      "functions": [
+        "__construct",
+        "all",
+        "by_name",
+        "completed_names",
+        "latest_completed",
+        "record_applied",
+        "record_baseline",
+        "record_failed",
+        "write",
+        "ensure_table"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Migration_policy.class.php",
+      "name": "Migration_policy.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Migration_policy"
+      ],
+      "functions": [
+        "classify_migration",
+        "classify_statement",
+        "classify_alter",
+        "classify_alter_clause",
+        "classify_other",
+        "destructive_result",
+        "result",
+        "directive_approved",
+        "only_destructive",
+        "drop_operation",
+        "tables_in",
+        "definition_is_not_null",
+        "definition_has_default",
+        "without_literals",
+        "shorten"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Migration_repository.class.php",
+      "name": "Migration_repository.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Migration_repository"
+      ],
+      "functions": [
+        "__construct",
+        "directory",
+        "all",
+        "refresh",
+        "find",
+        "load",
+        "checksum_of",
+        "checksum_of_file",
+        "read_directives"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Migration_runner.class.php",
+      "name": "Migration_runner.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Migration_runner"
+      ],
+      "functions": [
+        "__construct",
+        "repository",
+        "history",
+        "audit",
+        "baseline_state",
+        "status",
+        "preview",
+        "establish_baseline",
+        "baseline_comparison",
+        "baseline_refusal",
+        "run",
+        "run_one",
+        "execute",
+        "declares_destructive",
+        "record_refusal",
+        "server_version"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Migration_validator.class.php",
+      "name": "Migration_validator.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Migration_validator"
+      ],
+      "functions": [
+        "__construct",
+        "validate",
+        "guards_for",
+        "guards_for_alter",
+        "guards_for_redefinition",
+        "run",
+        "guard",
+        "tables_created_by",
+        "column_list",
+        "leading_type",
+        "live_tables"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_applier.class.php",
+      "name": "Schema_applier.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_applier"
+      ],
+      "functions": [
+        "__construct",
+        "apply",
+        "execute",
+        "record"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_audit.class.php",
+      "name": "Schema_audit.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_audit"
+      ],
+      "functions": [
+        "__construct",
+        "run_reference",
+        "set_schema_file",
+        "set_server_version",
+        "record",
+        "record_comparison",
+        "recent_entries",
+        "last_successful_backup",
+        "ensure_table",
+        "write_fallback"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_backup.class.php",
+      "name": "Schema_backup.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_backup"
+      ],
+      "functions": [
+        "__construct",
+        "backup_directory",
+        "filename_for",
+        "create",
+        "create_with_mysqldump",
+        "write_defaults_file",
+        "create_with_pdo",
+        "verify",
+        "can_run_commands",
+        "find_mysqldump",
+        "buffered_query_attribute",
+        "escape_ini",
+        "first_line",
+        "failure"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_connection.class.php",
+      "name": "Schema_connection.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_connection"
+      ],
+      "functions": [
+        "__construct",
+        "settings",
+        "database_name",
+        "host",
+        "port",
+        "username",
+        "password",
+        "pdo"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_differ.class.php",
+      "name": "Schema_differ.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_differ"
+      ],
+      "functions": [
+        "compare",
+        "compare_table",
+        "compare_new_column",
+        "compare_existing_column",
+        "compare_new_index",
+        "compare_existing_index",
+        "compare_table_options",
+        "capacity_change",
+        "type_capacity",
+        "type_family",
+        "describe_default",
+        "index_signature",
+        "foreign_key_signature",
+        "find_rename_candidate",
+        "preceding_column",
+        "add_change"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_guard.class.php",
+      "name": "Schema_guard.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_guard"
+      ],
+      "functions": [
+        "__construct",
+        "inspect",
+        "run_guard",
+        "check_nulls",
+        "check_nulls_multi",
+        "check_duplicates",
+        "check_orphans",
+        "check_value_length",
+        "check_castable",
+        "count_where",
+        "escape"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_parser.class.php",
+      "name": "Schema_parser.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_parser"
+      ],
+      "functions": [
+        "parse_file",
+        "parse_string",
+        "handle_statement",
+        "build_model",
+        "parse_create_table",
+        "parse_definition",
+        "lift_inline_key",
+        "parse_column",
+        "parse_alter_table",
+        "normalise_type",
+        "storage_type",
+        "normalise_default",
+        "unquote_identifier",
+        "index_type",
+        "parse_index_columns",
+        "parse_column_list",
+        "describe_unsupported",
+        "split_top_level",
+        "tokenise",
+        "skip_quoted",
+        "matching_bracket"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_reader.class.php",
+      "name": "Schema_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_reader"
+      ],
+      "functions": [
+        "__construct",
+        "read_schema",
+        "list_tables",
+        "list_uncompared_objects",
+        "estimated_row_counts",
+        "exact_row_count",
+        "server_version"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_snapshot.class.php",
+      "name": "Schema_snapshot.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_snapshot"
+      ],
+      "functions": [
+        "__construct",
+        "default_path",
+        "write",
+        "normalise_create_table",
+        "drift",
+        "breakdown"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_sql_builder.class.php",
+      "name": "Schema_sql_builder.class.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [
+        "Schema_sql_builder"
+      ],
+      "functions": [
+        "build",
+        "order",
+        "weight",
+        "build_change",
+        "create_table",
+        "column_definition",
+        "index_definition",
+        "foreign_key_definition",
+        "position_clause",
+        "default_literal",
+        "quote_literal",
+        "reference_action",
+        "identifier"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_statement_reader.class.php",
+      "name": "Schema_statement_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_statement_reader"
+      ],
+      "functions": [
+        "read_file",
+        "read_string",
+        "get_counts",
+        "retain_discarded_text",
+        "scan",
+        "is_comment_break",
+        "consume_quoted",
+        "append",
+        "classify",
+        "discard",
+        "flush_statement",
+        "reset_statement"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_upload.class.php",
+      "name": "Schema_upload.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_upload"
+      ],
+      "functions": [
+        "storage_directory",
+        "receive",
+        "scrub",
+        "sniff",
+        "safe_display_name",
+        "describe_upload_error",
+        "failure"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Service/Service.class.php",
       "name": "Service.class.php",
       "type": "PHP",
@@ -9738,12 +10151,43 @@
       ]
     },
     {
+      "id": "httpdocs/pages/database/_schema_tools_style.php",
+      "name": "_schema_tools_style.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/database/database_management.php",
+      "name": "database_management.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "schema_describe_age"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/database/download_backup.php",
       "name": "download_backup.php",
       "type": "PHP",
       "feature": "Database",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/database/schema_updater.php",
+      "name": "schema_updater.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "schema_updater_compare"
+      ],
       "imports": []
     },
     {
@@ -12735,6 +13179,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/config_instance.php",
+      "name": "config_instance.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/config_mail.php",
       "name": "config_mail.php",
       "type": "PHP",
@@ -12806,6 +13259,53 @@
       "feature": "Scheduled Tasks",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/database/backup.php",
+      "name": "backup.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "take_backup",
+        "report_rotation",
+        "show_status",
+        "describe_age",
+        "line",
+        "usage"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/database/backup_rotation.php",
+      "name": "backup_rotation.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "pbl_rotate_backups"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/database/migrate.php",
+      "name": "migrate.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "show_status",
+        "show_preview",
+        "run_migrations",
+        "establish_baseline",
+        "write_snapshot",
+        "show_drift",
+        "make_baseline",
+        "report_problems",
+        "line",
+        "usage"
+      ],
       "imports": []
     },
     {
@@ -12926,6 +13426,47 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/migrations/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "reset_test_database",
+        "reset_migrations_directory",
+        "write_migration",
+        "test_connection",
+        "test_pdo",
+        "test_runner",
+        "stub_backup",
+        "baseline_sql",
+        "seed_at_baseline",
+        "snapshot_table"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/schema_updater/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "fixture_path",
+        "reset_test_database",
+        "test_connection",
+        "test_pdo",
+        "run_pipeline",
+        "find_change",
+        "snapshot_table"
+      ],
       "imports": []
     },
     {

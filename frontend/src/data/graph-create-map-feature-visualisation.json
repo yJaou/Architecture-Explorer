@@ -279,6 +279,18 @@
       "imports": []
     },
     {
+      "id": "httpdocs/api/deployment/migrate.php",
+      "name": "migrate.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_deployment_request_headers",
+        "pbl_deployment_request_body"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/llm/daily-visit-summary.php",
       "name": "daily-visit-summary.php",
       "type": "PHP",
@@ -1524,6 +1536,55 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Schema_sync/Deployment_endpoint.class.php",
+      "name": "Deployment_endpoint.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Deployment_endpoint"
+      ],
+      "functions": [
+        "__construct",
+        "handle",
+        "unauthenticated",
+        "reply",
+        "migration",
+        "header_value",
+        "log",
+        "safe"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Deployment_migration.class.php",
+      "name": "Deployment_migration.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Deployment_migration"
+      ],
+      "functions": [
+        "__construct",
+        "run_reference",
+        "status",
+        "run",
+        "run_locked",
+        "plan",
+        "is_destructive",
+        "validation_failures",
+        "acquire_lock",
+        "release_lock",
+        "lock_name",
+        "add_drift",
+        "warnings_from",
+        "envelope",
+        "failure",
+        "no_backup",
+        "settle"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Schema_sync/Deployment_settings.class.php",
       "name": "Deployment_settings.class.php",
       "type": "PHP",
@@ -1538,7 +1599,29 @@
         "name",
         "backup_retention_days",
         "backup_retention_minimum",
-        "backup_stale_after_hours"
+        "backup_stale_after_hours",
+        "deployment_migration_timeout",
+        "deployment_migration_allowed_ips"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Deployment_token.class.php",
+      "name": "Deployment_token.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Deployment_token"
+      ],
+      "functions": [
+        "__construct",
+        "path",
+        "configured",
+        "reason",
+        "warnings",
+        "verify",
+        "generate",
+        "read"
       ],
       "imports": []
     },
@@ -1696,6 +1779,7 @@
         "record_comparison",
         "recent_entries",
         "last_successful_backup",
+        "last_deployment_run",
         "ensure_table",
         "write_fallback"
       ],
@@ -13289,6 +13373,21 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/database/deployment_token.php",
+      "name": "deployment_token.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "check",
+        "generate",
+        "show_curl_command",
+        "line",
+        "usage"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/database/migrate.php",
       "name": "migrate.php",
       "type": "PHP",
@@ -13426,6 +13525,46 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/deployment/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Test_backup"
+      ],
+      "functions": [
+        "test_group",
+        "check",
+        "reset_test_database",
+        "reset_migrations_directory",
+        "reset_log",
+        "log_contents",
+        "write_migration",
+        "write_token",
+        "write_snapshot",
+        "test_connection",
+        "test_pdo",
+        "test_deployment_settings",
+        "__construct",
+        "create",
+        "working_backup",
+        "failing_backup",
+        "test_migration",
+        "test_endpoint",
+        "request",
+        "post",
+        "snapshot_from_live",
+        "baseline_sql",
+        "baseline_snapshot_sql",
+        "migrated_snapshot_sql",
+        "seed_at_baseline",
+        "widget_columns",
+        "migration_history_rows",
+        "audit_log_text"
+      ],
       "imports": []
     },
     {

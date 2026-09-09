@@ -546,6 +546,39 @@
       "imports": []
     },
     {
+      "id": "httpdocs/api/notes/get_note.php",
+      "name": "get_note.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "note_respond"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/api/notes/get_person_notes.php",
+      "name": "get_person_notes.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "person_notes_respond"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/api/patients/get_carer_preferences.php",
+      "name": "get_carer_preferences.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [
+        "carer_preferences_respond"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/patients/get_conditions.php",
       "name": "get_conditions.php",
       "type": "PHP",
@@ -767,6 +800,99 @@
         "show_branch_number",
         "show_name",
         "show_added_date"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Carer_matching/Carer_matching.class.php",
+      "name": "Carer_matching.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_matching"
+      ],
+      "functions": [
+        "get_matching_preferences",
+        "set_matching_preferences",
+        "get_restrictions",
+        "get_restriction",
+        "get_active_restriction_for_pair",
+        "get_restriction_by_source",
+        "set_restriction",
+        "edit_restriction",
+        "set_restriction_active",
+        "get_preferred_carers",
+        "get_preferred_carer",
+        "get_active_preference_for_pair",
+        "get_preference_by_source",
+        "set_preferred_carer",
+        "edit_preferred_carer",
+        "set_preferred_carer_active",
+        "write_history",
+        "get_history",
+        "generate_record_number",
+        "row_is_in_force"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Carer_matching/Carer_matching_controller.class.php",
+      "name": "Carer_matching_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_matching_controller"
+      ],
+      "functions": [
+        "save_matching_preferences",
+        "add_declined_carer",
+        "update_declined_carer",
+        "set_declined_carer_active",
+        "add_preferred_carer",
+        "update_preferred_carer",
+        "set_preferred_carer_active_state",
+        "import_restriction_from_source",
+        "refuse",
+        "edit_is_authorised",
+        "current_user_number",
+        "log_activity_line",
+        "patient_exists",
+        "validate_pair",
+        "validate_dates"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Carer_matching/Carer_matching_view.class.php",
+      "name": "Carer_matching_view.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_matching_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_gender_preference",
+        "show_gender_preference_label",
+        "show_gender_preference_notes",
+        "show_additional_matching_preferences",
+        "gender_preference_is_hard",
+        "required_gender",
+        "has_any_preferences",
+        "show_declined_carers",
+        "show_preferred_carers",
+        "declined_staff_numbers",
+        "preferred_staff_numbers",
+        "show_history",
+        "get_constraints",
+        "evaluate_carer",
+        "rank_staff_numbers",
+        "find_conflicting_future_visits",
+        "staff_gender",
+        "normalise_gender",
+        "staff_display_name",
+        "staff_summary",
+        "decorate_row"
       ],
       "imports": []
     },
@@ -1262,6 +1388,9 @@
         "get_note",
         "edit_note_field",
         "set_note",
+        "get_notes_for_sessions",
+        "get_notes_for_person",
+        "count_notes_for_person",
         "check_note_number_exists",
         "delete_note"
       ],
@@ -1277,7 +1406,12 @@
       ],
       "functions": [
         "add_note",
+        "create_note",
         "generate_note_number",
+        "validate_note_date",
+        "validate_note_type",
+        "get_notes_for_sessions_map",
+        "get_person_notes_list",
         "remove_note",
         "validate_note_number"
       ],
@@ -1296,7 +1430,12 @@
         "show_note_number",
         "show_note",
         "show_note_created_staff_number",
-        "show_note_date"
+        "show_note_added_date",
+        "show_note_date",
+        "show_note_session_number",
+        "show_note_type",
+        "show_note_category",
+        "show_note_access_number"
       ],
       "imports": []
     },
@@ -2267,6 +2406,7 @@
         "delete_session_permanent",
         "delete_future_sessions_for_service",
         "validate_session_number",
+        "carer_matching_refusal",
         "update_session_address_distance",
         "ensure_session_tasks",
         "check_in_manual",
@@ -3563,6 +3703,17 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/dropdown/dropdown_carer_matching_staff.php",
+      "name": "dropdown_carer_matching_staff.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "include_carer_matching_staff"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/dropdown/dropdown_condition_status.php",
       "name": "dropdown_condition_status.php",
       "type": "PHP",
@@ -3791,6 +3942,18 @@
       "classes": [],
       "functions": [
         "include_next_of_kin_types"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/dropdown/dropdown_note_types.php",
+      "name": "dropdown_note_types.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "note_types",
+        "include_note_type"
       ],
       "imports": []
     },
@@ -4397,6 +4560,7 @@
         "get_private_path",
         "clean_input",
         "decode_stored_text",
+        "decode_stored_newlines",
         "log_activity",
         "get_search_data",
         "check_user_number",
@@ -4563,45 +4727,16 @@
         "get_record_alerts",
         "mask_string",
         "get_number_of_notes",
+        "note_visit_label",
+        "schedule_visit_note_badge",
         "get_number_of_documents",
         "get_number_of_risks",
         "get_number_of_risk_assessments",
         "get_medicines",
         "get_medicines_cache",
-        "get_conditions_cache",
-        "delete_active_staff_sessions",
-        "delete_active_patient_sessions",
-        "end_patient_services",
-        "terminate_funder_patient",
-        "end_funder_patients",
-        "check_alert_session",
-        "get_app_name_parts",
-        "display_logo",
-        "display_logo_authentication",
-        "replace_single_quotes",
-        "get_day_idle_time",
-        "haversineDistance",
-        "display_miles_feet",
-        "calculate_staff_sessions_distance",
-        "transport_mode_icon",
-        "get_transport_time",
-        "get_day_transport_time",
-        "get_patient_risk_assessment_staff_html",
-        "display_breaks",
-        "display_breaks_form",
-        "get_staff_equipment_count",
-        "get_latest_mar_period",
-        "get_latest_mar_day_for_patient",
-        "get_busiest_mar_patient",
-        "get_patient_mar_data",
-        "get_patient_mar_daily_data",
-        "mar_state_presentation",
-        "mar_carer_avatar_html",
-        "render_mar_daily_html",
-        "build_mar_daily_pdf_html",
-        "render_mar_table_html",
-        "build_mar_pdf_html",
-        "mar_staff_initials"
+        "get_service_user_carer_constraints",
+        "evaluate_carer_for_service_user",
+        "carer_allocation_blocks"
       ],
       "imports": []
     },
@@ -5511,6 +5646,20 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/patient_carer_matching.php",
+      "name": "patient_carer_matching.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [
+        "patient_carer_matching_actions",
+        "patient_carer_matching_summary_html",
+        "patient_carer_matching_section",
+        "filterCarerSelect"
+      ],
       "imports": []
     },
     {
@@ -11856,6 +12005,22 @@
         "pesc",
         "buildPersonTooltip",
         "positionPersonTooltip",
+        "nesc",
+        "notePreview",
+        "parkNativeTitle",
+        "restoreNativeTitle",
+        "noteItemHtml",
+        "noteListHtml",
+        "noteToolsHtml",
+        "noteHeadHtml",
+        "buildNoteTooltip",
+        "buildPersonNoteTooltip",
+        "positionNoteTooltip",
+        "hideNoteTooltip",
+        "armNoteHide",
+        "openNoteTooltip",
+        "applyNoteFilter",
+        "noteModalIsOpen",
         "getScheduleFullscreenElement",
         "requestScheduleFullscreen",
         "exitScheduleFullscreen",
@@ -11868,6 +12033,10 @@
         "cleanUrl",
         "seamlessNavigate",
         "ensureScheduleFocusStyles",
+        "scheduleLaneMatchOffset",
+        "scheduleExpandLanes",
+        "scheduleScrollToFirstHit",
+        "scheduleCollapseLanesToFocus",
         "scheduleClearVisitFocus",
         "scheduleFocusCategory",
         "scheduleVisitsEsc",
@@ -11879,6 +12048,7 @@
         "showActiveSessions",
         "showInProgressSessions",
         "showCompletedSessions",
+        "showBookedSessions",
         "showAllocatedSessionsSummary",
         "showTransportFrames",
         "updateScheduleSessionCounters",
@@ -11909,6 +12079,7 @@
         "setScheduleSideEditing",
         "addSession",
         "duplicateSessionPrefill",
+        "scheduleFlashFrame",
         "scheduleOpenVisit",
         "scheduleEditVisit",
         "editSession",
@@ -11951,6 +12122,14 @@
         "scheduleSaveRemoveAvailability",
         "scheduleOpenAddVisitModal",
         "scheduleCloseAddVisitModal",
+        "scheduleOpenAddNoteModal",
+        "scheduleCloseAddNoteModal",
+        "scheduleRenderViewNote",
+        "scheduleViewNoteFailed",
+        "scheduleOpenViewNoteModal",
+        "scheduleCloseViewNoteModal",
+        "scheduleAddNoteForCurrentVisit",
+        "scheduleSaveNote",
         "scheduleAddVisitServiceTypeChanged",
         "scheduleAddVisitTaskToggled",
         "scheduleSetTaskAlert",
@@ -11987,6 +12166,7 @@
         "scheduleFilterRowsByName",
         "scheduleLinkedSet",
         "scheduleToggleRowLink",
+        "scheduleSetRowLink",
         "scheduleClearRowLink",
         "scheduleSaveRowLink",
         "scheduleRestoreRowLink",
@@ -12023,6 +12203,7 @@
         "getBar",
         "updateBar",
         "markVisit",
+        "escapeIsSpokenFor",
         "submitBulkForm",
         "selectedAllocatedSessions",
         "selectedTimes",
@@ -13689,6 +13870,21 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/carer_matching/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "cleanup_test_rows",
+        "matching",
+        "blocks_for"
+      ],
       "imports": []
     },
     {

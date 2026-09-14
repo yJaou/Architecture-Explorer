@@ -1193,6 +1193,76 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/General_review/General_review.class.php",
+      "name": "General_review.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "General_review"
+      ],
+      "functions": [
+        "get_general_review",
+        "check_general_review_number_exists",
+        "get_general_reviews_for_patient",
+        "set_general_review",
+        "update_general_review",
+        "delete_general_review"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/General_review/General_review_controller.class.php",
+      "name": "General_review_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "General_review_controller"
+      ],
+      "functions": [
+        "add_general_review",
+        "edit_general_review",
+        "build_row",
+        "generate_general_review_number",
+        "remove_general_review",
+        "validate_general_review_number"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/General_review/General_review_view.class.php",
+      "name": "General_review_view.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "General_review_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_general_review_number",
+        "show_patient_number",
+        "show_review_date",
+        "show_completed_date",
+        "show_next_due_date",
+        "show_status",
+        "show_service_user_name",
+        "show_service_user_address",
+        "show_completed_by_name",
+        "show_completed_by_job_title",
+        "show_branch_name",
+        "show_carried_out_at_property",
+        "show_likes_service",
+        "show_improvements",
+        "show_would_recommend",
+        "show_branch_actions",
+        "show_created_staff_number",
+        "show_updated_staff_number",
+        "show_answers",
+        "show_added_date",
+        "show_updated_date"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Incident/Incident.class.php",
       "name": "Incident.class.php",
       "type": "PHP",
@@ -1626,6 +1696,78 @@
         "show_postcode_area",
         "show_colour",
         "show_added_date"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Questionnaire/Questionnaire.class.php",
+      "name": "Questionnaire.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Questionnaire"
+      ],
+      "functions": [
+        "get_questionnaire",
+        "check_questionnaire_number_exists",
+        "get_questionnaires_for_patient",
+        "set_questionnaire",
+        "update_questionnaire",
+        "delete_questionnaire"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Questionnaire/Questionnaire_controller.class.php",
+      "name": "Questionnaire_controller.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Questionnaire_controller"
+      ],
+      "functions": [
+        "add_questionnaire",
+        "edit_questionnaire",
+        "build_row",
+        "generate_questionnaire_number",
+        "remove_questionnaire",
+        "validate_questionnaire_number"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Questionnaire/Questionnaire_view.class.php",
+      "name": "Questionnaire_view.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Questionnaire_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_questionnaire_number",
+        "show_patient_number",
+        "show_questionnaire_date",
+        "show_completed_date",
+        "show_next_due_date",
+        "show_status",
+        "show_service_user_name",
+        "show_service_user_address",
+        "show_service_user_postcode",
+        "show_service_user_telephone",
+        "show_care_purchased",
+        "show_care_package_start_date",
+        "show_general_comments",
+        "show_service_user_signature",
+        "show_service_user_signature_date",
+        "show_action_plans",
+        "show_manager_name",
+        "show_manager_signature_date",
+        "show_created_staff_number",
+        "show_updated_staff_number",
+        "show_answers",
+        "show_added_date",
+        "show_updated_date"
       ],
       "imports": []
     },
@@ -2362,6 +2504,7 @@
         "get_session",
         "edit_session_field",
         "edit_session",
+        "set_session_cancellation",
         "sessions_have_visit_ref",
         "visit_ref_for_slot",
         "generate_visit_ref",
@@ -2402,6 +2545,8 @@
         "duplicate_service_occurrence",
         "generate_session_number",
         "remove_session",
+        "cancel_session",
+        "uncancel_session",
         "unassign_session",
         "delete_session_permanent",
         "delete_future_sessions_for_service",
@@ -2414,6 +2559,7 @@
         "mark_tasks_completed_silent",
         "change_visit_notes_manual",
         "check_out_manual",
+        "shift_visit_times_silently",
         "update_visit_times",
         "repoint_future_sessions_for_reschedule",
         "assign_carer_to_series"
@@ -2444,6 +2590,10 @@
         "show_session_address_distance",
         "show_has_session_address_distance",
         "show_session_cancellation_reason",
+        "show_session_cancellation_code",
+        "show_session_cancelled_by",
+        "show_session_cancelled_date",
+        "show_pre_cancel_state",
         "show_added_date",
         "show_progress_check_in",
         "show_progress_check_in_date",
@@ -2531,6 +2681,81 @@
         "show_medication_location",
         "show_medication_application",
         "show_task_completed_date"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Spot_check/Spot_check.class.php",
+      "name": "Spot_check.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Spot_check"
+      ],
+      "functions": [
+        "get_spot_check",
+        "check_spot_check_number_exists",
+        "set_spot_check",
+        "update_spot_check",
+        "delete_spot_check"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Spot_check/Spot_check_controller.class.php",
+      "name": "Spot_check_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Spot_check_controller"
+      ],
+      "functions": [
+        "add_spot_check",
+        "edit_spot_check",
+        "build_row",
+        "generate_spot_check_number",
+        "remove_spot_check",
+        "validate_spot_check_number"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Spot_check/Spot_check_view.class.php",
+      "name": "Spot_check_view.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Spot_check_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_spot_check_number",
+        "show_staff_number",
+        "show_patient_number",
+        "show_session_number",
+        "show_spot_check_date",
+        "show_spot_check_time",
+        "show_arrive_time",
+        "show_depart_time",
+        "show_next_due_date",
+        "show_status",
+        "show_service_user_name",
+        "show_reference_number",
+        "show_service_user_address",
+        "show_service_user_telephone",
+        "show_hours_per_week",
+        "show_visits_per_week",
+        "show_care_workers_per_week",
+        "show_assessor_name",
+        "show_spot_check_reason",
+        "show_care_workers_attending",
+        "show_follow_up_date",
+        "show_created_staff_number",
+        "show_updated_staff_number",
+        "show_answers",
+        "show_actions",
+        "show_added_date",
+        "show_updated_date"
       ],
       "imports": []
     },
@@ -2874,6 +3099,7 @@
         "generate_staff_position_number",
         "update_staff_position_name",
         "update_staff_position_mobile_app_only",
+        "update_staff_position_is_manager",
         "remove_staff_position",
         "validate_staff_position_number"
       ],
@@ -2893,6 +3119,7 @@
         "show_staff_type_number",
         "show_name",
         "show_mobile_app_only",
+        "show_is_manager",
         "show_added_date"
       ],
       "imports": []
@@ -3131,6 +3358,76 @@
         "show_task_record_result",
         "show_task_files",
         "show_task_record_added_date"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Telephone_review/Telephone_review.class.php",
+      "name": "Telephone_review.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Telephone_review"
+      ],
+      "functions": [
+        "get_telephone_review",
+        "check_telephone_review_number_exists",
+        "get_telephone_reviews_for_patient",
+        "set_telephone_review",
+        "update_telephone_review",
+        "delete_telephone_review"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Telephone_review/Telephone_review_controller.class.php",
+      "name": "Telephone_review_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Telephone_review_controller"
+      ],
+      "functions": [
+        "add_telephone_review",
+        "edit_telephone_review",
+        "build_row",
+        "generate_telephone_review_number",
+        "remove_telephone_review",
+        "validate_telephone_review_number"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Telephone_review/Telephone_review_view.class.php",
+      "name": "Telephone_review_view.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Telephone_review_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_telephone_review_number",
+        "show_patient_number",
+        "show_review_date",
+        "show_completed_date",
+        "show_next_due_date",
+        "show_status",
+        "show_service_user_name",
+        "show_service_user_address",
+        "show_completed_by_name",
+        "show_completed_by_job_title",
+        "show_branch_name",
+        "show_carried_out_at_property",
+        "show_likes_service",
+        "show_improvements",
+        "show_would_recommend",
+        "show_branch_actions",
+        "show_created_staff_number",
+        "show_updated_staff_number",
+        "show_answers",
+        "show_added_date",
+        "show_updated_date"
       ],
       "imports": []
     },
@@ -3585,6 +3882,18 @@
         "careplan_agent_group_label",
         "careplan_agent_bulk_run",
         "careplan_agent_chat"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/carer_familiarity.php",
+      "name": "carer_familiarity.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "carer_familiarity_map",
+        "carer_familiarity_percentages"
       ],
       "imports": []
     },
@@ -4282,7 +4591,10 @@
       "classes": [],
       "functions": [
         "include_staffs",
-        "get_staffs_list"
+        "get_staffs_list",
+        "manager_position_numbers",
+        "get_managers_list",
+        "include_managers"
       ],
       "imports": []
     },
@@ -4616,6 +4928,10 @@
         "display_date_time",
         "display_date_time_time",
         "display_date_time_uk",
+        "visit_cancellation_reasons",
+        "visit_cancellation_reason_is_valid",
+        "visit_cancellation_reason_label",
+        "visit_cancellation_reason_is_paid",
         "display_session_state_label",
         "session_is_completed",
         "session_view_to_change_values",
@@ -4624,6 +4940,14 @@
         "display_time_amount",
         "is_blank_profile_image",
         "schedule_visit_avatar",
+        "schedule_timing_filter_catalogue",
+        "schedule_timing_flags",
+        "schedule_timing_flag_classes",
+        "schedule_timing_grace_mins",
+        "schedule_timing_amount",
+        "schedule_visit_timing",
+        "schedule_timing_badge",
+        "schedule_timing_strip",
         "schedule_status_badge",
         "schedule_show_status_badge",
         "schedule_visit_box_line",
@@ -4666,6 +4990,7 @@
         "check_week_reoccurs",
         "find_nearest_monday",
         "check_service_has_session",
+        "get_service_sessions_on_date",
         "get_number_of_services",
         "get_unbooked_service_slots",
         "get_number_of_unbooked_service_slots",
@@ -4680,6 +5005,7 @@
         "get_staff_active_sessions",
         "get_staff_date_sessions",
         "schedule_filter_and_locate_carers",
+        "schedule_day_patient_coordinates",
         "staff_has_availability_for_session",
         "get_geocode_api_key",
         "get_address_from_coordinates",
@@ -4722,6 +5048,24 @@
         "incident_body_to_labels",
         "get_incidents_filtered",
         "get_patients_for_select",
+        "get_record_number_patient_questionnaires",
+        "get_questionnaires_filtered",
+        "get_patient_questionnaire_status",
+        "qa_pdf_logo_path",
+        "qa_pdf_logo_is_printable",
+        "qa_logo_web_url",
+        "qa_letterhead_html",
+        "get_record_number_patient_telephone_reviews",
+        "get_telephone_reviews_filtered",
+        "get_patient_telephone_review_status",
+        "get_record_number_patient_general_reviews",
+        "get_general_reviews_filtered",
+        "get_patient_general_review_status",
+        "get_record_number_staff_spot_checks",
+        "get_spot_checks_filtered",
+        "get_staff_spot_check_status",
+        "get_patient_week_shape",
+        "get_carer_visits_for_spot_check",
         "get_record_number_funder_patients",
         "get_record_mobile_devices",
         "get_record_alerts",
@@ -4737,6 +5081,63 @@
         "get_service_user_carer_constraints",
         "evaluate_carer_for_service_user",
         "carer_allocation_blocks"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/general_reviews/general_review_document.php",
+      "name": "general_review_document.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "general_review_type_scale",
+        "general_review_scaled",
+        "general_review_scaled_attr",
+        "general_review_cell",
+        "general_review_readable",
+        "general_review_value",
+        "general_review_grid_html",
+        "general_review_blank_values",
+        "general_review_values_from_record",
+        "general_review_document_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/general_reviews/general_review_form.php",
+      "name": "general_review_form.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "generalReviewUpdateDueDate",
+        "chosenInput",
+        "paint",
+        "refresh"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/general_reviews/general_review_questions.php",
+      "name": "general_review_questions.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "general_review_scale",
+        "general_review_face_directory",
+        "general_review_scale_values",
+        "general_review_sections",
+        "general_review_questions_by_key",
+        "general_review_blank_answers",
+        "general_review_collect_answers",
+        "general_review_encode_answers",
+        "general_review_decode_answers",
+        "general_review_answer_progress",
+        "general_review_concerns",
+        "general_review_next_due_date",
+        "general_review_due_status"
       ],
       "imports": []
     },
@@ -5582,6 +5983,25 @@
         "nhs_suggest_names",
         "nhs_detail_cache_path",
         "nhs_get_detail_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/os_geocoder.php",
+      "name": "os_geocoder.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_os_ensure_env_loaded",
+        "pbl_os_names_api_key",
+        "pbl_os_geocoding_available",
+        "pbl_extract_uk_postcode",
+        "pbl_normalise_postcode",
+        "pbl_bng_to_wgs84",
+        "pbl_helmert_osgb36_to_wgs84",
+        "pbl_os_names_geocode_postcode",
+        "pbl_os_geocode_address"
       ],
       "imports": []
     },
@@ -8846,6 +9266,38 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/questionnaires/questionnaire_form.php",
+      "name": "questionnaire_form.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "questionnaireUpdateDueDate",
+        "questionnaireStatusChanged"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/questionnaires/questionnaire_questions.php",
+      "name": "questionnaire_questions.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "questionnaire_organisation_name",
+        "questionnaire_sections",
+        "questionnaire_questions_by_key",
+        "questionnaire_blank_answers",
+        "questionnaire_collect_answers",
+        "questionnaire_encode_answers",
+        "questionnaire_decode_answers",
+        "questionnaire_answer_progress",
+        "questionnaire_next_due_date",
+        "questionnaire_due_status"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/schedule_agent.php",
       "name": "schedule_agent.php",
       "type": "PHP",
@@ -8863,6 +9315,57 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/schedule_carer_week_panel.php",
+      "name": "schedule_carer_week_panel.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_carer_week_panel",
+        "scheduleCarerWeekCache",
+        "scheduleCarerWeekCached",
+        "scheduleCarerWeekRemember",
+        "scheduleCarerWeekRestore",
+        "scheduleCarerWeekEsc",
+        "scheduleCarerWeekHours",
+        "scheduleServiceUserLaneParts",
+        "scheduleHideServiceUserLane",
+        "scheduleHideServiceUserLaneNow",
+        "scheduleShowServiceUserLane",
+        "scheduleShrinkCarerLane",
+        "scheduleRestoreCarerLane",
+        "scheduleFocusCarerRow",
+        "scheduleRestoreCarerRows",
+        "scheduleCarerWeekSkeletonHtml",
+        "scheduleCarerWeekRender",
+        "scheduleCarerWeekFit",
+        "scheduleCarerWeekTimeAt",
+        "scheduleCarerWeekDayData",
+        "scheduleCarerWeekContext",
+        "scheduleCarerWeekTimeText",
+        "scheduleCarerWeekDayLabel",
+        "scheduleCarerWeekModal",
+        "scheduleCarerWeekSubmit",
+        "scheduleCarerWeekConfirmMove",
+        "scheduleCarerWeekDropPreload"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/schedule_day_staff.php",
+      "name": "schedule_day_staff.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_staff_care_types",
+        "schedule_staff_positions",
+        "schedule_staff_roles",
+        "schedule_day_staff"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/schedule_day_visits.php",
       "name": "schedule_day_visits.php",
       "type": "PHP",
@@ -8871,6 +9374,48 @@
       "functions": [
         "schedule_day_visit_category",
         "schedule_day_visits"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/schedule_travel.php",
+      "name": "schedule_travel.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "schedule_travel_script",
+        "scheduleTravelHaversineKm",
+        "scheduleTravelMinutes",
+        "scheduleTravelMilesBetween",
+        "scheduleCoordsForPatient",
+        "scheduleCarerRecord",
+        "scheduleCarerHomeCoords",
+        "scheduleCarerTransportMode",
+        "scheduleCarerDayVisits",
+        "scheduleCheckTravelFeasibility",
+        "scheduleCheckTravelFeasibilityIn",
+        "scheduleEvaluateDay",
+        "scheduleTravelPatientName",
+        "scheduleTravelMinutesText",
+        "scheduleTravelMilesText",
+        "scheduleDayContext",
+        "schedulePlanTravelShift",
+        "schedulePlanTravelShiftIn",
+        "schedulePlanRow",
+        "scheduleApplyPlanToVisits",
+        "scheduleBuildAdjustOptions",
+        "scheduleBuildAdjustOptionsIn",
+        "schedulePlanRunsPastMidnight",
+        "scheduleTravelEsc",
+        "scheduleTravelTimeText",
+        "scheduleTravelWarningHtml",
+        "scheduleTravelAdjustChooserHtml",
+        "scheduleTravelAdjustOptionHtml",
+        "scheduleTravelAdjustDetailHtml",
+        "scheduleSelectedAdjustPlan",
+        "scheduleAnimateTravelShift",
+        "scheduleApplyTravelShift"
       ],
       "imports": []
     },
@@ -8887,6 +9432,7 @@
         "sessionNumberFromFrame",
         "buildTooltip",
         "positionTooltip",
+        "setHoverHighlight",
         "hideTooltip",
         "withinRect"
       ],
@@ -8913,6 +9459,65 @@
         "quick_link_outstanding_tasks",
         "quick_link_header",
         "show_quick_links"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/spot_checks/spot_check_document.php",
+      "name": "spot_check_document.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "spot_check_pdf_logo_path",
+        "spot_check_type_scale",
+        "spot_check_scaled",
+        "spot_check_scaled_attr",
+        "spot_check_cell",
+        "spot_check_readable",
+        "spot_check_slot",
+        "spot_check_grid_html",
+        "spot_check_values_from_record",
+        "spot_check_document_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/spot_checks/spot_check_form.php",
+      "name": "spot_check_form.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "spotCheckVisitChanged",
+        "spotCheckFill",
+        "spotCheckUpdateDueDate",
+        "close",
+        "matches",
+        "draw",
+        "choose"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/spot_checks/spot_check_questions.php",
+      "name": "spot_check_questions.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "spot_check_sections",
+        "spot_check_questions_by_key",
+        "spot_check_blank_answers",
+        "spot_check_collect_answers",
+        "spot_check_collect_actions",
+        "spot_check_encode",
+        "spot_check_decode_answers",
+        "spot_check_decode_actions",
+        "spot_check_answer_progress",
+        "spot_check_concerns",
+        "spot_check_next_due_date",
+        "spot_check_due_status"
       ],
       "imports": []
     },
@@ -8949,6 +9554,63 @@
         "tasks_agent_publish",
         "tasks_agent_queue",
         "tasks_agent_run_pass"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/telephone_reviews/telephone_review_document.php",
+      "name": "telephone_review_document.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "telephone_review_type_scale",
+        "telephone_review_scaled",
+        "telephone_review_scaled_attr",
+        "telephone_review_cell",
+        "telephone_review_readable",
+        "telephone_review_value",
+        "telephone_review_grid_html",
+        "telephone_review_blank_values",
+        "telephone_review_values_from_record",
+        "telephone_review_document_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/telephone_reviews/telephone_review_form.php",
+      "name": "telephone_review_form.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "telephoneReviewUpdateDueDate",
+        "chosenInput",
+        "paint",
+        "refresh"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/telephone_reviews/telephone_review_questions.php",
+      "name": "telephone_review_questions.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "telephone_review_scale",
+        "telephone_review_face_directory",
+        "telephone_review_scale_values",
+        "telephone_review_sections",
+        "telephone_review_questions_by_key",
+        "telephone_review_blank_answers",
+        "telephone_review_collect_answers",
+        "telephone_review_encode_answers",
+        "telephone_review_decode_answers",
+        "telephone_review_answer_progress",
+        "telephone_review_concerns",
+        "telephone_review_next_due_date",
+        "telephone_review_due_status"
       ],
       "imports": []
     },
@@ -10839,6 +11501,58 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/general_reviews/add_patient_general_review.php",
+      "name": "add_patient_general_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/general_reviews/edit_patient_general_review.php",
+      "name": "edit_patient_general_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/general_reviews/general_review_pdf.php",
+      "name": "general_review_pdf.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "MYPDF"
+      ],
+      "functions": [
+        "Header",
+        "Footer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/general_reviews/general_reviews_report.php",
+      "name": "general_reviews_report.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "general_review_filter_link"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/general_reviews/view_patient_general_review.php",
+      "name": "view_patient_general_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/health_condition_search/health_condition_search.php",
       "name": "health_condition_search.php",
       "type": "PHP",
@@ -10973,6 +11687,7 @@
       "feature": "Other",
       "classes": [],
       "functions": [
+        "map_tile_settings",
         "makeClusterIcon",
         "positionLabels",
         "escapeHtml",
@@ -11011,6 +11726,9 @@
         "veDurLabel",
         "veDateLabel",
         "veApplyNewSlot",
+        "mapCarerSort",
+        "mapCarerSortToggle",
+        "veDayLabel",
         "veVisitParams",
         "veHHMM",
         "openCreateVisit",
@@ -11579,6 +12297,15 @@
       ]
     },
     {
+      "id": "httpdocs/pages/patients/view_patient_general_reviews.php",
+      "name": "view_patient_general_reviews.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/patients/view_patient_incidents.php",
       "name": "view_patient_incidents.php",
       "type": "PHP",
@@ -11649,6 +12376,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/patients/view_patient_questionnaires.php",
+      "name": "view_patient_questionnaires.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/patients/view_patient_risk_assessments.php",
       "name": "view_patient_risk_assessments.php",
       "type": "PHP",
@@ -11683,6 +12419,15 @@
           "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/pages/patients/view_patient_telephone_reviews.php",
+      "name": "view_patient_telephone_reviews.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
     },
     {
       "id": "httpdocs/pages/patients/view_patients.php",
@@ -11742,6 +12487,62 @@
       "functions": [
         "privacy_setting",
         "privacy_out"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/questionnaires/add_patient_questionnaire.php",
+      "name": "add_patient_questionnaire.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/questionnaires/edit_patient_questionnaire.php",
+      "name": "edit_patient_questionnaire.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/questionnaires/questionnaire_pdf.php",
+      "name": "questionnaire_pdf.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "MYPDF"
+      ],
+      "functions": [
+        "questionnaire_pdf_text",
+        "questionnaire_pdf_date",
+        "Header",
+        "Footer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/questionnaires/questionnaires_report.php",
+      "name": "questionnaires_report.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "questionnaire_filter_link"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/questionnaires/view_patient_questionnaire.php",
+      "name": "view_patient_questionnaire.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "questionnaire_row"
       ],
       "imports": []
     },
@@ -11830,6 +12631,17 @@
           "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/pages/schedule/carer_week.php",
+      "name": "carer_week.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "carer_week_response"
+      ],
+      "imports": []
     },
     {
       "id": "httpdocs/pages/schedule/check_session_availability.php",
@@ -11962,6 +12774,18 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/schedule/shift_visits.php",
+      "name": "shift_visits.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "shift_response",
+        "schedule_shift_flag_is_true"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/schedule/staff_availability.php",
       "name": "staff_availability.php",
       "type": "PHP",
@@ -11997,8 +12821,10 @@
         "esc",
         "sessionNumberFromFrame",
         "isCarerFrame",
+        "scheduleCancelButton",
         "buildTooltip",
         "positionTooltip",
+        "setHoverHighlight",
         "hideTooltip",
         "withinRect",
         "showTooltipFor",
@@ -12039,19 +12865,48 @@
         "scheduleCollapseLanesToFocus",
         "scheduleClearVisitFocus",
         "scheduleFocusCategory",
+        "scheduleParseTypeFilter",
+        "scheduleTypeFilterMatches",
         "scheduleVisitsEsc",
         "scheduleVisitsClock",
         "scheduleShowMoreVisits",
         "scheduleRenderDayVisits",
+        "scheduleStaffHours",
+        "scheduleShowMoreStaff",
+        "scheduleRenderDayStaff",
+        "scheduleShowCarerWeek",
+        "scheduleSidebarTab",
+        "scheduleSaveSidebarFilter",
+        "scheduleRestoreSidebarTab",
         "showInactiveSessions",
         "showCanceledSessions",
         "showActiveSessions",
         "showInProgressSessions",
         "showCompletedSessions",
+        "showTimingSessions",
+        "scheduleTimingFrameSelector",
+        "scheduleReadTimingFilter",
+        "scheduleToggleTimingPanel",
+        "scheduleOpenTimingPanel",
+        "schedulePlaceTimingPanel",
+        "scheduleCloseTimingPanel",
+        "scheduleTimingFilterChanged",
+        "scheduleResetTimingFilterUi",
+        "scheduleClearTimingFilter",
+        "scheduleRemoveTimingFilter",
+        "scheduleApplyTimingFilter",
+        "scheduleRenderTimingChips",
+        "scheduleTimingFlagCounts",
+        "scheduleSyncTimingCounts",
+        "scheduleWriteTimingFilterToUrl",
         "showBookedSessions",
         "showAllocatedSessionsSummary",
-        "showTransportFrames",
         "updateScheduleSessionCounters",
+        "scheduleNavUrl",
+        "scheduleFamiliarityFor",
+        "scheduleFamiliarityPercent",
+        "scheduleFamiliaritySuffix",
+        "scheduleSortStaffByFamiliarity",
         "addStaffToSelect",
         "fetchAndPopulateStaffDropdown",
         "addStaffToSelectEdit",
@@ -12073,6 +12928,7 @@
         "onKey",
         "moveAllocatedDraggedVisit",
         "initializeDragAndDropAllocation",
+        "isOwnStaffRow",
         "isOwnRow",
         "handleSessionStateChange",
         "handleEditSessionStateChange",
@@ -12082,6 +12938,7 @@
         "scheduleFlashFrame",
         "scheduleOpenVisit",
         "scheduleEditVisit",
+        "scheduleSetCancellationReason",
         "editSession",
         "renderEditSessionHistory",
         "escHtml",
@@ -12150,6 +13007,7 @@
         "scheduleVisitDetailsHtml",
         "scheduleEsc",
         "scheduleFormatMins",
+        "scheduleFamiliarityLabel",
         "scheduleStaffHasAvailability",
         "scheduleCheckCarerAvailability",
         "scheduleHideVisitTooltip",
@@ -12187,6 +13045,7 @@
         "scheduleHidePinButton",
         "scheduleShowPinOffer",
         "schedulePinTwinNarrow",
+        "scheduleEscapeTwinNarrow",
         "scheduleHighlightTwin",
         "scheduleClearListSearches",
         "scheduleSaveListFilter",
@@ -12213,6 +13072,11 @@
         "ensureBulkPickerStyles",
         "toggleVisit",
         "selectPatientDay",
+        "ensureCancelStyles",
+        "postCancel",
+        "openCancelPicker",
+        "onCancelKey",
+        "closeCancelPicker",
         "injectStyles",
         "enhance",
         "renderList",
@@ -12591,6 +13455,67 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/spot_checks/add_staff_spot_check.php",
+      "name": "add_staff_spot_check.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/spot_checks/edit_staff_spot_check.php",
+      "name": "edit_staff_spot_check.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/spot_checks/service_user_details.php",
+      "name": "service_user_details.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/spot_checks/spot_check_pdf.php",
+      "name": "spot_check_pdf.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "MYPDF"
+      ],
+      "functions": [
+        "Header",
+        "Footer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/spot_checks/spot_checks_report.php",
+      "name": "spot_checks_report.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "spot_check_filter_link"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/spot_checks/view_staff_spot_check.php",
+      "name": "view_staff_spot_check.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/staff/add_staff.php",
       "name": "add_staff.php",
       "type": "PHP",
@@ -12929,6 +13854,15 @@
           "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/pages/staff/view_staff_spot_checks.php",
+      "name": "view_staff_spot_checks.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
     },
     {
       "id": "httpdocs/pages/staff/view_staffs.php",
@@ -13289,6 +14223,58 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/telephone_reviews/add_patient_telephone_review.php",
+      "name": "add_patient_telephone_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/telephone_reviews/edit_patient_telephone_review.php",
+      "name": "edit_patient_telephone_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/telephone_reviews/telephone_review_pdf.php",
+      "name": "telephone_review_pdf.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "MYPDF"
+      ],
+      "functions": [
+        "Header",
+        "Footer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/telephone_reviews/telephone_reviews_report.php",
+      "name": "telephone_reviews_report.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "telephone_review_filter_link"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/telephone_reviews/view_patient_telephone_review.php",
+      "name": "view_patient_telephone_review.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/time_off/add_time_off.php",
       "name": "add_time_off.php",
       "type": "PHP",
@@ -13577,6 +14563,17 @@
         "close",
         "setActive",
         "choose"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/backfill_coordinates.php",
+      "name": "backfill_coordinates.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "backfill_table"
       ],
       "imports": []
     },

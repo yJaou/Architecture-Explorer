@@ -752,6 +752,25 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Carer_build_progress.class.php",
+      "name": "Carer_build_progress.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_build_progress"
+      ],
+      "functions": [
+        "__construct",
+        "clean_token",
+        "report",
+        "report_part",
+        "finish",
+        "read",
+        "write"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Carer_import_planner.class.php",
       "name": "Carer_import_planner.class.php",
       "type": "PHP",
@@ -963,7 +982,12 @@
         "kind_from_header",
         "retire_file",
         "after_files_changed",
+        "build_progress_path",
+        "build_progress",
+        "build_running",
+        "build_died",
         "build",
+        "guard_build",
         "read_csv",
         "read_availability",
         "open_dataset",
@@ -2055,6 +2079,7 @@
       ],
       "functions": [
         "__construct",
+        "is_free",
         "run"
       ],
       "imports": []
@@ -13176,6 +13201,11 @@
         "fallback",
         "show_browser",
         "editing",
+        "show",
+        "tick",
+        "finish",
+        "poll",
+        "watch",
         "post",
         "escape",
         "addRow",

@@ -6645,7 +6645,8 @@
         "import_severity_label",
         "import_issue_scope",
         "import_shs_choices",
-        "import_record_summary"
+        "import_record_summary",
+        "import_connector_extension_id"
       ],
       "imports": []
     },

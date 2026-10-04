@@ -1925,6 +1925,7 @@
         "find",
         "touch",
         "revoke_for_job",
+        "ever_issued_for_job",
         "current_for_job"
       ],
       "imports": []

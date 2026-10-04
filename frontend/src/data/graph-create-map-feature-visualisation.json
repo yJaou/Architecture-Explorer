@@ -886,6 +886,9 @@
         "summary",
         "write_zip",
         "build",
+        "compact",
+        "put",
+        "header_of",
         "staff_name",
         "pdf_ref",
         "master",
@@ -906,7 +909,6 @@
         "export_files",
         "export_day",
         "completeness",
-        "availability_range",
         "dictionary",
         "export_column",
         "report_text",
@@ -926,6 +928,10 @@
         "__construct",
         "has",
         "table",
+        "rows",
+        "index_by_carer",
+        "next_row",
+        "spill",
         "by_carer",
         "bytes"
       ],
@@ -1069,6 +1075,23 @@
         "helvetica_widths",
         "make_row",
         "join_verbatim"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_set_index.class.php",
+      "name": "Carer_set_index.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_set_index"
+      ],
+      "functions": [
+        "__construct",
+        "carers",
+        "count",
+        "rows",
+        "__destruct"
       ],
       "imports": []
     },
@@ -1971,6 +1994,40 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Import/Csv_writer.class.php",
+      "name": "Csv_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Csv_writer"
+      ],
+      "functions": [
+        "line",
+        "text"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Deflated_text.class.php",
+      "name": "Deflated_text.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Deflated_text"
+      ],
+      "functions": [
+        "__construct",
+        "of",
+        "add",
+        "finish",
+        "deflated",
+        "crc",
+        "size",
+        "text"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Import/Encrypted_file_writer.class.php",
       "name": "Encrypted_file_writer.class.php",
       "type": "PHP",
@@ -2484,6 +2541,8 @@
         "__destruct",
         "add_folder",
         "add",
+        "add_deflated",
+        "entry",
         "close",
         "write"
       ],

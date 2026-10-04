@@ -1940,6 +1940,7 @@
       ],
       "functions": [
         "__construct",
+        "line",
         "header",
         "records"
       ],

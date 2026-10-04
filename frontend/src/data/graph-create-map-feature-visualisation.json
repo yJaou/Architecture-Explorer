@@ -362,6 +362,19 @@
       "imports": []
     },
     {
+      "id": "httpdocs/api/imports/connector.php",
+      "name": "connector.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "connector_reply",
+        "connector_log",
+        "connector_not_found"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/llm/daily-visit-summary.php",
       "name": "daily-visit-summary.php",
       "type": "PHP",
@@ -646,6 +659,483 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Access_importer_plugin.class.php",
+      "name": "Access_importer_plugin.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Access_importer_plugin"
+      ],
+      "functions": [
+        "code",
+        "name",
+        "version",
+        "vendor",
+        "type",
+        "description",
+        "minimum_api_version",
+        "permissions",
+        "default_configuration",
+        "entry_route",
+        "icon",
+        "menu_links",
+        "source_system",
+        "parsers",
+        "validator"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Access_validator.class.php",
+      "name": "Access_validator.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Access_validator"
+      ],
+      "functions": [
+        "validate",
+        "read_reference_records",
+        "index_shs",
+        "service_user_by_id",
+        "carer_by_id",
+        "person_by_id",
+        "service_user_by_name",
+        "carer_by_name",
+        "person_by_name",
+        "check_visits",
+        "keys_following_visit",
+        "status_decision",
+        "check_activities",
+        "find_slot",
+        "plan_belongs_to",
+        "check_notes"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Access_values.class.php",
+      "name": "Access_values.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Access_values"
+      ],
+      "functions": [
+        "text",
+        "note",
+        "unwrap",
+        "datetime",
+        "read_datetime",
+        "number",
+        "yes_no",
+        "surname_first_to_name",
+        "has_columns"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Activity_report_parser.class.php",
+      "name": "Activity_report_parser.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Activity_report_parser"
+      ],
+      "functions": [
+        "code",
+        "version",
+        "label",
+        "detect",
+        "parse"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_import_planner.class.php",
+      "name": "Carer_import_planner.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_import_planner"
+      ],
+      "functions": [
+        "__construct",
+        "plan",
+        "not_in_access",
+        "not_in_access_counts",
+        "plan_carer",
+        "lookups",
+        "reference",
+        "staff_values",
+        "changes",
+        "same_value",
+        "termination_values",
+        "refuse_shared_records",
+        "library",
+        "library_items",
+        "latest_wtr",
+        "terminations",
+        "child_counts",
+        "answer",
+        "counts"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_import_rollback.class.php",
+      "name": "Carer_import_rollback.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_import_rollback"
+      ],
+      "functions": [
+        "__construct",
+        "blockers",
+        "run",
+        "restore_changes",
+        "registered",
+        "delete"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_import_writer.class.php",
+      "name": "Carer_import_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_import_writer"
+      ],
+      "functions": [
+        "__construct",
+        "run",
+        "terminate_not_in_access",
+        "write_lists",
+        "write_reference",
+        "mobile_only_by_type",
+        "write_library_item",
+        "resolve",
+        "write_carer",
+        "carer_key",
+        "create_staff",
+        "update_staff",
+        "stored",
+        "write_next_of_kin",
+        "relationship",
+        "write_notes",
+        "write_events",
+        "write_history",
+        "write_equipment",
+        "write_trainings",
+        "write_tasks",
+        "write_records",
+        "base_due",
+        "sort_day",
+        "write_availability",
+        "day_spans",
+        "write_slots",
+        "merge_spans",
+        "sync_legacy_availability",
+        "blank_availability",
+        "write_time_off",
+        "write_photo",
+        "load_children",
+        "load_registered",
+        "already",
+        "child_key",
+        "register",
+        "insert",
+        "update_logged",
+        "unique_number",
+        "count"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_migration_dataset.class.php",
+      "name": "Carer_migration_dataset.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_migration_dataset"
+      ],
+      "functions": [
+        "__construct",
+        "with_export",
+        "summary",
+        "write_zip",
+        "build",
+        "staff_name",
+        "pdf_ref",
+        "master",
+        "raw_record",
+        "availability",
+        "profile_tables",
+        "other_profile_data",
+        "compare",
+        "photos",
+        "photo_file",
+        "png",
+        "photo_filename",
+        "safe",
+        "photo_manifest",
+        "staff_duplicates",
+        "check",
+        "validate",
+        "export_files",
+        "export_day",
+        "completeness",
+        "availability_range",
+        "dictionary",
+        "export_column",
+        "report_text",
+        "csv"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_migration_set.class.php",
+      "name": "Carer_migration_set.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_migration_set"
+      ],
+      "functions": [
+        "__construct",
+        "has",
+        "table",
+        "by_carer",
+        "bytes"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_profile_exports.class.php",
+      "name": "Carer_profile_exports.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_profile_exports"
+      ],
+      "functions": [
+        "identify",
+        "label",
+        "read_events",
+        "service_user",
+        "event_notes",
+        "read_notes",
+        "read_terminations",
+        "text",
+        "us_date",
+        "uk_date_time",
+        "display"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_profile_import.class.php",
+      "name": "Carer_profile_import.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_profile_import"
+      ],
+      "functions": [
+        "__construct",
+        "is_carer_job",
+        "name_of",
+        "default_name",
+        "clean_name",
+        "rename",
+        "create_job",
+        "job",
+        "audit_for",
+        "files",
+        "has_all_files",
+        "dataset",
+        "add_upload",
+        "add_archive",
+        "add_one",
+        "identify",
+        "kind_from_header",
+        "retire_file",
+        "after_files_changed",
+        "build",
+        "read_csv",
+        "read_availability",
+        "open_dataset",
+        "record_download",
+        "discard_dataset",
+        "cancel",
+        "analyse",
+        "analyse_now",
+        "answer",
+        "questions",
+        "preview",
+        "import",
+        "import_result",
+        "rollback_blockers",
+        "rollback",
+        "with_set",
+        "answers",
+        "issue_store",
+        "save_option",
+        "binding",
+        "preview_of",
+        "allow_memory",
+        "work_folder",
+        "remove_folder"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_profile_matcher.class.php",
+      "name": "Carer_profile_matcher.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_profile_matcher"
+      ],
+      "functions": [
+        "__construct",
+        "normalise",
+        "name_key",
+        "day",
+        "iso_day",
+        "plain",
+        "digits",
+        "postcode",
+        "match_profiles",
+        "profile_candidates",
+        "profile_name",
+        "match_availability",
+        "match_named_record",
+        "period",
+        "availability_differences"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_profile_pdf.class.php",
+      "name": "Carer_profile_pdf.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_profile_pdf"
+      ],
+      "functions": [
+        "__construct",
+        "looks_like_profiles",
+        "document",
+        "profiles",
+        "outline_leaves",
+        "read_profile",
+        "header_complete",
+        "read_line",
+        "certain_row_starts",
+        "keys",
+        "starts_a_row",
+        "groups",
+        "rows",
+        "fits",
+        "text_width",
+        "helvetica_widths",
+        "make_row",
+        "join_verbatim"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_shs_directory.class.php",
+      "name": "Carer_shs_directory.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_shs_directory"
+      ],
+      "functions": [
+        "load",
+        "read_staff",
+        "read_lists",
+        "read_libraries",
+        "read_existing_records",
+        "carer_by_mobizio",
+        "carers_by_identity",
+        "identity",
+        "find_type",
+        "find_position",
+        "find_branch",
+        "find_area",
+        "find_training",
+        "find_task",
+        "find_name",
+        "similar_name"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Carer_shs_format.class.php",
+      "name": "Carer_shs_format.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_shs_format"
+      ],
+      "functions": [
+        "text",
+        "enc",
+        "read",
+        "same",
+        "norm",
+        "day",
+        "time",
+        "minutes",
+        "phone",
+        "yes_no",
+        "number",
+        "number_for"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_export_parser.class.php",
+      "name": "Visit_export_parser.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_export_parser"
+      ],
+      "functions": [
+        "code",
+        "version",
+        "label",
+        "detect",
+        "parse",
+        "only"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_report_parser.class.php",
+      "name": "Visit_report_parser.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_report_parser"
+      ],
+      "functions": [
+        "code",
+        "version",
+        "label",
+        "detect",
+        "parse"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Alert/Alert.class.php",
       "name": "Alert.class.php",
       "type": "PHP",
@@ -800,6 +1290,76 @@
         "show_branch_number",
         "show_name",
         "show_added_date"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Care_assessment/Care_assessment.class.php",
+      "name": "Care_assessment.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_assessment"
+      ],
+      "functions": [
+        "get_assessment",
+        "check_assessment_number_exists",
+        "get_assessments_for_patient",
+        "set_assessment",
+        "update_assessment_header",
+        "update_assessment_sections",
+        "delete_assessment"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Care_assessment/Care_assessment_controller.class.php",
+      "name": "Care_assessment_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_assessment_controller"
+      ],
+      "functions": [
+        "add_assessment",
+        "edit_assessment",
+        "save_section",
+        "build_header",
+        "generate_assessment_number",
+        "build_assessment_number",
+        "remove_assessment",
+        "validate_assessment_number",
+        "get_patient_assessments"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Care_assessment/Care_assessment_view.class.php",
+      "name": "Care_assessment_view.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_assessment_view"
+      ],
+      "functions": [
+        "__construct",
+        "show_assessment_number",
+        "show_patient_number",
+        "show_assessment_date",
+        "show_service_start_date",
+        "show_review_date",
+        "show_status",
+        "show_completed_date",
+        "show_service_user_name",
+        "show_completed_by",
+        "show_created_staff_number",
+        "show_updated_staff_number",
+        "exists",
+        "show_sections",
+        "show_section_values",
+        "show_section_meta",
+        "show_added_date",
+        "show_updated_date"
       ],
       "imports": []
     },
@@ -1263,6 +1823,646 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Import/Answer_worksheet.class.php",
+      "name": "Answer_worksheet.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Answer_worksheet"
+      ],
+      "functions": [
+        "__construct",
+        "groups",
+        "answerable",
+        "word",
+        "rows",
+        "to_csv",
+        "read",
+        "option_for",
+        "map_kind",
+        "choices_for",
+        "record_for",
+        "by_name",
+        "suggestion",
+        "defuse",
+        "undefuse"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Archive_inbox.class.php",
+      "name": "Archive_inbox.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Archive_inbox"
+      ],
+      "functions": [
+        "__construct",
+        "unpack",
+        "read_next",
+        "summary",
+        "waiting",
+        "discard",
+        "manifest",
+        "save",
+        "member_path",
+        "pending_bytes",
+        "count_status",
+        "count_readable",
+        "locked"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Canonical_record_types.class.php",
+      "name": "Canonical_record_types.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Canonical_record_types"
+      ],
+      "functions": [
+        "is_known",
+        "missing_fields"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Chunked_upload.class.php",
+      "name": "Chunked_upload.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Chunked_upload"
+      ],
+      "functions": [
+        "__construct",
+        "begin",
+        "append",
+        "finish",
+        "discard",
+        "load",
+        "save",
+        "directory",
+        "remove_stale"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Connector_token.class.php",
+      "name": "Connector_token.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Connector_token"
+      ],
+      "functions": [
+        "__construct",
+        "issue",
+        "base_url",
+        "connection_code",
+        "find",
+        "touch",
+        "revoke_for_job",
+        "current_for_job"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Csv_reader.class.php",
+      "name": "Csv_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Csv_reader"
+      ],
+      "functions": [
+        "__construct",
+        "header",
+        "records"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Encrypted_file_writer.class.php",
+      "name": "Encrypted_file_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Encrypted_file_writer"
+      ],
+      "functions": [
+        "__construct",
+        "write",
+        "close",
+        "abandon"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Existing_import_check.class.php",
+      "name": "Existing_import_check.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Existing_import_check"
+      ],
+      "functions": [
+        "__construct",
+        "run",
+        "summary",
+        "overlapping_jobs"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_audit.class.php",
+      "name": "Import_audit.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_audit"
+      ],
+      "functions": [
+        "__construct",
+        "record",
+        "for_job"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_context.class.php",
+      "name": "Import_context.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_context"
+      ],
+      "functions": [
+        "__construct",
+        "from_application",
+        "pdo",
+        "organisation_code",
+        "storage_directory",
+        "writable_folder",
+        "cipher",
+        "limit",
+        "now"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_exception.class.php",
+      "name": "Import_exception.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_exception"
+      ],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_file_store.class.php",
+      "name": "Import_file_store.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_file_store"
+      ],
+      "functions": [
+        "__construct",
+        "inspect",
+        "store",
+        "store_document",
+        "store_file",
+        "files_for_job",
+        "open_stored",
+        "clean_name"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_job_lock.class.php",
+      "name": "Import_job_lock.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_job_lock"
+      ],
+      "functions": [
+        "__construct",
+        "run"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_job_repository.class.php",
+      "name": "Import_job_repository.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_job_repository"
+      ],
+      "functions": [
+        "__construct",
+        "create",
+        "find_by_reference",
+        "find_by_id",
+        "history",
+        "can_transition",
+        "transition",
+        "update_counts",
+        "set_fields"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_mappings.class.php",
+      "name": "Import_mappings.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_mappings"
+      ],
+      "functions": [
+        "__construct",
+        "name_key",
+        "normalise_name",
+        "get",
+        "save",
+        "remove",
+        "origin",
+        "binding"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_service.class.php",
+      "name": "Import_service.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_service"
+      ],
+      "functions": [
+        "__construct",
+        "jobs",
+        "audit",
+        "create_job",
+        "job",
+        "add_upload",
+        "add_archive",
+        "read_next_archive_file",
+        "add_file",
+        "check_existing",
+        "validate",
+        "analyse",
+        "issues",
+        "readiness",
+        "answer_issue",
+        "answer_all_like",
+        "answer_many",
+        "worksheet",
+        "answer_from_worksheet",
+        "group",
+        "clear_answer",
+        "change_answer",
+        "cancel",
+        "describe",
+        "staged_records",
+        "issue_records",
+        "count_staged",
+        "recover_interrupted",
+        "stage_file",
+        "refresh_job_totals",
+        "importer",
+        "parser_for"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Import_validation.class.php",
+      "name": "Import_validation.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_validation"
+      ],
+      "functions": [
+        "__construct",
+        "run",
+        "framework_checks"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Issue_collector.class.php",
+      "name": "Issue_collector.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Issue_collector"
+      ],
+      "functions": [
+        "raise",
+        "add_records",
+        "link",
+        "add_sample",
+        "set_fact",
+        "has",
+        "issues",
+        "record_ids",
+        "option"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Issue_store.class.php",
+      "name": "Issue_store.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Issue_store"
+      ],
+      "functions": [
+        "__construct",
+        "save_run",
+        "answer",
+        "answer_many",
+        "answer_all_like",
+        "clear_answer",
+        "issue",
+        "for_job",
+        "readiness",
+        "record_ids",
+        "find_option",
+        "carry_answer",
+        "verify",
+        "verify_target",
+        "clean_details",
+        "missing_details",
+        "parse_date",
+        "answer_details_of",
+        "decrypted",
+        "binding"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Payload_cipher.class.php",
+      "name": "Payload_cipher.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Payload_cipher"
+      ],
+      "functions": [
+        "__construct",
+        "from_application_key",
+        "encrypt",
+        "decrypt",
+        "encrypt_stream",
+        "file_writer",
+        "seal_segment",
+        "decrypt_file_to_stream",
+        "decrypt_file_to_path",
+        "decrypt_file_into",
+        "read_exactly"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Pdf_document.class.php",
+      "name": "Pdf_document.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Pdf_document"
+      ],
+      "functions": [
+        "__construct",
+        "split_documents",
+        "text_fingerprint",
+        "looks_like_pdf",
+        "info",
+        "page_count",
+        "pages",
+        "outline",
+        "page_items",
+        "page_image",
+        "read_cross_reference",
+        "object",
+        "resolve",
+        "is_stream",
+        "stream_data",
+        "collect_pages",
+        "outline_items",
+        "text",
+        "interpret",
+        "multiply",
+        "apply"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Pdf_object_parser.class.php",
+      "name": "Pdf_object_parser.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Pdf_object_parser"
+      ],
+      "functions": [
+        "__construct",
+        "expect_object_header",
+        "at_stream",
+        "stream_start",
+        "value",
+        "content_token",
+        "token",
+        "literal_string",
+        "skip_space",
+        "skip_regular"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Record_validator.class.php",
+      "name": "Record_validator.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "validate"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Shs_reference.class.php",
+      "name": "Shs_reference.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Shs_reference"
+      ],
+      "functions": [
+        "__construct",
+        "service_users",
+        "carers",
+        "care_plans_by_template",
+        "visits_between",
+        "find"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Source_parser.class.php",
+      "name": "Source_parser.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "code",
+        "version",
+        "label",
+        "detect",
+        "parse"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Source_record_registry.class.php",
+      "name": "Source_record_registry.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Source_record_registry"
+      ],
+      "functions": [
+        "__construct",
+        "lookup",
+        "register",
+        "mark_job_rolled_back"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Staged_record.class.php",
+      "name": "Staged_record.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staged_record"
+      ],
+      "functions": [
+        "__construct",
+        "add_error",
+        "rehash",
+        "is_valid",
+        "content_hash"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Staged_record_reader.class.php",
+      "name": "Staged_record_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staged_record_reader"
+      ],
+      "functions": [
+        "__construct",
+        "records"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Staging_writer.class.php",
+      "name": "Staging_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staging_writer"
+      ],
+      "functions": [
+        "__construct",
+        "add",
+        "flush",
+        "stats",
+        "payload_binding"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Xlsx_reader.class.php",
+      "name": "Xlsx_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Xlsx_reader"
+      ],
+      "functions": [
+        "__construct",
+        "sheet_names",
+        "looks_like_xlsx",
+        "sheet_name",
+        "rows",
+        "records",
+        "header",
+        "discard",
+        "__destruct",
+        "open_sheet",
+        "part",
+        "xml",
+        "read_shared_strings",
+        "string_item_text",
+        "read_date_styles",
+        "cell_value",
+        "serial_to_text",
+        "column_index"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Zip_reader.class.php",
+      "name": "Zip_reader.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Zip_reader"
+      ],
+      "functions": [
+        "__construct",
+        "__destruct",
+        "looks_like_zip",
+        "entries",
+        "unsupported_reason",
+        "extract"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Import/Zip_writer.class.php",
+      "name": "Zip_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Zip_writer"
+      ],
+      "functions": [
+        "__construct",
+        "__destruct",
+        "add_folder",
+        "add",
+        "close",
+        "write"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Incident/Incident.class.php",
       "name": "Incident.class.php",
       "type": "PHP",
@@ -1647,6 +2847,76 @@
         "show_status",
         "show_is_deleted",
         "show_deleted_at"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Plugin/Importer_plugin.class.php",
+      "name": "Importer_plugin.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "source_system",
+        "parsers",
+        "validator"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Plugin/Plugin.class.php",
+      "name": "Plugin.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "code",
+        "name",
+        "version",
+        "vendor",
+        "type",
+        "description",
+        "minimum_api_version",
+        "permissions",
+        "default_configuration",
+        "entry_route",
+        "icon",
+        "menu_links"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Plugin/Plugin_catalog.class.php",
+      "name": "Plugin_catalog.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Plugin_catalog"
+      ],
+      "functions": [
+        "all",
+        "get",
+        "is_compatible"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Plugin/Plugin_installations.class.php",
+      "name": "Plugin_installations.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Plugin_installations"
+      ],
+      "functions": [
+        "__construct",
+        "is_enabled",
+        "find",
+        "overview",
+        "enable",
+        "disable",
+        "configuration",
+        "set_enabled"
       ],
       "imports": []
     },
@@ -2772,6 +4042,7 @@
         "get_staff_availability",
         "edit_staff_field",
         "record_password_is_default",
+        "edit_staff_profile_details",
         "has_manager_staff_number_column",
         "edit_staff",
         "set_staff",
@@ -2945,6 +4216,7 @@
       "functions": [
         "add_staff",
         "update_staff",
+        "update_staff_profile_details",
         "hire_applicant",
         "reject_applicant",
         "reconsider_applicant",
@@ -3045,6 +4317,7 @@
         "show_pay_group_number",
         "show_payroll_run_number",
         "show_employee_payroll_number",
+        "show_profile_details",
         "show_pin",
         "show_mobizio_id",
         "show_employee_created",
@@ -3066,6 +4339,84 @@
         "show_status",
         "show_is_deleted",
         "show_deleted_at"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Staff_event/Staff_event.class.php",
+      "name": "Staff_event.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staff_event"
+      ],
+      "functions": [
+        "get_staff_events",
+        "get_event",
+        "set_event",
+        "edit_event",
+        "delete_event",
+        "check_event_number_exists",
+        "count_staff_events"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Staff_event/Staff_event_controller.class.php",
+      "name": "Staff_event_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staff_event_controller"
+      ],
+      "functions": [
+        "generate_event_number",
+        "validate_event_number",
+        "get_staff_event_count",
+        "get_event_list",
+        "get_event_record",
+        "add_event",
+        "update_event",
+        "remove_event",
+        "checked_values",
+        "decrypt_row"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Staff_history/Staff_history.class.php",
+      "name": "Staff_history.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staff_history"
+      ],
+      "functions": [
+        "get_staff_history",
+        "get_history_entry",
+        "set_history_entry",
+        "delete_history_entry",
+        "check_history_number_exists",
+        "count_staff_history"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Staff_history/Staff_history_controller.class.php",
+      "name": "Staff_history_controller.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staff_history_controller"
+      ],
+      "functions": [
+        "__construct",
+        "generate_history_number",
+        "get_staff_history_count",
+        "get_history_by_type",
+        "get_history_entry_record",
+        "add_history_entry",
+        "remove_history_entry"
       ],
       "imports": []
     },
@@ -3865,6 +5216,110 @@
       "feature": "Authentication",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/care_assessments/care_assessment_display.php",
+      "name": "care_assessment_display.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "care_assessment_show_text",
+        "care_assessment_show_date",
+        "care_assessment_value_html",
+        "care_assessment_field_html",
+        "care_assessment_rows_html",
+        "care_assessment_grid_html",
+        "care_assessment_section_html",
+        "care_assessment_pdf_section_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/care_assessments/care_assessment_fields.php",
+      "name": "care_assessment_fields.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "care_assessment_organisation_name",
+        "care_assessment_yesno_options",
+        "care_assessment_sections",
+        "care_assessment_sections_support",
+        "care_assessment_sections_assessments",
+        "care_assessment_sections_handling",
+        "care_assessment_section",
+        "care_assessment_sections_by_key",
+        "care_assessment_answerable_fields",
+        "care_assessment_blank_field_value",
+        "care_assessment_blank_section_values",
+        "care_assessment_blank_values",
+        "care_assessment_field_is_answered",
+        "care_assessment_section_progress",
+        "care_assessment_progress",
+        "care_assessment_clean",
+        "care_assessment_match_option",
+        "care_assessment_clean_options",
+        "care_assessment_collect_section",
+        "care_assessment_column_is_indexed",
+        "care_assessment_collect_cell",
+        "care_assessment_collect_rows",
+        "care_assessment_encode",
+        "care_assessment_decode",
+        "care_assessment_decode_field",
+        "care_assessment_next_review_date",
+        "care_assessment_due_status"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/care_assessments/care_assessment_form.php",
+      "name": "care_assessment_form.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "care_assessment_input_value",
+        "care_assessment_option_value",
+        "care_assessment_escape",
+        "care_assessment_render_simple_input",
+        "care_assessment_render_checkboxes",
+        "care_assessment_render_repeating",
+        "care_assessment_render_repeating_row",
+        "care_assessment_render_grid",
+        "care_assessment_render_field",
+        "caRepeatContainer",
+        "caRenumber",
+        "caAddRow",
+        "caRemoveRow"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/care_assessments/care_assessment_header_form.php",
+      "name": "care_assessment_header_form.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "caAssessmentDateChanged",
+        "caStatusChanged"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/care_assessments/care_assessment_prefill.php",
+      "name": "care_assessment_prefill.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "care_assessment_prefill_date",
+        "care_assessment_prefill_next_of_kin",
+        "care_assessment_prefill_section",
+        "care_assessment_apply_prefill"
+      ],
       "imports": []
     },
     {
@@ -4858,6 +6313,7 @@
       "classes": [],
       "functions": [
         "user_can",
+        "enabled_plugin_codes",
         "connect_database",
         "ensure_soft_delete_columns_exist",
         "cryptography_settings",
@@ -4982,6 +6438,9 @@
         "check_last_training_record_added_date",
         "check_training_record",
         "check_last_training_record_complete",
+        "staff_has_training_record",
+        "staff_has_task_record",
+        "person_has_record",
         "get_last_training_record_number",
         "all_trainings_completed",
         "risk_assessment_completed",
@@ -5048,6 +6507,7 @@
         "incident_body_to_labels",
         "get_incidents_filtered",
         "get_patients_for_select",
+        "get_record_number_patient_care_assessments",
         "get_record_number_patient_questionnaires",
         "get_questionnaires_filtered",
         "get_patient_questionnaire_status",
@@ -5154,6 +6614,39 @@
           "path": "side_bar.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/includes/imports/connector_recipes.php",
+      "name": "connector_recipes.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "connector_recipe_carer_profiles"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/import_page_helpers.php",
+      "name": "import_page_helpers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "import_h",
+        "import_status_style",
+        "import_status_pill",
+        "import_carer_status_pill",
+        "import_classifications",
+        "import_staff_name",
+        "import_datetime",
+        "import_issue_state_style",
+        "import_severity_label",
+        "import_issue_scope",
+        "import_shs_choices",
+        "import_record_summary"
+      ],
+      "imports": []
     },
     {
       "id": "httpdocs/includes/incidents/body_map_widget.php",
@@ -9522,6 +11015,17 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/staff_history/staff_history_types.php",
+      "name": "staff_history_types.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "staff_history_types"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/task_listing_helpers.php",
       "name": "task_listing_helpers.php",
       "type": "PHP",
@@ -11044,6 +12548,60 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/care_assessments/add_patient_care_assessment.php",
+      "name": "add_patient_care_assessment.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/care_assessments/care_assessment_pdf.php",
+      "name": "care_assessment_pdf.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "MYPDF"
+      ],
+      "functions": [
+        "care_assessment_pdf_date",
+        "Header",
+        "Footer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/care_assessments/edit_care_assessment_section.php",
+      "name": "edit_care_assessment_section.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/care_assessments/edit_patient_care_assessment.php",
+      "name": "edit_patient_care_assessment.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/care_assessments/view_patient_care_assessment.php",
+      "name": "view_patient_care_assessment.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [
+        "care_assessment_staff_name",
+        "caToggleDocument"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/care_plan/download_care_plan.php",
       "name": "download_care_plan.php",
       "type": "PHP",
@@ -11562,6 +13120,118 @@
         "nhsRemoteSuggest",
         "renderConditionFallback",
         "loadMedicationInfo"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/import_carer_download.php",
+      "name": "import_carer_download.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/import_connector_download.php",
+      "name": "import_connector_download.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/import_upload.php",
+      "name": "import_upload.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "upload_respond",
+        "import_status_label"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/import_worksheet.php",
+      "name": "import_worksheet.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_carer_profile_import.php",
+      "name": "view_carer_profile_import.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "copy_text",
+        "fallback",
+        "show_browser",
+        "editing",
+        "post",
+        "escape",
+        "addRow",
+        "upload",
+        "fail",
+        "run",
+        "add"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_carer_profiles_guide.php",
+      "name": "view_carer_profiles_guide.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "choose",
+        "refresh"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_import.php",
+      "name": "view_import.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "import_report_group_result",
+        "import_browse_link",
+        "import_analyse_form",
+        "import_issue_link",
+        "import_detail_display",
+        "import_answer_details_text",
+        "import_issue_group_card",
+        "import_issue_card",
+        "import_set_unanswered",
+        "post",
+        "escape",
+        "addRow",
+        "upload",
+        "readArchive",
+        "addMember",
+        "fail",
+        "run",
+        "add"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_imports.php",
+      "name": "view_imports.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "open_import",
+        "reset"
       ],
       "imports": []
     },
@@ -12277,6 +13947,15 @@
           "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/pages/patients/view_patient_care_assessments.php",
+      "name": "view_patient_care_assessments.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [],
+      "imports": []
     },
     {
       "id": "httpdocs/pages/patients/view_patient_conditions.php",
@@ -13795,6 +15474,7 @@
       "feature": "Other",
       "classes": [],
       "functions": [
+        "staff_detail_row",
         "labelOf",
         "keyOf",
         "sortStaff",
@@ -13879,6 +15559,62 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/staff_events/edit_staff_event.php",
+      "name": "edit_staff_event.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/panels/staff_panel.php"
+        },
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
+        }
+      ]
+    },
+    {
+      "id": "httpdocs/pages/staff_events/view_staff_events.php",
+      "name": "view_staff_events.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/panels/staff_panel.php"
+        },
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
+        }
+      ]
+    },
+    {
+      "id": "httpdocs/pages/staff_history/view_staff_history.php",
+      "name": "view_staff_history.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "showHistoryFields"
+      ],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/panels/staff_panel.php"
+        },
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
+        }
+      ]
+    },
+    {
       "id": "httpdocs/pages/staff_positions/view_staff_position.php",
       "name": "view_staff_position.php",
       "type": "PHP",
@@ -13908,6 +15644,15 @@
     {
       "id": "httpdocs/pages/staff_types/view_staff_types.php",
       "name": "view_staff_types.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/store/view_store.php",
+      "name": "view_store.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],
@@ -14762,6 +16507,22 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/import/import.php",
+      "name": "import.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "require_option",
+        "require_staff",
+        "expand_paths",
+        "add_files",
+        "print_job",
+        "print_issues"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/import_nhs_local_terminology.php",
       "name": "import_nhs_local_terminology.php",
       "type": "PHP",
@@ -14870,6 +16631,20 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/tests/care_assessments/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "cleanup_test_rows",
+        "care_assessment_test_post"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/tests/carer_matching/run_tests.php",
       "name": "run_tests.php",
       "type": "PHP",
@@ -14881,6 +16656,48 @@
         "cleanup_test_rows",
         "matching",
         "blocks_for"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/carer_profiles/run_import_tests.php",
+      "name": "run_import_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "insert_row",
+        "seed_staff",
+        "csv_text",
+        "employment",
+        "store_built_set",
+        "snapshot",
+        "staff",
+        "plain",
+        "rows"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/carer_profiles/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "fake_jpeg",
+        "profiles_pdf",
+        "write_pdf",
+        "standard_sections",
+        "staff_row",
+        "write_xlsx",
+        "read_csv_text",
+        "write_workbook"
       ],
       "imports": []
     },
@@ -14921,6 +16738,30 @@
         "widget_columns",
         "migration_history_rows",
         "audit_log_text"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/import/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "new_pdo",
+        "context",
+        "visit_row",
+        "activity_row",
+        "visit_export_row",
+        "write_export",
+        "write_zip",
+        "stage_archive",
+        "stage",
+        "simulate_import",
+        "shs_count"
       ],
       "imports": []
     },
@@ -16570,6 +18411,36 @@
     },
     {
       "source": "httpdocs/pages/staff/view_staff_sessions.php",
+      "target": "httpdocs/includes/side_bar_quick_links.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_events/edit_staff_event.php",
+      "target": "httpdocs/includes/panels/staff_panel.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_events/edit_staff_event.php",
+      "target": "httpdocs/includes/side_bar_quick_links.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_events/view_staff_events.php",
+      "target": "httpdocs/includes/panels/staff_panel.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_events/view_staff_events.php",
+      "target": "httpdocs/includes/side_bar_quick_links.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_history/view_staff_history.php",
+      "target": "httpdocs/includes/panels/staff_panel.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/staff_history/view_staff_history.php",
       "target": "httpdocs/includes/side_bar_quick_links.php",
       "type": "include"
     },

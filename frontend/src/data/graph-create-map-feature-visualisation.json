@@ -13194,7 +13194,8 @@
       "classes": [],
       "functions": [
         "choose",
-        "refresh"
+        "refresh",
+        "toggle"
       ],
       "imports": []
     },

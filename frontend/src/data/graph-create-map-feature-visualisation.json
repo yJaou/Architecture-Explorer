@@ -4643,6 +4643,8 @@
         "add_staff_position",
         "staff_position_name_in_use",
         "staff_position_holders",
+        "staff_position_holder_list",
+        "holder_kind",
         "generate_staff_position_number",
         "update_staff_position_name",
         "rename_staff_position",

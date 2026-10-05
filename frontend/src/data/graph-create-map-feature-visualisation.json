@@ -964,6 +964,27 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Carer_note_attribution.class.php",
+      "name": "Carer_note_attribution.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Carer_note_attribution"
+      ],
+      "functions": [
+        "__construct",
+        "pending",
+        "run",
+        "signer",
+        "signature",
+        "match",
+        "pending_from",
+        "surnames",
+        "staff"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Carer_profile_exports.class.php",
       "name": "Carer_profile_exports.class.php",
       "type": "PHP",
@@ -1048,6 +1069,8 @@
         "questions",
         "preview",
         "import",
+        "notes_to_attribute",
+        "attribute_notes",
         "import_result",
         "rollback_blockers",
         "rollback",
@@ -2837,6 +2860,10 @@
         "show_note_number",
         "show_note",
         "show_note_created_staff_number",
+        "show_note_source",
+        "show_note_signed_staff_number",
+        "attribution",
+        "show_attribution",
         "show_note_added_date",
         "show_note_date",
         "show_note_session_number",
@@ -15699,7 +15726,14 @@
       "classes": [],
       "functions": [
         "format_staff_hire_datetime",
+        "staff_list_state",
+        "render_staff_group_row",
+        "staff_row_in_view",
         "rows",
+        "setCount",
+        "showTab",
+        "setPickerOpen",
+        "syncTrigger",
         "applyFilter",
         "applySort"
       ],

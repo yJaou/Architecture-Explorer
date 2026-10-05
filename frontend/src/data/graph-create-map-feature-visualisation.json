@@ -4415,6 +4415,28 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Staff/Staff_permanent_delete.class.php",
+      "name": "Staff_permanent_delete.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Staff_permanent_delete"
+      ],
+      "functions": [
+        "__construct",
+        "allowed",
+        "preview",
+        "run",
+        "person",
+        "conversations_sql",
+        "has_table",
+        "count",
+        "execute",
+        "pdo"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Staff/Staff_view.class.php",
       "name": "Staff_view.class.php",
       "type": "PHP",
@@ -4602,6 +4624,8 @@
         "check_staff_position_number_exists",
         "get_staff_position_holders",
         "get_all_staff_positions",
+        "get_staff_placement",
+        "set_staff_placement",
         "move_staff_position_to_type",
         "delete_staff_position"
       ],
@@ -4621,6 +4645,8 @@
         "staff_position_holders",
         "generate_staff_position_number",
         "update_staff_position_name",
+        "rename_staff_position",
+        "move_staff_to_position",
         "update_staff_position_type",
         "update_staff_position_mobile_app_only",
         "update_staff_position_is_manager",
@@ -15746,7 +15772,17 @@
         "setPickerOpen",
         "syncTrigger",
         "applyFilter",
-        "applySort"
+        "applySort",
+        "post",
+        "toast",
+        "open",
+        "close",
+        "itemOf",
+        "isTarget",
+        "sublistIn",
+        "adjust",
+        "place",
+        "rowName"
       ],
       "imports": []
     },
@@ -16995,6 +17031,21 @@
         "run_pipeline",
         "find_change",
         "snapshot_table"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/staff_permanent_delete/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "insert_row",
+        "rows"
       ],
       "imports": []
     },

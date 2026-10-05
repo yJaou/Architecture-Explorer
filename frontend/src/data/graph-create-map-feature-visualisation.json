@@ -977,6 +977,7 @@
         "run",
         "signer",
         "signature",
+        "signature_parts",
         "match",
         "pending_from",
         "surnames",
@@ -4597,6 +4598,9 @@
         "edit_staff_position_field",
         "set_staff_position",
         "check_staff_position_number_exists",
+        "get_staff_position_holders",
+        "get_all_staff_positions",
+        "move_staff_position_to_type",
         "delete_staff_position"
       ],
       "imports": []
@@ -4611,8 +4615,11 @@
       ],
       "functions": [
         "add_staff_position",
+        "staff_position_name_in_use",
+        "staff_position_holders",
         "generate_staff_position_number",
         "update_staff_position_name",
+        "update_staff_position_type",
         "update_staff_position_mobile_app_only",
         "update_staff_position_is_manager",
         "remove_staff_position",

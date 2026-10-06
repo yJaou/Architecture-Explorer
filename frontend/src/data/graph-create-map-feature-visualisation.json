@@ -835,11 +835,17 @@
       ],
       "functions": [
         "__construct",
+        "key_columns",
+        "created_type",
+        "linked_type",
+        "person_table",
+        "person_tables",
+        "in_use",
+        "references",
         "blockers",
-        "run",
-        "restore_changes",
-        "registered",
-        "delete"
+        "blocked_message",
+        "files_for",
+        "files_of_person"
       ],
       "imports": []
     },
@@ -853,13 +859,19 @@
       ],
       "functions": [
         "__construct",
-        "run",
+        "check_ready",
+        "prepare",
+        "people",
+        "write_person",
+        "person_label",
+        "failed_result",
+        "write_last",
+        "result",
         "terminate_not_in_access",
         "write_lists",
         "write_reference",
         "mobile_only_by_type",
         "write_library_item",
-        "resolve",
         "write_carer",
         "carer_key",
         "create_staff",
@@ -884,15 +896,7 @@
         "blank_availability",
         "write_time_off",
         "write_photo",
-        "load_children",
-        "load_registered",
-        "already",
-        "child_key",
-        "register",
-        "insert",
-        "update_logged",
-        "unique_number",
-        "count"
+        "load_children"
       ],
       "imports": []
     },
@@ -958,6 +962,7 @@
         "index_by_carer",
         "next_row",
         "spill",
+        "by_person",
         "by_carer",
         "bytes"
       ],
@@ -1017,76 +1022,37 @@
         "Carer_profile_import"
       ],
       "functions": [
-        "__construct",
+        "kind",
+        "title",
+        "noun",
+        "kinds",
+        "required_kinds",
+        "path",
+        "set_file_name",
+        "event_prefix",
         "is_carer_job",
-        "name_of",
-        "default_name",
-        "clean_name",
-        "rename",
-        "create_job",
-        "job",
-        "audit_for",
-        "files",
-        "has_all_files",
-        "dataset",
-        "add_upload",
-        "add_archive",
-        "add_one",
         "identify",
         "kind_from_header",
-        "retire_file",
-        "after_files_changed",
-        "build_progress_path",
-        "build_progress",
-        "build_running",
-        "build_paused",
-        "build_died",
-        "build",
-        "build_part",
-        "begin_build",
+        "initial_build_state",
+        "final_stage",
+        "build_stage",
+        "end_build_part",
         "build_profiles",
         "build_rows",
         "build_pdf",
         "build_availability",
         "build_assemble",
-        "decrypted",
-        "build_folder",
-        "build_state_path",
-        "build_chunk_path",
-        "write_build_chunk",
-        "read_build_chunk",
-        "write_build_state",
-        "read_build_state",
-        "guard_build",
-        "read_csv",
         "read_availability",
-        "open_dataset",
-        "record_download",
-        "discard_dataset",
-        "cancel",
-        "analyse",
-        "compare_died",
-        "analyse_now",
-        "guard_compare",
-        "answer",
-        "questions",
-        "preview",
-        "import",
+        "open_set",
+        "make_plan",
+        "plan_counts",
+        "writer",
+        "after_import",
+        "imported_count",
+        "rollback_worker",
         "notes_to_attribute",
         "attribute_notes",
-        "import_result",
-        "rollback_blockers",
-        "rollback",
-        "with_set",
-        "answers",
-        "issue_store",
-        "save_option",
-        "binding",
-        "preview_of",
-        "host_limit_advice",
-        "allow_memory",
-        "work_folder",
-        "remove_folder"
+        "preview_of"
       ],
       "imports": []
     },
@@ -1139,6 +1105,7 @@
         "leaves",
         "outline_leaves",
         "read_profile",
+        "none_text",
         "header_complete",
         "read_line",
         "certain_row_starts",
@@ -1146,6 +1113,7 @@
         "starts_a_row",
         "groups",
         "rows",
+        "another_cell_would_have_fitted",
         "fits",
         "text_width",
         "helvetica_widths",
@@ -1220,6 +1188,435 @@
         "yes_no",
         "number",
         "number_for"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Import_rollback_base.class.php",
+      "name": "Import_rollback_base.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_rollback_base"
+      ],
+      "functions": [
+        "__construct",
+        "key_columns",
+        "created_type",
+        "linked_type",
+        "person_table",
+        "person_tables",
+        "in_use",
+        "references",
+        "blockers",
+        "files_for",
+        "files_of_person",
+        "blocked_message",
+        "run",
+        "restore_changes",
+        "registered",
+        "delete"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Import_writer_base.class.php",
+      "name": "Import_writer_base.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Import_writer_base"
+      ],
+      "functions": [
+        "__construct",
+        "people",
+        "check_ready",
+        "prepare",
+        "write_person",
+        "person_label",
+        "write_last",
+        "run",
+        "total",
+        "begin",
+        "write_from",
+        "batch_size",
+        "finish",
+        "state",
+        "result",
+        "failed_result",
+        "items",
+        "load_registered",
+        "already",
+        "child_key",
+        "register",
+        "resolve",
+        "insert",
+        "update_logged",
+        "unique_number",
+        "count"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/People_planner_import.class.php",
+      "name": "People_planner_import.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "People_planner_import"
+      ],
+      "functions": [
+        "__construct",
+        "kind",
+        "title",
+        "noun",
+        "kinds",
+        "required_kinds",
+        "path",
+        "set_file_name",
+        "event_prefix",
+        "identify",
+        "initial_build_state",
+        "final_stage",
+        "build_stage",
+        "build_assemble",
+        "open_set",
+        "make_plan",
+        "plan_counts",
+        "preview_of",
+        "writer",
+        "after_import",
+        "imported_count",
+        "rollback_worker",
+        "end_build_part",
+        "kind_of",
+        "is_job",
+        "for_job",
+        "name_of",
+        "default_name",
+        "clean_name",
+        "rename",
+        "create_job",
+        "job",
+        "history",
+        "audit_for",
+        "files",
+        "has_all_files",
+        "dataset",
+        "add_upload",
+        "add_archive",
+        "add_one",
+        "workbook_header",
+        "csv_header",
+        "retire_file",
+        "after_files_changed",
+        "build_progress_path",
+        "build_progress",
+        "build_running",
+        "build_paused",
+        "build_died",
+        "build",
+        "build_part",
+        "begin_build",
+        "store_set",
+        "decrypted",
+        "part_folder",
+        "state_path",
+        "chunk_path",
+        "write_chunk",
+        "read_chunk",
+        "remove_chunk",
+        "chunk_binding",
+        "write_state",
+        "read_state",
+        "guard",
+        "read_csv",
+        "open_dataset",
+        "record_download",
+        "discard_dataset",
+        "cancel",
+        "analyse",
+        "compare_died",
+        "analyse_now",
+        "answer",
+        "questions",
+        "preview",
+        "import",
+        "import_running",
+        "import_paused",
+        "import_part",
+        "begin_import",
+        "end_import",
+        "import_result",
+        "rollback_blockers",
+        "rollback",
+        "rollback_running",
+        "with_set",
+        "answers",
+        "issue_store",
+        "save_option",
+        "binding",
+        "host_limit_advice",
+        "allow_memory",
+        "work_folder",
+        "remove_folder"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_exports.class.php",
+      "name": "Service_user_exports.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_exports"
+      ],
+      "functions": [
+        "identify",
+        "read_notes",
+        "read_suspensions",
+        "read_terminations",
+        "read_events",
+        "read_priorities",
+        "time"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_funder_rule.class.php",
+      "name": "Service_user_funder_rule.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_funder_rule"
+      ],
+      "functions": [
+        "classify",
+        "group",
+        "other",
+        "same_person",
+        "suggested_name"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_import_planner.class.php",
+      "name": "Service_user_import_planner.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_import_planner"
+      ],
+      "functions": [
+        "__construct",
+        "plan",
+        "funders",
+        "new_funder",
+        "extras",
+        "plan_person",
+        "access_status",
+        "display_name",
+        "values",
+        "clean_names",
+        "changes",
+        "same_value",
+        "termination_values",
+        "reference",
+        "refuse_shared_records",
+        "not_in_access",
+        "row_owners",
+        "child_counts",
+        "answer",
+        "counts",
+        "preview_of"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_import_rollback.class.php",
+      "name": "Service_user_import_rollback.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_import_rollback"
+      ],
+      "functions": [
+        "key_columns",
+        "created_type",
+        "linked_type",
+        "person_table",
+        "person_tables",
+        "in_use",
+        "references",
+        "blockers",
+        "blocked_message"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_import_writer.class.php",
+      "name": "Service_user_import_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_import_writer"
+      ],
+      "functions": [
+        "__construct",
+        "check_ready",
+        "prepare",
+        "people",
+        "person_label",
+        "failed_result",
+        "write_last",
+        "result",
+        "write_lists",
+        "write_reference",
+        "write_person",
+        "create_patient",
+        "update_patient",
+        "stored",
+        "geocode",
+        "unique_qr_code",
+        "write_next_of_kin",
+        "relationship",
+        "write_critical",
+        "write_reviews",
+        "write_history",
+        "write_notes",
+        "write_absences",
+        "write_events",
+        "terminate_not_in_access",
+        "load_children",
+        "blank_row",
+        "has_column",
+        "columns"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_matcher.class.php",
+      "name": "Service_user_matcher.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_matcher"
+      ],
+      "functions": [
+        "__construct",
+        "address_key",
+        "days",
+        "key",
+        "match",
+        "match_profile"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_migration_dataset.class.php",
+      "name": "Service_user_migration_dataset.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_migration_dataset"
+      ],
+      "functions": [
+        "__construct",
+        "service_users",
+        "funders",
+        "compact_profile",
+        "profiles",
+        "workbooks",
+        "workbook",
+        "finish",
+        "summary",
+        "write_zip",
+        "report",
+        "csv",
+        "check",
+        "unmatched",
+        "iso"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_migration_set.class.php",
+      "name": "Service_user_migration_set.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_migration_set"
+      ],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_profile_import.class.php",
+      "name": "Service_user_profile_import.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_profile_import"
+      ],
+      "functions": [
+        "kind",
+        "title",
+        "noun",
+        "kinds",
+        "required_kinds",
+        "path",
+        "set_file_name",
+        "event_prefix",
+        "identify",
+        "kind_from_header",
+        "initial_build_state",
+        "final_stage",
+        "build_stage",
+        "build_pdf",
+        "end_build_part",
+        "build_assemble",
+        "open_set",
+        "make_plan",
+        "plan_counts",
+        "writer",
+        "after_import",
+        "imported_count",
+        "rollback_worker",
+        "preview_of"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_profiles_pdf.class.php",
+      "name": "Service_user_profiles_pdf.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_profiles_pdf"
+      ],
+      "functions": [
+        "none_text"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Service_user_shs_directory.class.php",
+      "name": "Service_user_shs_directory.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Service_user_shs_directory"
+      ],
+      "functions": [
+        "load",
+        "read_patients",
+        "read_lists",
+        "read_existing",
+        "note_key",
+        "identity",
+        "by_access_id",
+        "by_identity",
+        "has_access_id"
       ],
       "imports": []
     },
@@ -2404,7 +2801,7 @@
       "functions": [
         "__construct",
         "split_documents",
-        "text_fingerprint",
+        "fingerprint",
         "looks_like_pdf",
         "info",
         "page_count",
@@ -6704,6 +7101,10 @@
         "get_record_number_service_sessions",
         "get_record_number_patient_conditions",
         "get_record_number_patient_incidents",
+        "get_patient_access_records",
+        "get_record_number_patient_access_records",
+        "patient_review_record_source",
+        "patient_has_critical_information",
         "get_incident_body_part_labels",
         "incident_body_to_labels",
         "get_incidents_filtered",
@@ -6817,13 +7218,29 @@
       ]
     },
     {
+      "id": "httpdocs/includes/imports/carer_profiles_page_parts.php",
+      "name": "carer_profiles_page_parts.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "ppi_part_result",
+        "ppi_import_question",
+        "ppi_part_preview",
+        "ppi_part_report"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/imports/connector_recipes.php",
       "name": "connector_recipes.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],
       "functions": [
-        "connector_recipe_carer_profiles"
+        "connector_recipe_for",
+        "connector_recipe_carer_profiles",
+        "connector_recipe_service_user_profiles"
       ],
       "imports": []
     },
@@ -6847,6 +7264,66 @@
         "import_shs_choices",
         "import_record_summary",
         "import_connector_extension_id"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/people_planner_guide_page.php",
+      "name": "people_planner_guide_page.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "choose",
+        "refresh",
+        "toggle"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/people_planner_import_page.php",
+      "name": "people_planner_import_page.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "ppi_rollback_confirmed",
+        "cpi_compare",
+        "copy_text",
+        "fallback",
+        "show_browser",
+        "new_token",
+        "task_with_bar",
+        "show",
+        "tick",
+        "finish",
+        "failed",
+        "poll",
+        "post",
+        "part",
+        "editing",
+        "watch",
+        "begin",
+        "escape",
+        "addRow",
+        "upload",
+        "fail",
+        "run",
+        "add"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/service_users_page_parts.php",
+      "name": "service_users_page_parts.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "ppi_part_result",
+        "ppi_import_question",
+        "ppi_part_preview",
+        "ppi_part_report"
       ],
       "imports": []
     },
@@ -13370,29 +13847,7 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [
-        "cpi_compare",
-        "copy_text",
-        "fallback",
-        "show_browser",
-        "compare_with_bar",
-        "show",
-        "tick",
-        "poll",
-        "finish",
-        "editing",
-        "failed",
-        "watch",
-        "part",
-        "begin",
-        "post",
-        "escape",
-        "addRow",
-        "upload",
-        "fail",
-        "run",
-        "add"
-      ],
+      "functions": [],
       "imports": []
     },
     {
@@ -13401,11 +13856,7 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [
-        "choose",
-        "refresh",
-        "toggle"
-      ],
+      "functions": [],
       "imports": []
     },
     {
@@ -13446,6 +13897,24 @@
         "open_import",
         "reset"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_service_user_import.php",
+      "name": "view_service_user_import.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_service_users_guide.php",
+      "name": "view_service_users_guide.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {
@@ -14149,6 +14618,27 @@
         "updateSecondaryQRCode",
         "displayOrganisationFields",
         "showAccessType"
+      ],
+      "imports": [
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/panels/patient_panel.php"
+        },
+        {
+          "type": "include",
+          "path": "/home/runner/work/PBLCare-Admin/PBLCare-Admin/httpdocs/includes/side_bar_quick_links.php"
+        }
+      ]
+    },
+    {
+      "id": "httpdocs/pages/patients/view_patient_access_records.php",
+      "name": "view_patient_access_records.php",
+      "type": "PHP",
+      "feature": "Patient Management",
+      "classes": [],
+      "functions": [
+        "par_date",
+        "par_text"
       ],
       "imports": [
         {
@@ -17037,6 +17527,59 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/tests/service_user_profiles/fixtures.php",
+      "name": "fixtures.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "su_write_pdf",
+        "su_profiles_pdf",
+        "su_sections",
+        "su_nok",
+        "su_write_workbook",
+        "su_serial",
+        "su_csv",
+        "su_fixture_files"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/service_user_profiles/run_import_tests.php",
+      "name": "run_import_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "insert_row",
+        "seed_patient",
+        "snapshot",
+        "patient",
+        "plain",
+        "count_rows",
+        "built_import",
+        "answer_suggestions"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/service_user_profiles/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refused",
+        "csv_file"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/tests/staff_permanent_delete/run_tests.php",
       "name": "run_tests.php",
       "type": "PHP",
@@ -18461,6 +19004,16 @@
     },
     {
       "source": "httpdocs/pages/patients/view_patient.php",
+      "target": "httpdocs/includes/side_bar_quick_links.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/patients/view_patient_access_records.php",
+      "target": "httpdocs/includes/panels/patient_panel.php",
+      "type": "include"
+    },
+    {
+      "source": "httpdocs/pages/patients/view_patient_access_records.php",
       "target": "httpdocs/includes/side_bar_quick_links.php",
       "type": "include"
     },

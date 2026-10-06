@@ -752,6 +752,183 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Care_plan_format.class.php",
+      "name": "Care_plan_format.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_format"
+      ],
+      "functions": [
+        "compact_person",
+        "compact_plan",
+        "compact_line",
+        "prn_line",
+        "as_of",
+        "in_effect",
+        "delivered",
+        "next_number",
+        "medication_number",
+        "keeping_medications",
+        "minutes",
+        "local_time",
+        "text",
+        "same_text",
+        "is_medication"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_import.class.php",
+      "name": "Care_plan_import.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_import"
+      ],
+      "functions": [
+        "kind",
+        "title",
+        "noun",
+        "kinds",
+        "required_kinds",
+        "path",
+        "set_file_name",
+        "event_prefix",
+        "identify",
+        "header_of",
+        "initial_build_state",
+        "final_stage",
+        "build_stage",
+        "build_assemble",
+        "csv",
+        "report",
+        "open_set",
+        "make_plan",
+        "plan_counts",
+        "writer",
+        "imported_count",
+        "rollback_worker",
+        "preview_of"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_import_planner.class.php",
+      "name": "Care_plan_import_planner.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_import_planner"
+      ],
+      "functions": [
+        "__construct",
+        "plan",
+        "task_names",
+        "resolver",
+        "plan_person",
+        "shs_only",
+        "plan_plan",
+        "differences",
+        "schedule",
+        "contains",
+        "label",
+        "times",
+        "day_names",
+        "answer",
+        "counts",
+        "preview_of"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_import_rollback.class.php",
+      "name": "Care_plan_import_rollback.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_import_rollback"
+      ],
+      "functions": [
+        "key_columns",
+        "created_type",
+        "linked_type",
+        "person_table",
+        "person_tables",
+        "in_use",
+        "registered",
+        "blockers",
+        "blocked_message"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_import_writer.class.php",
+      "name": "Care_plan_import_writer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_import_writer"
+      ],
+      "functions": [
+        "__construct",
+        "check_ready",
+        "prepare",
+        "kept",
+        "people",
+        "person_label",
+        "failed_result",
+        "write_last",
+        "result",
+        "write_person",
+        "create_plan",
+        "link_plan",
+        "match_tasks",
+        "resolver",
+        "add_task",
+        "insert_task_detail",
+        "insert_line",
+        "patient_of",
+        "datetime"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_set.class.php",
+      "name": "Care_plan_set.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_set"
+      ],
+      "functions": [
+        "__construct",
+        "people",
+        "offsets",
+        "at"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Care_plan_shs_directory.class.php",
+      "name": "Care_plan_shs_directory.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Care_plan_shs_directory"
+      ],
+      "functions": [
+        "load",
+        "read_patients",
+        "read_services",
+        "read_library",
+        "stored",
+        "patient_for",
+        "has_picture"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Carer_availability_pass.class.php",
       "name": "Carer_availability_pass.class.php",
       "type": "PHP",
@@ -7218,6 +7395,36 @@
       ]
     },
     {
+      "id": "httpdocs/includes/imports/care_plan_task_names.php",
+      "name": "care_plan_task_names.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "care_plan_task_standard_names",
+        "care_plan_task_new_names",
+        "care_plan_task_missing_icons",
+        "care_plan_ensure_library_tasks",
+        "care_plan_task_medicine_names",
+        "care_plan_task_key"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/care_plans_page_parts.php",
+      "name": "care_plans_page_parts.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "ppi_part_result",
+        "ppi_import_question",
+        "ppi_part_preview",
+        "ppi_part_report"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/imports/carer_profiles_page_parts.php",
       "name": "carer_profiles_page_parts.php",
       "type": "PHP",
@@ -7240,7 +7447,8 @@
       "functions": [
         "connector_recipe_for",
         "connector_recipe_carer_profiles",
-        "connector_recipe_service_user_profiles"
+        "connector_recipe_service_user_profiles",
+        "connector_recipe_care_plans"
       ],
       "imports": []
     },
@@ -13842,6 +14050,24 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/imports/view_care_plan_import.php",
+      "name": "view_care_plan_import.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_care_plans_guide.php",
+      "name": "view_care_plans_guide.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/imports/view_carer_profile_import.php",
       "name": "view_carer_profile_import.php",
       "type": "PHP",
@@ -17369,6 +17595,36 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/tests/care_plans/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "insert_row",
+        "full_row",
+        "seed_patient",
+        "seed_task",
+        "seed_service",
+        "cp_link",
+        "cp_plan",
+        "cp_person",
+        "cp_file",
+        "snapshot",
+        "table_counts",
+        "count_rows",
+        "one",
+        "upload",
+        "built_import",
+        "answer_suggestions",
+        "plain"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/tests/carer_matching/run_tests.php",
       "name": "run_tests.php",
       "type": "PHP",
@@ -17596,6 +17852,15 @@
         "insert_row",
         "rows"
       ],
+      "imports": []
+    },
+    {
+      "id": "migration/loader/add_care_plan_library_tasks.php",
+      "name": "add_care_plan_library_tasks.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {

@@ -4102,6 +4102,34 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Schema_sync/Backup_schedule.class.php",
+      "name": "Backup_schedule.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Backup_schedule"
+      ],
+      "functions": [
+        "__construct",
+        "defaults",
+        "settings",
+        "is_saved",
+        "save",
+        "describe",
+        "weekday_name",
+        "due",
+        "latest_slot",
+        "next_slot",
+        "describe_seconds",
+        "record_run",
+        "last_run",
+        "timer_is_running",
+        "read_json",
+        "write_json"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Schema_sync/Deployment_endpoint.class.php",
       "name": "Deployment_endpoint.class.php",
       "type": "PHP",
@@ -13871,6 +13899,10 @@
         "backup_named_in_query",
         "backup_describe_when",
         "open_dialog",
+        "open_delete",
+        "refresh_selection",
+        "refresh_schedule_fields",
+        "refresh_keep_note",
         "megabytes",
         "elapsed",
         "set_bar",
@@ -17666,6 +17698,7 @@
       "classes": [],
       "functions": [
         "take_backup",
+        "pbl_last_scheduled_backup_at",
         "report_rotation",
         "show_status",
         "describe_age",

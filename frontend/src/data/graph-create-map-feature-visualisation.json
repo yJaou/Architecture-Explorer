@@ -350,6 +350,22 @@
       "imports": []
     },
     {
+      "id": "httpdocs/api/database/backup.php",
+      "name": "backup.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "backup_respond",
+        "backup_read_job",
+        "backup_write_job",
+        "backup_find_file",
+        "backup_estimate_bytes",
+        "backup_take"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/deployment/migrate.php",
       "name": "migrate.php",
       "type": "PHP",
@@ -4070,6 +4086,22 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Schema_sync/Backup_catalogue.class.php",
+      "name": "Backup_catalogue.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Backup_catalogue"
+      ],
+      "functions": [
+        "__construct",
+        "is_backup_filename",
+        "entries",
+        "describe"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Schema_sync/Deployment_endpoint.class.php",
       "name": "Deployment_endpoint.class.php",
       "type": "PHP",
@@ -4465,6 +4497,23 @@
         "estimated_row_counts",
         "exact_row_count",
         "server_version"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Schema_restore.class.php",
+      "name": "Schema_restore.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Schema_restore"
+      ],
+      "functions": [
+        "__construct",
+        "is_restorable",
+        "restore",
+        "should_skip",
+        "base_tables"
       ],
       "imports": []
     },
@@ -13817,7 +13866,23 @@
       "type": "PHP",
       "feature": "Database",
       "classes": [],
-      "functions": [],
+      "functions": [
+        "backup_csrf_is_valid",
+        "backup_named_in_query",
+        "backup_describe_when",
+        "open_dialog",
+        "megabytes",
+        "elapsed",
+        "set_bar",
+        "show_running",
+        "finish",
+        "show_done",
+        "show_failed",
+        "poll",
+        "new_job",
+        "start",
+        "begin_watching"
+      ],
       "imports": []
     },
     {
@@ -17974,7 +18039,11 @@
         "stub_backup",
         "baseline_sql",
         "seed_at_baseline",
-        "snapshot_table"
+        "snapshot_table",
+        "seed_for_restore",
+        "restore_fingerprint",
+        "restore_tables",
+        "mysqldump_test_file"
       ],
       "imports": []
     },

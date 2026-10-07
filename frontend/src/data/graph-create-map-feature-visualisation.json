@@ -366,6 +366,17 @@
       "imports": []
     },
     {
+      "id": "httpdocs/api/database/scheduled_backup.php",
+      "name": "scheduled_backup.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "scheduled_backup_respond"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/api/deployment/migrate.php",
       "name": "migrate.php",
       "type": "PHP",
@@ -4126,6 +4137,29 @@
         "timer_is_running",
         "read_json",
         "write_json"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Schema_sync/Backup_trigger.class.php",
+      "name": "Backup_trigger.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Backup_trigger"
+      ],
+      "functions": [
+        "__construct",
+        "on_page_request",
+        "should_start",
+        "start_in_background",
+        "call_self",
+        "run",
+        "token",
+        "token_matches",
+        "state",
+        "update_state",
+        "newest_scheduled_file_at"
       ],
       "imports": []
     },

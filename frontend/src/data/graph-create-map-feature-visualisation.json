@@ -7077,7 +7077,10 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [],
+      "functions": [
+        "goBack",
+        "release"
+      ],
       "imports": []
     },
     {
@@ -7512,6 +7515,8 @@
         "editing",
         "watch",
         "begin",
+        "not_installed",
+        "check",
         "escape",
         "addRow",
         "upload",

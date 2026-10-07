@@ -397,7 +397,9 @@
       "functions": [
         "connector_reply",
         "connector_log",
-        "connector_not_found"
+        "connector_not_found",
+        "connector_file",
+        "connector_run"
       ],
       "imports": []
     },
@@ -1978,6 +1980,46 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Visit_month_ledger.class.php",
+      "name": "Visit_month_ledger.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_month_ledger"
+      ],
+      "functions": [
+        "__construct",
+        "month_of",
+        "period",
+        "label",
+        "clean_month",
+        "this_month",
+        "order_key",
+        "rows",
+        "save_row",
+        "visit_jobs",
+        "covered",
+        "state_of",
+        "months",
+        "tally",
+        "record_discovery",
+        "next_fetch",
+        "month",
+        "fetching_job",
+        "fetch_failed",
+        "step",
+        "work_on",
+        "carry_answers",
+        "queue_many",
+        "queue",
+        "queue_one",
+        "stop",
+        "audit_run",
+        "locked"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Visit_report_parser.class.php",
       "name": "Visit_report_parser.class.php",
       "type": "PHP",
@@ -2815,6 +2857,7 @@
       "functions": [
         "__construct",
         "issue",
+        "issue_for_scope",
         "base_url",
         "connection_code",
         "find",
@@ -14477,6 +14520,33 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/imports/view_visits_all.php",
+      "name": "view_visits_all.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "vma_month",
+        "vma_months",
+        "vma_connector_code",
+        "text",
+        "pill",
+        "canChoose",
+        "byYear",
+        "yearSummary",
+        "monthRow",
+        "render",
+        "showChosen",
+        "now",
+        "error",
+        "post",
+        "work",
+        "openConnector",
+        "notInstalled"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/imports/view_visits_guide.php",
       "name": "view_visits_guide.php",
       "type": "PHP",
@@ -18206,7 +18276,9 @@
       "name": "run_tests.php",
       "type": "PHP",
       "feature": "Scheduling",
-      "classes": [],
+      "classes": [
+        "Fixed_clock_context"
+      ],
       "functions": [
         "test_group",
         "check",
@@ -18225,7 +18297,11 @@
         "count_rows",
         "upload",
         "built_import",
-        "answer_all"
+        "answer_all",
+        "now",
+        "month_files",
+        "fetch_month",
+        "run_steps"
       ],
       "imports": []
     },

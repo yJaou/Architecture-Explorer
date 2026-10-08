@@ -2098,6 +2098,24 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Visit_records_missing.class.php",
+      "name": "Visit_records_missing.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_missing"
+      ],
+      "functions": [
+        "__construct",
+        "why",
+        "reason",
+        "key",
+        "import_for",
+        "questions_of"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Visit_records_planner.class.php",
       "name": "Visit_records_planner.class.php",
       "type": "PHP",
@@ -2109,6 +2127,7 @@
         "__construct",
         "plan",
         "no_visit",
+        "explain_missing",
         "note_task_names",
         "task_attention",
         "preview_of",
@@ -3344,6 +3363,7 @@
         "link",
         "add_sample",
         "set_fact",
+        "set_detail",
         "has",
         "issues",
         "record_ids",
@@ -8001,7 +8021,9 @@
         "import_issue_scope",
         "import_shs_choices",
         "import_record_summary",
-        "import_connector_extension_id"
+        "import_connector_extension_id",
+        "import_connector_version",
+        "import_connector_link"
       ],
       "imports": []
     },

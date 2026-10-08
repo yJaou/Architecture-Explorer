@@ -1419,7 +1419,14 @@
         "files_of_person",
         "blocked_message",
         "run",
+        "remove_registered",
+        "run_part",
+        "remaining",
+        "remove_created",
         "restore_changes",
+        "page_size",
+        "restore_page",
+        "restore_row",
         "delete_people",
         "registered",
         "delete"
@@ -1557,6 +1564,9 @@
         "import_result",
         "rollback_blockers",
         "rollback",
+        "rolls_back_in_parts",
+        "rollback_part",
+        "rollback_paused",
         "rollback_running",
         "with_set",
         "answers",
@@ -1989,6 +1999,11 @@
       ],
       "functions": [
         "__construct",
+        "for_scope",
+        "importer",
+        "kind",
+        "scope",
+        "visits_ledger",
         "month_of",
         "period",
         "label",
@@ -2016,6 +2031,189 @@
         "stop",
         "audit_run",
         "locked"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_format.class.php",
+      "name": "Visit_records_format.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_format"
+      ],
+      "functions": [
+        "compact_visit",
+        "compact_activity",
+        "line_day",
+        "occurrence",
+        "join",
+        "hash",
+        "task_state",
+        "storable",
+        "stored",
+        "task_note",
+        "text",
+        "number",
+        "coordinate"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_import.class.php",
+      "name": "Visit_records_import.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_import"
+      ],
+      "functions": [
+        "kind",
+        "title",
+        "noun",
+        "kinds",
+        "required_kinds",
+        "path",
+        "set_file_name",
+        "event_prefix",
+        "default_period_name",
+        "identify",
+        "initial_build_state",
+        "final_stage",
+        "build_stage",
+        "read_day",
+        "join_day",
+        "build_assemble",
+        "records_report",
+        "open_set",
+        "with_set",
+        "make_plan",
+        "plan_counts",
+        "writer",
+        "imported_count",
+        "rolls_back_in_parts",
+        "rollback_worker",
+        "preview_of"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_planner.class.php",
+      "name": "Visit_records_planner.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_planner"
+      ],
+      "functions": [
+        "__construct",
+        "plan",
+        "no_visit",
+        "note_task_names",
+        "task_attention",
+        "preview_of",
+        "answer"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_rollback.class.php",
+      "name": "Visit_records_rollback.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_rollback"
+      ],
+      "functions": [
+        "key_columns",
+        "created_type",
+        "linked_type",
+        "person_table",
+        "person_tables",
+        "in_use",
+        "blockers",
+        "blocked_message"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_set.class.php",
+      "name": "Visit_records_set.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_set"
+      ],
+      "functions": [
+        "__construct",
+        "count",
+        "visits",
+        "record",
+        "decode"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_shs_directory.class.php",
+      "name": "Visit_records_shs_directory.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_shs_directory"
+      ],
+      "functions": [
+        "load",
+        "read_library",
+        "session"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_tasks.class.php",
+      "name": "Visit_records_tasks.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_tasks"
+      ],
+      "functions": [
+        "__construct",
+        "resolve",
+        "medication_task_number",
+        "session_task_number",
+        "own_task_number"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Access_importer/Visit_records_writer.class.php",
+      "name": "Visit_records_writer.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Visit_records_writer"
+      ],
+      "functions": [
+        "__construct",
+        "check_ready",
+        "prepare",
+        "people",
+        "person_label",
+        "write_last",
+        "result",
+        "write_person",
+        "attendance",
+        "note",
+        "write_tasks",
+        "find_task",
+        "task_values",
+        "add_task",
+        "write_comments",
+        "load_registered",
+        "log_created",
+        "delete_logged",
+        "strings",
+        "amount"
       ],
       "imports": []
     },
@@ -4914,6 +5112,7 @@
         "__construct",
         "show_session_number",
         "show_visit_ref",
+        "show_source_status",
         "show_other_carers",
         "show_patient_number",
         "show_service_number",
@@ -7778,7 +7977,8 @@
         "connector_recipe_carer_profiles",
         "connector_recipe_service_user_profiles",
         "connector_recipe_care_plans",
-        "connector_recipe_visits"
+        "connector_recipe_visits",
+        "connector_recipe_visit_records"
       ],
       "imports": []
     },
@@ -7864,6 +8064,21 @@
         "ppi_import_question",
         "ppi_part_preview",
         "ppi_part_report"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/imports/visit_records_page_parts.php",
+      "name": "visit_records_page_parts.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "ppi_part_result",
+        "ppi_import_question",
+        "ppi_part_preview",
+        "ppi_part_report",
+        "ppi_visit_records_task_names"
       ],
       "imports": []
     },
@@ -14520,6 +14735,33 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/imports/view_visit_records_all.php",
+      "name": "view_visit_records_all.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_visit_records_guide.php",
+      "name": "view_visit_records_guide.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_visit_records_import.php",
+      "name": "view_visit_records_import.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/imports/view_visits_all.php",
       "name": "view_visits_all.php",
       "type": "PHP",
@@ -16394,6 +16636,9 @@
         "get_session_task_completion_summary",
         "sanitize_visit_task_icon_class",
         "render_visit_task_icon_markup",
+        "visit_task_access_comments",
+        "visit_task_access_person",
+        "render_visit_task_access_details",
         "visit_task_state_labels",
         "visit_task_state_styles",
         "visit_task_covered_styles",
@@ -18268,6 +18513,41 @@
         "refusal",
         "insert_row",
         "rows"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/visit_records/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Fixed_clock_context"
+      ],
+      "functions": [
+        "test_group",
+        "check",
+        "refusal",
+        "now",
+        "insert_row",
+        "full_row",
+        "seed_patient",
+        "seed_staff",
+        "seed_service",
+        "seed_library_task",
+        "seed_visit_task",
+        "one",
+        "count_rows",
+        "upload",
+        "answer_all",
+        "snapshot",
+        "cp_visit",
+        "ndjson",
+        "v_line",
+        "a_line",
+        "done",
+        "comment",
+        "record_lines"
       ],
       "imports": []
     },

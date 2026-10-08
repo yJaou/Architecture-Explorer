@@ -8024,7 +8024,12 @@
         "import_connector_extension_id",
         "import_connector_version",
         "import_connector_link",
-        "import_connector_icon"
+        "import_connector_icon",
+        "done",
+        "yes",
+        "no",
+        "outside",
+        "key"
       ],
       "imports": []
     },
@@ -14794,6 +14799,7 @@
         "vma_month",
         "vma_months",
         "vma_connector_code",
+        "stageBar",
         "text",
         "pill",
         "canChoose",
@@ -14806,8 +14812,12 @@
         "error",
         "post",
         "work",
+        "connectorTab",
+        "closeTab",
         "openConnector",
-        "notInstalled"
+        "notInstalled",
+        "resumeConnector",
+        "importMonths"
       ],
       "imports": []
     },

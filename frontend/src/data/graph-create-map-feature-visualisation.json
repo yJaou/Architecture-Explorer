@@ -8023,7 +8023,8 @@
         "import_record_summary",
         "import_connector_extension_id",
         "import_connector_version",
-        "import_connector_link"
+        "import_connector_link",
+        "import_connector_icon"
       ],
       "imports": []
     },

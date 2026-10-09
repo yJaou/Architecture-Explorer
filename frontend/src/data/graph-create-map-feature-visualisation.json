@@ -1508,6 +1508,9 @@
         "end_build_part",
         "kind_of",
         "is_job",
+        "only_of",
+        "back_of",
+        "create_job_for",
         "for_job",
         "name_of",
         "default_name",
@@ -1629,6 +1632,7 @@
       ],
       "functions": [
         "__construct",
+        "in_scope",
         "plan",
         "funders",
         "new_funder",
@@ -8060,6 +8064,8 @@
       "feature": "Other",
       "classes": [],
       "functions": [
+        "ppi_people_to_bring",
+        "ppi_scoped_in_progress",
         "ppi_rollback_confirmed",
         "cpi_compare",
         "land",

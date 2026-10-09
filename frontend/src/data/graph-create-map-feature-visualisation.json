@@ -8066,6 +8066,7 @@
       "functions": [
         "ppi_people_to_bring",
         "ppi_scoped_in_progress",
+        "ppi_scoped_done",
         "ppi_rollback_confirmed",
         "cpi_compare",
         "land",

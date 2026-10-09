@@ -853,6 +853,7 @@
       ],
       "functions": [
         "__construct",
+        "people",
         "plan",
         "task_names",
         "resolver",
@@ -1919,6 +1920,7 @@
         "open_set",
         "with_set",
         "make_plan",
+        "care_plans_checked",
         "plan_counts",
         "writer",
         "imported_count",
@@ -18331,7 +18333,8 @@
         "upload",
         "built_import",
         "answer_suggestions",
-        "plain"
+        "plain",
+        "count_rows_cp"
       ],
       "imports": []
     },

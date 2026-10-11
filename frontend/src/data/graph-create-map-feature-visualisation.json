@@ -2066,6 +2066,7 @@
         "queue_many",
         "queue",
         "queue_one",
+        "retry_fetch_failed",
         "stop",
         "audit_run",
         "locked"
@@ -3119,6 +3120,7 @@
         "connection_code",
         "find",
         "touch",
+        "quiet_seconds_for_scope",
         "revoke_for_job",
         "ever_issued_for_job",
         "current_for_job"
@@ -14855,6 +14857,7 @@
         "byYear",
         "yearSummary",
         "monthRow",
+        "stuckMonths",
         "offerGuide",
         "render",
         "showChosen",
@@ -14876,7 +14879,10 @@
         "openApprove",
         "guide",
         "closeGuide",
+        "fetchWaiting",
         "resumeConnector",
+        "carryOn",
+        "connectorGuide",
         "importMonths"
       ],
       "imports": []

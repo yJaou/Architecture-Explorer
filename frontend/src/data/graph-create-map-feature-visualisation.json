@@ -715,6 +715,28 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Access_journey.class.php",
+      "name": "Access_journey.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Access_journey"
+      ],
+      "functions": [
+        "__construct",
+        "steps",
+        "now",
+        "now_title",
+        "jobs",
+        "import_step",
+        "months_step",
+        "names",
+        "days_since",
+        "ago"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Access_validator.class.php",
       "name": "Access_validator.class.php",
       "type": "PHP",
@@ -1239,6 +1261,7 @@
         "kinds",
         "required_kinds",
         "path",
+        "next_import",
         "set_file_name",
         "event_prefix",
         "is_carer_job",
@@ -2026,6 +2049,7 @@
         "kind",
         "scope",
         "visits_ledger",
+        "records_ledger",
         "month_of",
         "period",
         "label",
@@ -2041,6 +2065,12 @@
         "tally",
         "record_discovery",
         "next_fetch",
+        "next_records_fetch",
+        "records_to_follow",
+        "follow_with_records",
+        "job_id",
+        "month_progress",
+        "records_by_month",
         "month",
         "fetching_job",
         "fetch_failed",
@@ -14785,6 +14815,20 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/imports/view_journey.php",
+      "name": "view_journey.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "journey_action",
+        "journey_pill",
+        "show",
+        "refresh"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/imports/view_service_user_import.php",
       "name": "view_service_user_import.php",
       "type": "PHP",
@@ -14853,6 +14897,8 @@
         "checkWords",
         "plansBar",
         "stageBar",
+        "onTheWayCount",
+        "recordsCell",
         "text",
         "pill",
         "canChoose",

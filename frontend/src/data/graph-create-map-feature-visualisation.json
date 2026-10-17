@@ -2097,6 +2097,8 @@
         "checks_summary",
         "wanted",
         "start_checks",
+        "bring_across_now",
+        "start_checks_now",
         "being_read",
         "widen_another",
         "compare_with_checks",

@@ -2078,6 +2078,7 @@
         "job_id",
         "month_progress",
         "records_by_month",
+        "records_counts",
         "month",
         "fetching_job",
         "fetch_failed",

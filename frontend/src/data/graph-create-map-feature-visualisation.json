@@ -2064,6 +2064,7 @@
         "order_key",
         "rows",
         "save_row",
+        "visits_in_shs",
         "visit_jobs",
         "covered",
         "state_of",

@@ -2082,6 +2082,7 @@
         "next_fetch",
         "next_records_fetch",
         "records_to_follow",
+        "follow_import",
         "follow_with_records",
         "job_id",
         "month_progress",

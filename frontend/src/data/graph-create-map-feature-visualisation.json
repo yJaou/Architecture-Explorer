@@ -2118,6 +2118,10 @@
         "queue",
         "queue_one",
         "retry_fetch_failed",
+        "paused",
+        "pause",
+        "resume",
+        "pause_file",
         "stop",
         "audit_run",
         "locked"

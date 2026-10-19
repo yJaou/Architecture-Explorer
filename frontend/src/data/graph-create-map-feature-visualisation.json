@@ -2072,6 +2072,7 @@
         "save_row",
         "visits_in_shs",
         "imported_totals",
+        "count_imported",
         "visit_jobs",
         "covered",
         "state_of",

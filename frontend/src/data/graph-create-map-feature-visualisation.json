@@ -1991,6 +1991,7 @@
         "unlinked_candidates",
         "take_candidate",
         "shs_only",
+        "shs_only_origin",
         "attention",
         "counts",
         "preview_of",
@@ -5424,6 +5425,7 @@
       ],
       "functions": [
         "get_staff",
+        "get_position_access_group_number",
         "get_staff_availability",
         "edit_staff_field",
         "record_password_is_default",
@@ -5694,6 +5696,7 @@
         "show_branch_number",
         "show_branch_area_number",
         "show_access_group_number",
+        "show_position_access_group_number",
         "show_landline_phone_number",
         "show_mobile_phone_number",
         "show_pager",
@@ -5824,6 +5827,30 @@
         "get_history_entry_record",
         "add_history_entry",
         "remove_history_entry"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Staff_position/Position_access_groups.class.php",
+      "name": "Position_access_groups.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Position_access_groups"
+      ],
+      "functions": [
+        "normalise_name",
+        "suggest_group",
+        "positions",
+        "groups",
+        "in_use",
+        "position_for_group",
+        "build_plan",
+        "plan_entry_pages",
+        "plan_keeps_manager",
+        "apply",
+        "give_new_position_a_group",
+        "rename_group_with_position"
       ],
       "imports": []
     },
@@ -13827,6 +13854,17 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/access_groups/match_positions.php",
+      "name": "match_positions.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "match_positions_group_label"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/access_groups/upgrade_permissions.php",
       "name": "upgrade_permissions.php",
       "type": "PHP",
@@ -18603,6 +18641,18 @@
         "restore_fingerprint",
         "restore_tables",
         "mysqldump_test_file"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/position_access_groups/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "test_group",
+        "check"
       ],
       "imports": []
     },

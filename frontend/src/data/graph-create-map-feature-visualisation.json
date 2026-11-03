@@ -5939,6 +5939,7 @@
         "edit_staff_type_field",
         "set_staff_type",
         "check_staff_type_number_exists",
+        "count_staff_type_holders",
         "delete_staff_type"
       ],
       "imports": []

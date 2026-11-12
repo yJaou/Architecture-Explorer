@@ -15345,6 +15345,7 @@
         "dbState",
         "dbHM",
         "dbPatientName",
+        "dbKeyOf",
         "dbDayMode",
         "dbDayText",
         "dbGoToDay",
@@ -15352,6 +15353,7 @@
         "dbFold",
         "dbClassic",
         "dbFocusCarer",
+        "dbOpenVisit",
         "renderDayboard",
         "load"
       ],

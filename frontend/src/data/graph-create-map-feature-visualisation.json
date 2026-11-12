@@ -15341,6 +15341,8 @@
         "dbState",
         "dbHM",
         "dbPatientName",
+        "dbApplyFolds",
+        "dbFold",
         "dbClassic",
         "renderDayboard",
         "load"

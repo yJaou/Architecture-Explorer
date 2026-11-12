@@ -1904,6 +1904,7 @@
         "remove",
         "put_back",
         "repairs",
+        "out_for_job",
         "folder",
         "repair_folder",
         "manifest",

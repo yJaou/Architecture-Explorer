@@ -8107,6 +8107,26 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/geocoding.php",
+      "name": "geocoding.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "installation_country",
+        "geocode_address_text",
+        "geocoder_provider",
+        "aws_location_geocode",
+        "aws_location_reverse",
+        "aws_location_region",
+        "aws_location_call",
+        "aws_instance_credentials",
+        "aws_imds_request",
+        "aws_sigv4_headers"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/header.php",
       "name": "header.php",
       "type": "PHP",
@@ -15197,6 +15217,7 @@
       "classes": [],
       "functions": [
         "map_tile_settings",
+        "map_city_settings",
         "makeClusterIcon",
         "positionLabels",
         "escapeHtml",

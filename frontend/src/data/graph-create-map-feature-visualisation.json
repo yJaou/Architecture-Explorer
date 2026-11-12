@@ -8122,7 +8122,9 @@
         "aws_location_call",
         "aws_instance_credentials",
         "aws_imds_request",
-        "aws_sigv4_headers"
+        "aws_sigv4_headers",
+        "address_county_label",
+        "address_postcode_label"
       ],
       "imports": []
     },

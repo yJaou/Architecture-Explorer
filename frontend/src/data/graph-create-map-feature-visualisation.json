@@ -15338,6 +15338,11 @@
         "infoTipHtml",
         "bindInfoTip",
         "render",
+        "dbState",
+        "dbHM",
+        "dbPatientName",
+        "dbClassic",
+        "renderDayboard",
         "load"
       ],
       "imports": []

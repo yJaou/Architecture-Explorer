@@ -4729,7 +4729,6 @@
         "guards_for_redefinition",
         "run",
         "guard",
-        "tables_created_by",
         "column_list",
         "leading_type",
         "live_tables"
@@ -4895,6 +4894,7 @@
         "parse_column",
         "parse_alter_table",
         "normalise_type",
+        "normalise_charset_name",
         "storage_type",
         "normalise_default",
         "unquote_identifier",
@@ -6648,6 +6648,18 @@
       "functions": [
         "normalizeBase",
         "isAbsoluteUrl"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/app_time_zone.php",
+      "name": "app_time_zone.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "app_time_zone",
+        "apply_app_time_zone"
       ],
       "imports": []
     },
@@ -18298,6 +18310,19 @@
         "show_curl_command",
         "line",
         "usage"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/database/first_install.php",
+      "name": "first_install.php",
+      "type": "PHP",
+      "feature": "Database",
+      "classes": [],
+      "functions": [
+        "first_install_fail",
+        "first_install_number",
+        "first_install_insert"
       ],
       "imports": []
     },

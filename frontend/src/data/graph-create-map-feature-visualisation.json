@@ -15351,6 +15351,7 @@
         "dbApplyFolds",
         "dbFold",
         "dbClassic",
+        "dbFocusCarer",
         "renderDayboard",
         "load"
       ],

@@ -1454,6 +1454,7 @@
         "files_for",
         "files_of_person",
         "blocked_message",
+        "refuse_if_unsafe",
         "run",
         "remove_registered",
         "run_part",
@@ -1888,6 +1889,33 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Access_importer/Visit_duplicate_repair.class.php",
+      "name": "Visit_duplicate_repair.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Visit_duplicate_repair"
+      ],
+      "functions": [
+        "__construct",
+        "find",
+        "recorded",
+        "start",
+        "remove",
+        "put_back",
+        "repairs",
+        "folder",
+        "repair_folder",
+        "manifest",
+        "write_manifest",
+        "binding",
+        "write_part",
+        "read_part",
+        "write_file"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Access_importer/Visit_export_parser.class.php",
       "name": "Visit_export_parser.class.php",
       "type": "PHP",
@@ -2018,6 +2046,7 @@
         "in_use",
         "delete_people",
         "blockers",
+        "refuse_if_unsafe",
         "blocked_message"
       ],
       "imports": []
@@ -14925,6 +14954,18 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/imports/view_visit_duplicates.php",
+      "name": "view_visit_duplicates.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [
+        "vdr_names",
+        "vdr_rows"
+      ],
       "imports": []
     },
     {

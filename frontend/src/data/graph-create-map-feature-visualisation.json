@@ -15352,6 +15352,7 @@
         "dbApplyFolds",
         "dbFold",
         "dbClassic",
+        "dbScrollToMap",
         "dbFocusCarer",
         "dbOpenVisit",
         "renderDayboard",

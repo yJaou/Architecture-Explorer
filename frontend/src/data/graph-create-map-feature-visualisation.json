@@ -8124,7 +8124,8 @@
         "aws_imds_request",
         "aws_sigv4_headers",
         "address_county_label",
-        "address_postcode_label"
+        "address_postcode_label",
+        "installation_map_cities"
       ],
       "imports": []
     },
@@ -13068,6 +13069,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/mobile_api/instance/get_instance_settings.api.php",
+      "name": "get_instance_settings.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/messages/_direct_message_helpers.php",
       "name": "_direct_message_helpers.php",
       "type": "PHP",
@@ -13471,6 +13481,15 @@
       ]
     },
     {
+      "id": "httpdocs/mobile_api/sessions/get_carer_location.api.php",
+      "name": "get_carer_location.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/sessions/get_completed_session.api.php",
       "name": "get_completed_session.api.php",
       "type": "PHP",
@@ -13609,6 +13628,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/mobile_api/sessions/get_missed_sessions.api.php",
+      "name": "get_missed_sessions.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/sessions/get_patient_visit_history.api.php",
       "name": "get_patient_visit_history.api.php",
       "type": "PHP",
@@ -13630,6 +13658,15 @@
       ]
     },
     {
+      "id": "httpdocs/mobile_api/sessions/get_service_user_location.api.php",
+      "name": "get_service_user_location.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/sessions/get_service_user_session.api.php",
       "name": "get_service_user_session.api.php",
       "type": "PHP",
@@ -13639,6 +13676,15 @@
         "pbl_su_session_encrypt_picture",
         "pbl_su_enc"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/mobile_api/sessions/get_service_user_sharing_window.api.php",
+      "name": "get_service_user_sharing_window.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {
@@ -13757,6 +13803,29 @@
       ]
     },
     {
+      "id": "httpdocs/mobile_api/sessions/service_user_location_helpers.php",
+      "name": "service_user_location_helpers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "pbl_su_location_respond",
+        "pbl_su_location_log",
+        "pbl_su_location_check_envelope",
+        "pbl_su_location_require_service_user",
+        "pbl_su_location_require_staff",
+        "pbl_su_location_read_input",
+        "pbl_su_visit_awaiting_check_in",
+        "pbl_su_visit_slot",
+        "pbl_su_visit_share_opened_at",
+        "pbl_service_user_imminent_session",
+        "pbl_su_location_is_valid_fix",
+        "pbl_service_user_store_location",
+        "pbl_service_user_latest_location"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/sessions/start_session.api.php",
       "name": "start_session.api.php",
       "type": "PHP",
@@ -13783,6 +13852,15 @@
         "pbl_occ_week_reoccurs",
         "pbl_unallocated_occurrence_structs"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/mobile_api/sessions/update_service_user_location.api.php",
+      "name": "update_service_user_location.api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {

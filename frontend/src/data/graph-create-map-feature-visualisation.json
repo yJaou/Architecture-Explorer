@@ -5640,6 +5640,7 @@
       ],
       "functions": [
         "add_staff",
+        "pay_rate_sheets_exist",
         "update_staff",
         "update_staff_profile_details",
         "hire_applicant",

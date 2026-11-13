@@ -12861,6 +12861,29 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/workforce_country.php",
+      "name": "workforce_country.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "workforce_is_canada",
+        "staff_id_number_label",
+        "staff_id_number_check",
+        "staff_sin_needs_work_permit",
+        "staff_equality_fields_required",
+        "equality_mandatory_mark",
+        "canadian_ethnic_origin_options",
+        "staff_wtr_label",
+        "staff_wtr_options",
+        "staff_eligibility_options",
+        "staff_eligibility_has_expiry",
+        "staff_eligibility_expiry_label",
+        "staff_eligibility_onchange"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/mobile_api/account/get_account.api.php",
       "name": "get_account.api.php",
       "type": "PHP",

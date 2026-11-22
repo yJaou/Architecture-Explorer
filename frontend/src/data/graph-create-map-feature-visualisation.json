@@ -8319,6 +8319,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/care-plan-monitoring.php",
+      "name": "care-plan-monitoring.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/carer-preferences.php",
       "name": "carer-preferences.php",
       "type": "PHP",
@@ -8413,6 +8422,15 @@
       "name": "give-a-login.php",
       "type": "PHP",
       "feature": "Authentication",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/live-map.php",
+      "name": "live-map.php",
+      "type": "PHP",
+      "feature": "Other",
       "classes": [],
       "functions": [],
       "imports": []

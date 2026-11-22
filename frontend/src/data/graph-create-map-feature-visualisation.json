@@ -8416,6 +8416,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/staff-reports.php",
+      "name": "staff-reports.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/staff-trainings-tasks-equipment.php",
       "name": "staff-trainings-tasks-equipment.php",
       "type": "PHP",
@@ -9503,6 +9512,17 @@
         "nhs_suggest_names",
         "nhs_detail_cache_path",
         "nhs_get_detail_html"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/organisation_details.php",
+      "name": "organisation_details.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "organisation_details"
       ],
       "imports": []
     },

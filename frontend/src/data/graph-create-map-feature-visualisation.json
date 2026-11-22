@@ -8272,6 +8272,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/trainings.php",
+      "name": "trainings.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/imports/care_plan_task_names.php",
       "name": "care_plan_task_names.php",
       "type": "PHP",

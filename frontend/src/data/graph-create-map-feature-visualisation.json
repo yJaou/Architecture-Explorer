@@ -8398,6 +8398,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/staff-events-and-history.php",
+      "name": "staff-events-and-history.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/staff-trainings-tasks-equipment.php",
       "name": "staff-trainings-tasks-equipment.php",
       "type": "PHP",

@@ -8218,6 +8218,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/access-groups.php",
+      "name": "access-groups.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/add-carer.php",
       "name": "add-carer.php",
       "type": "PHP",

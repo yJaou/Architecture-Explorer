@@ -8272,6 +8272,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/next-of-kin.php",
+      "name": "next-of-kin.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/settings.php",
       "name": "settings.php",
       "type": "PHP",

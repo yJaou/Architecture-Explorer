@@ -8236,6 +8236,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/add-service-user.php",
+      "name": "add-service-user.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/branches-and-areas.php",
       "name": "branches-and-areas.php",
       "type": "PHP",

@@ -8292,6 +8292,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/app-for-managers.php",
+      "name": "app-for-managers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/applicants.php",
       "name": "applicants.php",
       "type": "PHP",

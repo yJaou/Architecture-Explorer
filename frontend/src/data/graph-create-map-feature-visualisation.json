@@ -8292,6 +8292,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/cancelling-visits.php",
+      "name": "cancelling-visits.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/care-assessment.php",
       "name": "care-assessment.php",
       "type": "PHP",
@@ -8305,6 +8314,15 @@
       "name": "carer-preferences.php",
       "type": "PHP",
       "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/changing-visits.php",
+      "name": "changing-visits.php",
+      "type": "PHP",
+      "feature": "Scheduling",
       "classes": [],
       "functions": [],
       "imports": []

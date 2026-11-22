@@ -7940,6 +7940,7 @@
         "display_time_of_day",
         "get_display_date_format",
         "display_date",
+        "display_date_timestamp",
         "display_date_time",
         "display_date_time_time",
         "display_date_time_uk",

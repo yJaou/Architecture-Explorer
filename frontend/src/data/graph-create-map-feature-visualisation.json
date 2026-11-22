@@ -7867,6 +7867,7 @@
         "decode_time_off_notes",
         "time_off_applies_on_date",
         "edit_settings",
+        "settings_ini_write",
         "get_settings",
         "get_private_path",
         "clean_input",

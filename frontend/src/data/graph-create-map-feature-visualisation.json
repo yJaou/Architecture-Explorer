@@ -8245,6 +8245,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/funders.php",
+      "name": "funders.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/staff-types-and-positions.php",
       "name": "staff-types-and-positions.php",
       "type": "PHP",

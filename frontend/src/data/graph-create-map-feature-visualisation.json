@@ -8390,6 +8390,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/visit-reports-and-mar.php",
+      "name": "visit-reports-and-mar.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/imports/care_plan_task_names.php",
       "name": "care_plan_task_names.php",
       "type": "PHP",

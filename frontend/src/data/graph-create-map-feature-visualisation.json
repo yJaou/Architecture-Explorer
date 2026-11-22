@@ -8236,6 +8236,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/staff-types-and-positions.php",
+      "name": "staff-types-and-positions.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/imports/care_plan_task_names.php",
       "name": "care_plan_task_names.php",
       "type": "PHP",

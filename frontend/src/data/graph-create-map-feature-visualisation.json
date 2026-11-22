@@ -15055,7 +15055,9 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [],
+      "functions": [
+        "helpFoldAll"
+      ],
       "imports": []
     },
     {

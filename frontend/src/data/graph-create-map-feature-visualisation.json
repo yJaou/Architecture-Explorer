@@ -8282,6 +8282,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/daily-schedule.php",
+      "name": "daily-schedule.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/ending-a-service.php",
       "name": "ending-a-service.php",
       "type": "PHP",

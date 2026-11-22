@@ -8292,6 +8292,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/calendar-and-copying.php",
+      "name": "calendar-and-copying.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/cancelling-visits.php",
       "name": "cancelling-visits.php",
       "type": "PHP",
@@ -8420,6 +8429,15 @@
     {
       "id": "httpdocs/includes/help/pages/notes-and-documents.php",
       "name": "notes-and-documents.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/scheduling-reports.php",
+      "name": "scheduling-reports.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],

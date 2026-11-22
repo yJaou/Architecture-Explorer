@@ -5568,6 +5568,7 @@
         "show_staff_type_number",
         "show_staff_position_number",
         "show_staff_wtr",
+        "show_position_access_group_number",
         "show_staff_source",
         "show_branch_number",
         "show_branch_area_number",
@@ -5688,6 +5689,7 @@
         "pay_rate_sheets_exist",
         "update_staff",
         "update_staff_profile_details",
+        "carry_applicant_availability_to_slots",
         "hire_applicant",
         "reject_applicant",
         "reconsider_applicant",
@@ -8256,6 +8258,15 @@
     {
       "id": "httpdocs/includes/help/pages/add-service-user.php",
       "name": "add-service-user.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/applicants.php",
+      "name": "applicants.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],

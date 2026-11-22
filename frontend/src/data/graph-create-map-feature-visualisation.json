@@ -8263,6 +8263,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/availability-and-time-off.php",
+      "name": "availability-and-time-off.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/branches-and-areas.php",
       "name": "branches-and-areas.php",
       "type": "PHP",

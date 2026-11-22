@@ -8299,6 +8299,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/tasks-and-medication.php",
+      "name": "tasks-and-medication.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/trainings.php",
       "name": "trainings.php",
       "type": "PHP",

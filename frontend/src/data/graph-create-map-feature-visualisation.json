@@ -5505,6 +5505,10 @@
       "functions": [
         "get_staff",
         "get_position_access_group_number",
+        "set_email_change_code",
+        "get_email_change_code",
+        "use_email_change_code",
+        "retire_email_change_code",
         "get_staff_availability",
         "edit_staff_field",
         "record_password_is_default",
@@ -5710,6 +5714,9 @@
         "remove_availability",
         "edit_all_availability",
         "complete_own_personal_details",
+        "request_account_email_change",
+        "confirm_account_email_change",
+        "mask_email",
         "update_account_profile_picture",
         "update_account_password"
       ],
@@ -7896,6 +7903,7 @@
         "apply_smtp_settings",
         "send_password_has_changed_email",
         "log_mail_error",
+        "send_account_email",
         "send_new_password_email",
         "staff_sign_in_instructions",
         "send_login_details_email",
@@ -8309,6 +8317,24 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/finding-your-way.php",
+      "name": "finding-your-way.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/first-sign-in.php",
+      "name": "first-sign-in.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/funders.php",
       "name": "funders.php",
       "type": "PHP",
@@ -8394,6 +8420,24 @@
       "name": "visit-reports-and-mar.php",
       "type": "PHP",
       "feature": "Scheduling",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/who-can-see-what.php",
+      "name": "who-can-see-what.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/your-account.php",
+      "name": "your-account.php",
+      "type": "PHP",
+      "feature": "Other",
       "classes": [],
       "functions": [],
       "imports": []

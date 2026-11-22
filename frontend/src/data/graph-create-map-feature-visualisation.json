@@ -8398,6 +8398,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/staff-trainings-tasks-equipment.php",
+      "name": "staff-trainings-tasks-equipment.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/staff-types-and-positions.php",
       "name": "staff-types-and-positions.php",
       "type": "PHP",

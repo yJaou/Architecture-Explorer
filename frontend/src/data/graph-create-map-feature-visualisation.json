@@ -8238,6 +8238,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/activating-a-device.php",
+      "name": "activating-a-device.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/add-carer.php",
       "name": "add-carer.php",
       "type": "PHP",
@@ -8258,6 +8267,24 @@
     {
       "id": "httpdocs/includes/help/pages/add-service-user.php",
       "name": "add-service-user.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/app-for-carers.php",
+      "name": "app-for-carers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/app-for-families.php",
+      "name": "app-for-families.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],
@@ -8429,6 +8456,15 @@
     {
       "id": "httpdocs/includes/help/pages/live-map.php",
       "name": "live-map.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/messages.php",
+      "name": "messages.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],

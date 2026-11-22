@@ -8245,6 +8245,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/add-office-staff.php",
+      "name": "add-office-staff.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/add-service-user.php",
       "name": "add-service-user.php",
       "type": "PHP",
@@ -17563,6 +17572,7 @@
         "handleMedicalConditionsChange",
         "handleDisabledChange",
         "handleDisabledAdjustmentChange",
+        "showDeferrable",
         "calculateAge",
         "updateAge"
       ],

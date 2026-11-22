@@ -303,6 +303,27 @@
       "imports": []
     },
     {
+      "id": "demo/scripts/seed_app_review.php",
+      "name": "seed_app_review.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "say",
+        "fail",
+        "one",
+        "all",
+        "max_id",
+        "newest",
+        "quietly",
+        "add_visits",
+        "add_service_user",
+        "missing_service_users",
+        "review_plans"
+      ],
+      "imports": []
+    },
+    {
       "id": "demo/scripts/seed_demo_data.php",
       "name": "seed_demo_data.php",
       "type": "PHP",
@@ -346,6 +367,26 @@
         "newest",
         "quietly",
         "save_manifest"
+      ],
+      "imports": []
+    },
+    {
+      "id": "demo/scripts/seed_mrq_demo.php",
+      "name": "seed_mrq_demo.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "say",
+        "fail",
+        "one",
+        "all",
+        "max_id",
+        "newest",
+        "quietly",
+        "hm",
+        "add_visit",
+        "complete_visit"
       ],
       "imports": []
     },
@@ -5668,6 +5709,7 @@
         "update_availability",
         "remove_availability",
         "edit_all_availability",
+        "complete_own_personal_details",
         "update_account_profile_picture",
         "update_account_password"
       ],
@@ -7838,6 +7880,10 @@
         "find_username_owner",
         "username_taken_message",
         "check_staff_mobile_app_only",
+        "staff_position_defers_personal_details",
+        "staff_deferrable_personal_detail_labels",
+        "staff_missing_personal_details",
+        "staff_must_complete_personal_details",
         "check_user_authenticated",
         "shorten_string",
         "get_postcode_area",
@@ -8143,6 +8189,40 @@
           "path": "side_bar.php"
         }
       ]
+    },
+    {
+      "id": "httpdocs/includes/help/help_catalogue.php",
+      "name": "help_catalogue.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "help_catalogue",
+        "help_find_page",
+        "help_page_content",
+        "help_link_or_text",
+        "help_media_path",
+        "help_step_card"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/help_styles.php",
+      "name": "help_styles.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/add-carer.php",
+      "name": "add-carer.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
     },
     {
       "id": "httpdocs/includes/imports/care_plan_task_names.php",
@@ -14076,6 +14156,19 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/account/complete_details.php",
+      "name": "complete_details.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [],
+      "functions": [
+        "complete_details_row",
+        "complete_details_text",
+        "complete_details_date"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/account/view_account.php",
       "name": "view_account.php",
       "type": "PHP",
@@ -14936,6 +15029,33 @@
         "renderConditionFallback",
         "loadMedicationInfo"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/help/view_help.php",
+      "name": "view_help.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/help/view_help_media.php",
+      "name": "view_help_media.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/help/view_help_page.php",
+      "name": "view_help_page.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {
@@ -17692,6 +17812,18 @@
       "feature": "Other",
       "classes": [],
       "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/support.php",
+      "name": "support.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "support_setting",
+        "support_out"
+      ],
       "imports": []
     },
     {

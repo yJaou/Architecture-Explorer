@@ -8254,6 +8254,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/carer-preferences.php",
+      "name": "carer-preferences.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/create-care-plan.php",
       "name": "create-care-plan.php",
       "type": "PHP",

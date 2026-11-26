@@ -8596,6 +8596,33 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/rota-roll-out.php",
+      "name": "rota-roll-out.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/rota-template-changes.php",
+      "name": "rota-template-changes.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/rota-templates.php",
+      "name": "rota-templates.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/scheduling-reports.php",
       "name": "scheduling-reports.php",
       "type": "PHP",

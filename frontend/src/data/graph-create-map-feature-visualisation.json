@@ -4534,6 +4534,89 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Rota/Rota_rollout.class.php",
+      "name": "Rota_rollout.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Rota_rollout"
+      ],
+      "functions": [
+        "__construct",
+        "default_range",
+        "clamp_range",
+        "preview",
+        "apply",
+        "run_timer",
+        "timer_ran_today",
+        "has_active_templates",
+        "release_template",
+        "work",
+        "occurrence_actions",
+        "orphan_action",
+        "execute",
+        "count",
+        "action",
+        "plan",
+        "plan_for_date",
+        "plan_runs_on",
+        "exceptions_for",
+        "patient_branch",
+        "sessions_on",
+        "template_sessions",
+        "started",
+        "hand_edited",
+        "carer_refusal",
+        "time_off_for"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Rota/Rota_templates.class.php",
+      "name": "Rota_templates.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Rota_templates"
+      ],
+      "functions": [
+        "weekday_name",
+        "weekday_column",
+        "status_label",
+        "monday_of",
+        "cycle_week_of",
+        "next_date_for",
+        "all_templates",
+        "get_template",
+        "get_entries",
+        "get_entry",
+        "get_rollouts",
+        "get_rollout",
+        "get_plan",
+        "care_plan_slots",
+        "rota_staff",
+        "staff_names",
+        "patient_names",
+        "names",
+        "validate_settings",
+        "create_template",
+        "update_template",
+        "set_status",
+        "active_clashes",
+        "add_entry",
+        "update_entry",
+        "delete_entry",
+        "accept_plan_change",
+        "copy_from_week",
+        "current_plan_for",
+        "entry_problems",
+        "clean_run",
+        "touch",
+        "new_number"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Schema_sync/Backup_catalogue.class.php",
       "name": "Backup_catalogue.class.php",
       "type": "PHP",
@@ -5271,6 +5354,9 @@
         "add_carer_to_visit",
         "get_visit_carer_numbers",
         "add_unallocated_session",
+        "add_rota_session",
+        "set_rota_origin",
+        "set_rota_carer",
         "find_active_session_for_slot",
         "update_session",
         "duplicate_visit_exists",
@@ -16852,6 +16938,56 @@
       ]
     },
     {
+      "id": "httpdocs/pages/rota_templates/_rota_helpers.php",
+      "name": "_rota_helpers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "rota_h",
+        "rota_csrf_field",
+        "rota_csrf_ok",
+        "rota_redirect",
+        "rota_flash",
+        "rota_status_pill",
+        "rota_branch_names",
+        "rota_time_range",
+        "rota_stylesheet"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/rota_templates/edit_rota_template.php",
+      "name": "edit_rota_template.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "fillStaff",
+        "openAdd",
+        "openEdit"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/rota_templates/rollout_rota_template.php",
+      "name": "rollout_rota_template.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/rota_templates/view_rota_templates.php",
+      "name": "view_rota_templates.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/schedule/carer_week.php",
       "name": "carer_week.php",
       "type": "PHP",
@@ -18997,6 +19133,17 @@
       "imports": []
     },
     {
+      "id": "httpdocs_private/cron_scripts/rota_rollout.php",
+      "name": "rota_rollout.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [],
+      "functions": [
+        "describe"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs_private/cron_scripts/tasks_agent_pass.php",
       "name": "tasks_agent_pass.php",
       "type": "PHP",
@@ -19012,6 +19159,7 @@
       "feature": "Database",
       "classes": [],
       "functions": [
+        "run_nightly_jobs",
         "take_backup",
         "pbl_last_scheduled_backup_at",
         "report_rotation",
@@ -19418,6 +19566,26 @@
       "functions": [
         "test_group",
         "check"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/rota_templates/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "extends"
+      ],
+      "functions": [
+        "db",
+        "test_group",
+        "check",
+        "seed",
+        "plan_row",
+        "sessions",
+        "one",
+        "count_type"
       ],
       "imports": []
     },

@@ -5412,6 +5412,7 @@
         "show_has_session_address_distance",
         "show_session_cancellation_reason",
         "show_session_cancellation_code",
+        "show_rota_template_number",
         "show_session_cancelled_by",
         "show_session_cancelled_date",
         "show_pre_cancel_state",
@@ -13172,6 +13173,8 @@
       "feature": "Scheduling",
       "classes": [],
       "functions": [
+        "schedule_rota_template_name",
+        "schedule_sessions_rota_column",
         "schedule_visit_tooltip_payload",
         "schedule_visit_tooltip",
         "esc",

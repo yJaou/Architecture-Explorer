@@ -8306,7 +8306,8 @@
         "help_media_path",
         "help_step_card",
         "help_measured_marks",
-        "help_guides_for_screen"
+        "help_guides_for_screen",
+        "help_player_data"
       ],
       "imports": []
     },

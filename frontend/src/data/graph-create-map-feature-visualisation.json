@@ -5597,6 +5597,7 @@
         "use_email_change_code",
         "retire_email_change_code",
         "get_staff_availability",
+        "save_help_tab_position",
         "edit_staff_field",
         "record_password_is_default",
         "edit_staff_profile_details",
@@ -5775,6 +5776,7 @@
         "add_staff",
         "pay_rate_sheets_exist",
         "update_staff",
+        "set_help_tab_position",
         "update_staff_profile_details",
         "carry_applicant_availability_to_slots",
         "hire_applicant",
@@ -5915,6 +5917,7 @@
         "show_last_visit_date",
         "visit_extreme_date",
         "show_manager_staff_number",
+        "show_help_tab_position",
         "show_profile_picture",
         "show_hire_date",
         "show_notice_date",
@@ -15552,6 +15555,15 @@
         "renderConditionFallback",
         "loadMedicationInfo"
       ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/help/save_tab_position.php",
+      "name": "save_tab_position.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
       "imports": []
     },
     {

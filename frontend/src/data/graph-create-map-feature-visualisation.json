@@ -4452,6 +4452,76 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Report_builder/Block_applicants.class.php",
+      "name": "Block_applicants.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_applicants"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_availability.class.php",
+      "name": "Block_availability.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Block_availability"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_chart.class.php",
+      "name": "Block_chart.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_chart"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "follows",
+        "sources",
+        "required_permissions",
+        "permissions_for",
+        "fields",
+        "buckets",
+        "bucket_key",
+        "data",
+        "nice_max",
+        "columns_svg",
+        "bars_svg",
+        "render"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Report_builder/Block_divider.class.php",
       "name": "Block_divider.class.php",
       "type": "PHP",
@@ -4554,6 +4624,28 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Report_builder/Block_medication.class.php",
+      "name": "Block_medication.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_medication"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "fields",
+        "css",
+        "render"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Report_builder/Block_page_break.class.php",
       "name": "Block_page_break.class.php",
       "type": "PHP",
@@ -4571,6 +4663,29 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Report_builder/Block_quality_checks.class.php",
+      "name": "Block_quality_checks.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_quality_checks"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "follows",
+        "forms",
+        "required_permissions",
+        "permissions_for",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Report_builder/Block_registry.class.php",
       "name": "Block_registry.class.php",
       "type": "PHP",
@@ -4581,6 +4696,7 @@
       "functions": [
         "classes",
         "get",
+        "starting_point",
         "group_order",
         "palette"
       ],
@@ -4647,6 +4763,27 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Report_builder/Block_tasks.class.php",
+      "name": "Block_tasks.class.php",
+      "type": "PHP",
+      "feature": "Scheduled Tasks",
+      "classes": [
+        "Block_tasks"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Report_builder/Block_text.class.php",
       "name": "Block_text.class.php",
       "type": "PHP",
@@ -4659,6 +4796,48 @@
         "label",
         "icon",
         "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_time_off.class.php",
+      "name": "Block_time_off.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_time_off"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_training.class.php",
+      "name": "Block_training.class.php",
+      "type": "PHP",
+      "feature": "AI Core",
+      "classes": [
+        "Block_training"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
         "fields",
         "render"
       ],
@@ -8519,6 +8698,7 @@
         "check_session_staff_clash",
         "get_record_number_patients",
         "get_scheduled_patient_numbers_for_staff",
+        "report_builder_button",
         "report_keyword_matches",
         "sort_report_rows",
         "report_people_sort_key_fn",
@@ -8816,6 +8996,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/build-a-report.php",
+      "name": "build-a-report.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/calendar-and-copying.php",
       "name": "calendar-and-copying.php",
       "type": "PHP",
@@ -8996,6 +9185,15 @@
       "imports": []
     },
     {
+      "id": "httpdocs/includes/help/pages/report-letterheads.php",
+      "name": "report-letterheads.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
       "id": "httpdocs/includes/help/pages/rota-roll-out.php",
       "name": "rota-roll-out.php",
       "type": "PHP",
@@ -9016,6 +9214,15 @@
     {
       "id": "httpdocs/includes/help/pages/rota-templates.php",
       "name": "rota-templates.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/includes/help/pages/run-and-share-reports.php",
+      "name": "run-and-share-reports.php",
       "type": "PHP",
       "feature": "Other",
       "classes": [],
@@ -17326,9 +17533,7 @@
       "type": "PHP",
       "feature": "Other",
       "classes": [],
-      "functions": [
-        "rb_starting_blocks"
-      ],
+      "functions": [],
       "imports": []
     },
     {

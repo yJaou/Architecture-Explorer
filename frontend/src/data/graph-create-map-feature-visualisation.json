@@ -4418,6 +4418,395 @@
       "imports": []
     },
     {
+      "id": "httpdocs/classes/Report_builder/Block.class.php",
+      "name": "Block.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "permissions_for",
+        "follows",
+        "fields",
+        "render",
+        "defaults",
+        "clean_settings",
+        "h",
+        "fill_tokens",
+        "align_class",
+        "title_html",
+        "table_html",
+        "picked_columns",
+        "display_day",
+        "display_minutes",
+        "display_clock",
+        "people_names"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_divider.class.php",
+      "name": "Block_divider.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_divider"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_figures.class.php",
+      "name": "Block_figures.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_figures"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "follows",
+        "metrics",
+        "permissions_for",
+        "metric_allowed",
+        "fields",
+        "clean_settings",
+        "value",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_heading.class.php",
+      "name": "Block_heading.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_heading"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_image.class.php",
+      "name": "Block_image.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_image"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_incidents.class.php",
+      "name": "Block_incidents.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_incidents"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "column_options",
+        "fields",
+        "incidents",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_page_break.class.php",
+      "name": "Block_page_break.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_page_break"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_registry.class.php",
+      "name": "Block_registry.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_registry"
+      ],
+      "functions": [
+        "classes",
+        "get",
+        "group_order",
+        "palette"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_service_users.class.php",
+      "name": "Block_service_users.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_service_users"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "column_options",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_signature.class.php",
+      "name": "Block_signature.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_signature"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_staff_list.class.php",
+      "name": "Block_staff_list.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_staff_list"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "column_options",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_text.class.php",
+      "name": "Block_text.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Block_text"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "icon",
+        "description",
+        "fields",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Block_visits.class.php",
+      "name": "Block_visits.class.php",
+      "type": "PHP",
+      "feature": "Scheduling",
+      "classes": [
+        "Block_visits"
+      ],
+      "functions": [
+        "type",
+        "label",
+        "group",
+        "icon",
+        "description",
+        "required_permissions",
+        "follows",
+        "column_options",
+        "status_options",
+        "fields",
+        "status_of",
+        "status_label",
+        "visits",
+        "render"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Report_access.class.php",
+      "name": "Report_access.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Report_access"
+      ],
+      "functions": [
+        "__construct",
+        "staff_number",
+        "has",
+        "full_access",
+        "can_build",
+        "can_run",
+        "can_see_design",
+        "can_edit_design",
+        "can_edit_letterhead",
+        "can_see_run",
+        "can_use_block",
+        "visible_patient_numbers",
+        "may_see_patient"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Report_context.class.php",
+      "name": "Report_context.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Report_context"
+      ],
+      "functions": [
+        "period_options",
+        "resolve_period",
+        "valid_date",
+        "__construct",
+        "period_label",
+        "parameters",
+        "tokens"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Report_images.class.php",
+      "name": "Report_images.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Report_images"
+      ],
+      "functions": [
+        "folder",
+        "valid_name",
+        "url",
+        "path",
+        "store_upload",
+        "store_bytes"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Report_renderer.class.php",
+      "name": "Report_renderer.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Report_renderer"
+      ],
+      "functions": [
+        "h",
+        "organisation",
+        "font_stack",
+        "default_letterhead",
+        "letterhead_html",
+        "block_html",
+        "report_html",
+        "css"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/classes/Report_builder/Report_store.class.php",
+      "name": "Report_store.class.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Report_store"
+      ],
+      "functions": [
+        "tables_ready",
+        "new_number",
+        "empty_definition",
+        "decode_definition",
+        "normalise_definition",
+        "font_options",
+        "letterheads",
+        "get_letterhead",
+        "clean_letterhead",
+        "save_letterhead",
+        "delete_letterhead",
+        "designs_for",
+        "get_design",
+        "clean_name",
+        "create_design",
+        "update_design",
+        "set_shared",
+        "delete_design",
+        "copy_design",
+        "record_run",
+        "runs_for",
+        "get_run"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/classes/Risk/Risk.class.php",
       "name": "Risk.class.php",
       "type": "PHP",
@@ -16902,6 +17291,97 @@
       "imports": []
     },
     {
+      "id": "httpdocs/pages/reports/_report_helpers.php",
+      "name": "_report_helpers.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "rb_h",
+        "rb_csrf_field",
+        "rb_csrf_ok",
+        "rb_redirect",
+        "rb_flash",
+        "report_json",
+        "rb_staff_name",
+        "rb_patient_name",
+        "rb_people_options",
+        "rb_context_from",
+        "rb_page_styles"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/report_api.php",
+      "name": "report_api.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/report_builder.php",
+      "name": "report_builder.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "rb_starting_blocks"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/report_image.php",
+      "name": "report_image.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/report_run.php",
+      "name": "report_run.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/view_report_letterheads.php",
+      "name": "view_report_letterheads.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "esc",
+        "draw"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/view_report_runs.php",
+      "name": "view_report_runs.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [],
+      "imports": []
+    },
+    {
+      "id": "httpdocs/pages/reports/view_reports.php",
+      "name": "view_reports.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [],
+      "functions": [
+        "rb_design_rows"
+      ],
+      "imports": []
+    },
+    {
       "id": "httpdocs/pages/reset_password.php",
       "name": "reset_password.php",
       "type": "PHP",
@@ -19616,6 +20096,23 @@
       "functions": [
         "test_group",
         "check"
+      ],
+      "imports": []
+    },
+    {
+      "id": "httpdocs_private/tests/report_builder/run_tests.php",
+      "name": "run_tests.php",
+      "type": "PHP",
+      "feature": "Other",
+      "classes": [
+        "Test_group"
+      ],
+      "functions": [
+        "test_group",
+        "check",
+        "__construct",
+        "check_page_access",
+        "access"
       ],
       "imports": []
     },
